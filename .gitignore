@@ -1,6 +1,6 @@
 
 # Directories
-neural_nlp/ressources/models/glove/*
+ressources/models/glove/*
 
 .idea
 
