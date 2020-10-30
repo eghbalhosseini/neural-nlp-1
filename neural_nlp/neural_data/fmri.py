@@ -16,6 +16,7 @@ from nltk_contrib.textgrid import TextGrid
 from pathlib import Path
 from tqdm import tqdm
 from xarray import DataArray
+import pickle as pkl
 
 from brainscore.metrics import Score
 from brainscore.metrics.regression import CrossRegressedCorrelation, linear_regression
@@ -24,6 +25,7 @@ from neural_nlp.utils import ordered_set, is_sorted
 from result_caching import cache, store, store_netcdf
 
 neural_data_dir = (Path(os.path.dirname(__file__)) / '..' / '..' / 'ressources' / 'neural_data' / 'fmri').resolve()
+ressources_dir = (Path(os.path.dirname(__file__)) / '..' / '..' / 'ressources').resolve()
 _logger = logging.getLogger(__name__)
 
 
@@ -83,8 +85,106 @@ def load_Pereira2018_Blank_languageresiduals():
     residuals.attrs['stimulus_set'] = assembly.stimulus_set
     return residuals
 
+#@store()
+def load_Pereira2018_scrambled(version='Scr1'): # edit of load_Pereira2018_Blank
+    _logger.info('\n\n\n ************************ \n I AM SCRAMBLING \n ******************** \n\n\n')
+    reference_data = load_Pereira2018()
 
-@store()
+    data_dir = neural_data_dir / ("Pereira2018_Blank")
+    experiments = {'n72': "243sentences", 'n96': "384sentences"}
+    assemblies = []
+    subjects = ['018', '199', '215', '288', '289', '296', '343', '366', '407', '426']
+    for subject in tqdm(subjects, desc="subjects"):
+        subject_assemblies = []
+        for experiment_filepart, experiment_name in experiments.items():
+            filepath = data_dir / f"{subject}_complang_passages_{experiment_filepart}_persent.mat"
+            if not filepath.is_file():
+                _logger.debug(f"Subject {subject} did not run {experiment_name}: {filepath} does not exist")
+                continue
+            data = scipy.io.loadmat(str(filepath))
+            # if version != 'base':
+            #     data = data['x'][0, 0]
+
+            # construct assembly
+            assembly = data['data']
+            neuroid_meta = data['meta']
+
+            expanded_assembly = []
+            voxel_nums, atlases, filter_strategies, atlas_selections, atlas_filter_lower, rois = [], [], [], [], [], []
+            for voxel_num in range(assembly.shape[1]):
+                for atlas_iter, atlas_selection in enumerate(neuroid_meta['atlases'][0, 0][:, 0]):
+                    multimask = neuroid_meta['roiMultimask'][0, 0][atlas_iter, 0][voxel_num, 0]
+                    if np.isnan(multimask):
+                        continue
+                    atlas_selection = atlas_selection[0].split('_')
+                    filter_strategy = None if len(atlas_selection) != 3 else atlas_selection[1]
+                    filter_lower = re.match(r'from([0-9]{2})to100prcnt', atlas_selection[-1])
+                    atlas_filter_lower.append(int(filter_lower.group(1)))
+                    atlas, selection = atlas_selection[0], atlas_selection[-1]
+                    atlases.append(atlas)
+                    filter_strategies.append(filter_strategy)
+                    atlas_selections.append(selection)
+                    multimask = int(multimask) - 1  # Matlab 1-based to Python 0-based indexing
+                    rois.append(neuroid_meta['rois'][0, 0][atlas_iter, 0][multimask, 0][0])
+                    voxel_nums.append(voxel_num)
+                    expanded_assembly.append(assembly[:, voxel_num])
+            # ensure all are mapped
+            assert set(voxel_nums) == set(range(assembly.shape[1])), "not all voxels mapped"
+            # add indices
+            assembly = np.stack(expanded_assembly).T
+            assert assembly.shape[1] == len(atlases) == len(atlas_selections) == len(rois)
+            indices_in_3d = neuroid_meta['indicesIn3D'][0, 0][:, 0]
+            indices_in_3d = [indices_in_3d[voxel_num] for voxel_num in voxel_nums]
+            # add coords
+            col_to_coords = np.array([neuroid_meta['colToCoord'][0, 0][voxel_num] for voxel_num in voxel_nums])
+
+            # put it all together
+            assembly = NeuroidAssembly(assembly, coords={
+                **{coord: (dims, value) for coord, dims, value in walk_coords(
+                    reference_data.sel(experiment=experiment_name)['presentation'])},
+                **{'experiment': ('presentation', [experiment_name] * assembly.shape[0]),
+                   'subject': ('neuroid', [subject] * assembly.shape[1]),
+                   'voxel_num': ('neuroid', voxel_nums),
+                   'atlas': ('neuroid', atlases),
+                   'filter_strategy': ('neuroid', filter_strategies),
+                   'atlas_selection': ('neuroid', atlas_selections),
+                   'atlas_selection_lower': ('neuroid', atlas_filter_lower),
+                   'roi': ('neuroid', rois),
+                   'indices_in_3d': ('neuroid', indices_in_3d),
+                   'col_to_coord_1': ('neuroid', col_to_coords[:, 0]),
+                   'col_to_coord_2': ('neuroid', col_to_coords[:, 1]),
+                   'col_to_coord_3': ('neuroid', col_to_coords[:, 2]),
+                   }}, dims=['presentation', 'neuroid'])
+            assembly['neuroid_id'] = 'neuroid', _build_id(assembly, ['subject', 'voxel_num'])
+            subject_assemblies.append(assembly)
+        assembly = merge_data_arrays(subject_assemblies)
+        assemblies.append(assembly)
+
+    _logger.debug(f"Merging {len(assemblies)} assemblies")
+    assembly = merge_data_arrays(assemblies)
+    assembly.attrs['version'] = version
+
+    _logger.debug("Creating StimulusSet")
+    
+    scrambled_data_dir = os.path.join(ressources_dir, "scrambled-stimuli-dfs/")
+    
+    STIMULI_TO_PKL_MAP = {'lowPMI' : os.path.join(scrambled_data_dir,'stimuli_lowPMI.pkl'),
+                   'Original' : os.path.join(scrambled_data_dir,'stimuli_Original.pkl'),
+                   'Scr1' : os.path.join(scrambled_data_dir, 'stimuli_Scr1.pkl'),
+                   'Scr3' : os.path.join(scrambled_data_dir, 'stimuli_Scr3.pkl'),
+                   'Scr5' : os.path.join(scrambled_data_dir, 'stimuli_Scr5.pkl'),
+                   'Scr7' : os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl')}
+
+    for key in STIMULI_TO_PKL_MAP.keys():
+        if version == key:
+            _logger.info('I AM USING THIS DATA VERSION', key)
+            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
+    
+    assembly.attrs['stimulus_set'] = stimuli
+
+    return assembly
+
+#@store()
 def load_Pereira2018_Blank(version='base'):
     reference_data = load_Pereira2018()
 
@@ -168,7 +268,7 @@ def load_Pereira2018_Blank(version='base'):
     return assembly
 
 
-@store()
+#@store()
 def load_Pereira2018():
     data_dir = neural_data_dir / "Pereira2018"
     experiment2, experiment3 = "243sentences.mat", "384sentences.mat"
@@ -232,6 +332,7 @@ def load_Pereira2018():
     stimuli.name = "Pereira2018"
     assembly.attrs['stimulus_set'] = stimuli
     return assembly
+
 
 
 def _build_id(assembly, coords):
