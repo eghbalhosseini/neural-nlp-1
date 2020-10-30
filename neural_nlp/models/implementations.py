@@ -2,6 +2,7 @@ import copy
 from collections import OrderedDict, defaultdict
 from enum import Enum
 from importlib import import_module
+import getpass
 
 import itertools
 import logging
@@ -761,6 +762,12 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
                 token_word = ''.join(tokens).lower()
                 for special_token in self.tokenizer_special_tokens:
                     token_word = token_word.replace(special_token, '')
+
+                user = getpass.getuser()
+                if user == 'gt':
+                    if sentence_index >= len(sentences_chain): # ADDED TO AVOID INDEX ERROR WITH TRANSFORMERS 3.0.1
+                        continue
+
                 if sentences_chain[sentence_index].lower() != token_word:
                     previous_indices.append(token_index)
                     continue
