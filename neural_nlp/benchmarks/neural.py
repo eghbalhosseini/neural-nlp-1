@@ -982,7 +982,7 @@ def consistency(score, ceiling):
 
 benchmark_pool = [
     # primary benchmarks
-    ('Pereira2018-encoding-test', PereiraEncoding),
+    ('Pereira2018-encoding', PereiraEncoding),
     ('Pereira2018-encoding-scrambled', PereiraEncodingScrambled),
     ('Fedorenko2016v3-encoding', Fedorenko2016V3Encoding),
     ('Blank2014fROI-encoding', Blank2014fROIEncoding),
