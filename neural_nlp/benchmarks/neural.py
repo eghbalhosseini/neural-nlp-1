@@ -3,6 +3,10 @@ Neural benchmarks to probe match of model internals against human internals.
 """
 import warnings
 
+import os
+import pandas as pd
+from pathlib import Path
+
 import itertools
 import logging
 import numpy as np
@@ -26,6 +30,8 @@ from neural_nlp.stimuli import load_stimuli, StimulusSet
 from neural_nlp.utils import ordered_set
 from result_caching import store
 
+neural_data_dir = (Path(os.path.dirname(__file__)) / '..' / '..' / 'ressources' / 'neural_data' / 'fmri').resolve()
+ressources_dir = (Path(os.path.dirname(__file__)) / '..' / '..' / 'ressources').resolve()
 _logger = logging.getLogger(__name__)
 
 
@@ -449,10 +455,27 @@ class _PereiraBenchmarkScrambled(Benchmark):
         https://www.nature.com/articles/s41467-018-03068-4
     """
 
-    def __init__(self, identifier, metric, data_version='base'):
+    def __init__(self, identifier, metric, scrambled_version, data_version='base'):
         self._identifier = identifier
         self._data_version = data_version
         self._target_assembly = LazyLoad(lambda: self._load_assembly(version=self._data_version))
+
+        scrambled_data_dir = os.path.join(ressources_dir, "scrambled-stimuli-dfs/")
+
+        STIMULI_TO_PKL_MAP = {'lowPMI': os.path.join(scrambled_data_dir, 'stimuli_lowPMI.pkl'),
+                              'Original': os.path.join(scrambled_data_dir, 'stimuli_Original.pkl'),
+                              'Scr1': os.path.join(scrambled_data_dir, 'stimuli_Scr1.pkl'),
+                              'Scr3': os.path.join(scrambled_data_dir, 'stimuli_Scr3.pkl'),
+                              'Scr5': os.path.join(scrambled_data_dir, 'stimuli_Scr5.pkl'),
+                              'Scr7': os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl')}
+
+        for key in STIMULI_TO_PKL_MAP.keys():
+            if scrambled_version == key:
+                _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
+                stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
+
+        self._target_assembly.attrs['stimulus_set'] = stimuli
+
         self._single_metric = metric
         self._ceiler = self.PereiraExtrapolationCeiling(subject_column='subject', num_bootstraps=100)
         self._cross = CartesianProduct(dividers=['experiment', 'atlas'])
@@ -470,7 +493,7 @@ class _PereiraBenchmarkScrambled(Benchmark):
     def _average_cross_scores(self, cross_scores):
         return cross_scores.mean(['experiment', 'atlas'])
 
-    # @load_s3(key='Pereira2018')
+    @load_s3(key='Pereira2018')
     def _load_assembly(self, version='base'):
     #def _load_assembly(self, version='Scr'):
         assembly = load_Pereira2018_scrambled(version=version)
@@ -644,24 +667,120 @@ class PereiraEncoding(_PereiraBenchmark):
     def ceiling(self):
         return super(PereiraEncoding, self).ceiling
 
-class PereiraEncodingScrambled(_PereiraBenchmarkScrambled):
+class PereiraEncodingScrambledOriginal(_PereiraBenchmarkScrambled):
     """
     data source:
         Pereira et al., nature communications 2018
         https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, scrambled_version="Original", **kwargs):
         metric = CrossRegressedCorrelation(
             regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
             correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
             crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
-        super(PereiraEncodingScrambled, self).__init__(metric=metric, **kwargs) # identifier='Pereira2018-encoding-scrambled'
+        super(PereiraEncodingScrambledOriginal, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled-original'
 
     @property
     @load_s3(key='Pereira2018-encoding-ceiling')
     def ceiling(self):
-        return super(PereiraEncodingScrambled, self).ceiling
+        return super(PereiraEncodingScrambled1, self).ceiling
+
+class PereiraEncodingScrambled1(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="Scr1", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambled1, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled1'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambled1, self).ceiling
+
+class PereiraEncodingScrambled3(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="Scr3", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambled3, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled3'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambled3, self).ceiling
+
+class PereiraEncodingScrambled5(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="Scr5", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambled5, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled5'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambled5, self).ceiling
+
+class PereiraEncodingScrambled7(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="Scr7", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambled7, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled7'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambled7, self).ceiling
+
+class PereiraEncodingScrambledLowPMI(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="lowPMI", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambledLowPMI, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled-lowpmi'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambledLowPMI, self).ceiling
+
 
 class _PereiraSubjectWise(_PereiraBenchmark):
     def __init__(self, **kwargs):
@@ -983,9 +1102,15 @@ def consistency(score, ceiling):
 benchmark_pool = [
     # primary benchmarks
     ('Pereira2018-encoding', PereiraEncoding),
-    ('Pereira2018-encoding-scrambled', PereiraEncodingScrambled),
     ('Fedorenko2016v3-encoding', Fedorenko2016V3Encoding),
     ('Blank2014fROI-encoding', Blank2014fROIEncoding),
+    #6.884 benchmarks
+    ('Pereira2018-encoding-scrambled-original', PereiraEncodingScrambledOriginal),
+    ('Pereira2018-encoding-scrambled1', PereiraEncodingScrambled1),
+    ('Pereira2018-encoding-scrambled3', PereiraEncodingScrambled3),
+    ('Pereira2018-encoding-scrambled5', PereiraEncodingScrambled5),
+    ('Pereira2018-encoding-scrambled7', PereiraEncodingScrambled7),
+    ('Pereira2018-encoding-scrambled-lowpmi', PereiraEncodingScrambledLowPMI),
     # secondary benchmarks
     ('Pereira2018-rdm', PereiraRDM),
     ('Fedorenko2016v3-rdm', Fedorenko2016V3RDM),
