@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import datetime 
 import seaborn
-from stats import is_significant, _permutation_test
+#from stats import is_significant, _permutation_test
 import xlsxwriter 
 from scipy import stats
 import xarray as xr
