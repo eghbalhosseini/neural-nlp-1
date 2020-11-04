@@ -1,2 +1,0 @@
-INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled1', '--model', 'distilbert']
-DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled1,model=distilbert,subsample=None

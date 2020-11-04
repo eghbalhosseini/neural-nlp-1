@@ -11,9 +11,9 @@
 timestamp() {
   date +"%T"
 }
-echo 'Executing run_scrambled_gpt2_scr1'
+echo 'Executing run_scrambled_distilgpt2_scr1'
 timestamp
-filename="run_scrambled_gpt2_scr1_$(date '+%Y%m%d%T').txt"
+filename="run_scrambled_distilgpt2_scr1_$(date '+%Y%m%d%T').txt"
 cd /om/user/gretatu/neural-nlp
 source activate brainmodeling
 

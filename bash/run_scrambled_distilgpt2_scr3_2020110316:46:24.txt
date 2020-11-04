@@ -1,12 +1,75 @@
-INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled1', '--model', 'distilgpt2']
-DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled1,model=distilgpt2,subsample=None
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled3', '--model', 'distilgpt2']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled3,model=distilgpt2,subsample=None
 INFO:neural_nlp:Loading benchmark
 INFO:neural_nlp:Running
-DEBUG:neural_nlp.benchmarks.neural:I AM USING THIS DATA VERSION: Scr1
-DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled1._load_assembly/version=base
+DEBUG:neural_nlp.benchmarks.neural:I AM USING THIS DATA VERSION: Scr3
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3._load_assembly/version=base
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Downloading Pereira2018.nc to /home/gretatu/.neural_nlp/Pereira2018.nc
+
+Pereira2018.nc:   0%|          | 0.00/552M [00:00<?, ?B/s][A
+Pereira2018.nc:   0%|          | 262k/552M [00:00<07:52, 1.17MB/s][A
+Pereira2018.nc:   2%|▏         | 8.65M/552M [00:00<05:27, 1.66MB/s][A
+Pereira2018.nc:   3%|▎         | 16.8M/552M [00:00<03:48, 2.35MB/s][A
+Pereira2018.nc:   5%|▌         | 28.3M/552M [00:00<02:37, 3.32MB/s][A
+Pereira2018.nc:   7%|▋         | 40.6M/552M [00:00<01:49, 4.69MB/s][A
+Pereira2018.nc:  10%|▉         | 53.5M/552M [00:00<01:15, 6.60MB/s][A
+Pereira2018.nc:  12%|█▏        | 64.5M/552M [00:00<00:53, 9.19MB/s][A
+Pereira2018.nc:  14%|█▍        | 76.0M/552M [00:00<00:37, 12.7MB/s][A
+Pereira2018.nc:  16%|█▌        | 87.8M/552M [00:01<00:26, 17.3MB/s][A
+Pereira2018.nc:  18%|█▊        | 98.8M/552M [00:01<00:19, 22.9MB/s][A
+Pereira2018.nc:  21%|██        | 113M/552M [00:01<00:14, 30.6MB/s] [A
+Pereira2018.nc:  23%|██▎       | 125M/552M [00:01<00:10, 39.3MB/s][A
+Pereira2018.nc:  25%|██▍       | 136M/552M [00:01<00:08, 48.8MB/s][A
+Pereira2018.nc:  27%|██▋       | 148M/552M [00:01<00:06, 58.3MB/s][A
+Pereira2018.nc:  29%|██▉       | 160M/552M [00:01<00:05, 68.7MB/s][A
+Pereira2018.nc:  31%|███       | 171M/552M [00:01<00:04, 77.7MB/s][A
+Pereira2018.nc:  33%|███▎      | 183M/552M [00:01<00:04, 86.1MB/s][A
+Pereira2018.nc:  35%|███▌      | 196M/552M [00:01<00:03, 94.5MB/s][A
+Pereira2018.nc:  38%|███▊      | 207M/552M [00:02<00:03, 99.1MB/s][A
+Pereira2018.nc:  40%|███▉      | 219M/552M [00:02<00:03, 104MB/s] [A
+Pereira2018.nc:  42%|████▏     | 232M/552M [00:02<00:02, 109MB/s][A
+Pereira2018.nc:  44%|████▍     | 244M/552M [00:02<00:02, 107MB/s][A
+Pereira2018.nc:  46%|████▌     | 255M/552M [00:02<00:02, 109MB/s][A
+Pereira2018.nc:  48%|████▊     | 267M/552M [00:02<00:02, 110MB/s][A
+Pereira2018.nc:  50%|█████     | 278M/552M [00:02<00:02, 112MB/s][A
+Pereira2018.nc:  53%|█████▎    | 290M/552M [00:02<00:02, 114MB/s][A
+Pereira2018.nc:  55%|█████▍    | 302M/552M [00:02<00:02, 110MB/s][A
+Pereira2018.nc:  57%|█████▋    | 314M/552M [00:03<00:02, 111MB/s][A
+Pereira2018.nc:  59%|█████▉    | 326M/552M [00:03<00:01, 113MB/s][A
+Pereira2018.nc:  61%|██████    | 337M/552M [00:03<00:01, 113MB/s][A
+Pereira2018.nc:  63%|██████▎   | 349M/552M [00:03<00:01, 115MB/s][A
+Pereira2018.nc:  65%|██████▌   | 361M/552M [00:03<00:01, 116MB/s][A
+Pereira2018.nc:  68%|██████▊   | 373M/552M [00:03<00:01, 114MB/s][A
+Pereira2018.nc:  70%|██████▉   | 385M/552M [00:03<00:01, 115MB/s][A
+Pereira2018.nc:  72%|███████▏  | 397M/552M [00:03<00:01, 115MB/s][A
+Pereira2018.nc:  74%|███████▍  | 409M/552M [00:03<00:01, 116MB/s][A
+Pereira2018.nc:  76%|███████▋  | 422M/552M [00:03<00:01, 117MB/s][A
+Pereira2018.nc:  78%|███████▊  | 433M/552M [00:04<00:01, 115MB/s][A
+Pereira2018.nc:  81%|████████  | 445M/552M [00:04<00:00, 115MB/s][A
+Pereira2018.nc:  83%|████████▎ | 457M/552M [00:04<00:00, 116MB/s][A
+Pereira2018.nc:  85%|████████▍ | 469M/552M [00:04<00:00, 114MB/s][A
+Pereira2018.nc:  87%|████████▋ | 481M/552M [00:04<00:00, 116MB/s][A
+Pereira2018.nc:  89%|████████▉ | 493M/552M [00:04<00:00, 116MB/s][A
+Pereira2018.nc:  92%|█████████▏| 505M/552M [00:04<00:00, 118MB/s][A
+Pereira2018.nc:  94%|█████████▎| 517M/552M [00:04<00:00, 118MB/s][A
+Pereira2018.nc:  96%|█████████▌| 530M/552M [00:04<00:00, 115MB/s][A
+Pereira2018.nc:  98%|█████████▊| 542M/552M [00:04<00:00, 117MB/s][APereira2018.nc: 100%|██████████| 552M/552M [00:06<00:00, 91.9MB/s]
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Downloading Pereira2018-stimulus_set.csv to /home/gretatu/.neural_nlp/Pereira2018-stimulus_set.csv
+
+Pereira2018-stimulus_set.csv:   0%|          | 0.00/92.9k [00:00<?, ?B/s][A
+Pereira2018-stimulus_set.csv: 100%|██████████| 92.9k/92.9k [00:00<00:00, 751kB/s][APereira2018-stimulus_set.csv: 100%|██████████| 92.9k/92.9k [00:00<00:00, 738kB/s]
 DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
 DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/distilgpt2-config.json HTTP/1.1" 200 0
-INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json from cache at /om/user/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
+DEBUG:filelock:Attempting to acquire lock 47241872476256 on /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7.lock
+INFO:filelock:Lock 47241872476256 acquired on /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmphd23lmjj
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/distilgpt2-config.json HTTP/1.1" 200 762
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json in cache at /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
+DEBUG:filelock:Attempting to release lock 47241872476256 on /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7.lock
+INFO:filelock:Lock 47241872476256 released on /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7.lock
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json from cache at /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
 INFO:transformers.configuration_utils:Model config GPT2Config {
   "_num_labels": 1,
   "activation_function": "gelu_new",
@@ -48,13 +111,31 @@ INFO:transformers.configuration_utils:Model config GPT2Config {
 
 DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
 DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/distilgpt2-vocab.json HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47245155405048 on /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71.lock
+INFO:filelock:Lock 47245155405048 acquired on /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-vocab.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpbuj6_8a3
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/distilgpt2-vocab.json HTTP/1.1" 200 1042301
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-vocab.json in cache at /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71
+DEBUG:filelock:Attempting to release lock 47245155405048 on /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71.lock
+INFO:filelock:Lock 47245155405048 released on /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71.lock
 DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
 DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/distilgpt2-merges.txt HTTP/1.1" 200 0
-INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-vocab.json from cache at /om/user/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71
-INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-merges.txt from cache at /om/user/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+DEBUG:filelock:Attempting to acquire lock 47245155405440 on /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda.lock
+INFO:filelock:Lock 47245155405440 acquired on /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-merges.txt not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpvufv7l15
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/distilgpt2-merges.txt HTTP/1.1" 200 456318
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-merges.txt in cache at /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
+DEBUG:filelock:Attempting to release lock 47245155405440 on /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda.lock
+INFO:filelock:Lock 47245155405440 released on /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda.lock
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-vocab.json from cache at /home/gretatu/.cache/torch/transformers/71cc2431cf0b5bbe7a23601a808ed322c90251c8261b46f04970140a3c2c1cb4.1512018be4ba4e8726e41b9145129dc30651ea4fec86aa61f4b9f40bf94eac71
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-merges.txt from cache at /home/gretatu/.cache/torch/transformers/4faf7afb02a1ea7d2944e9ba7a175c7b8de4957cdbae75cd5ddffc7c7643ebbc.70bec105b4158ed9a1747fea67a43f5dee97855c64d62b6ec3742f4cfdb5feda
 DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
 DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/distilgpt2-config.json HTTP/1.1" 200 0
-INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json from cache at /om/user/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/distilgpt2-config.json from cache at /home/gretatu/.cache/torch/transformers/eb0f77b3f095880586731f57e2fe19060d71d1036ef8daf727bd97a17fb66a43.7c30f0c070132208a64285a2dce903c733f1db6a70d16d1fac1663fd79b640b7
 INFO:transformers.configuration_utils:Model config GPT2Config {
   "_num_labels": 1,
   "activation_function": "gelu_new",
@@ -97,7 +178,16 @@ INFO:transformers.configuration_utils:Model config GPT2Config {
 
 DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
 DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "HEAD /distilgpt2-pytorch_model.bin HTTP/1.1" 200 0
-INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/distilgpt2-pytorch_model.bin from cache at /om/user/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c
+DEBUG:filelock:Attempting to acquire lock 47245151973160 on /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c.lock
+INFO:filelock:Lock 47245151973160 acquired on /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c.lock
+INFO:transformers.file_utils:https://cdn.huggingface.co/distilgpt2-pytorch_model.bin not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmp_n8y9g1w
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "GET /distilgpt2-pytorch_model.bin HTTP/1.1" 200 352833716
+INFO:transformers.file_utils:storing https://cdn.huggingface.co/distilgpt2-pytorch_model.bin in cache at /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c
+DEBUG:filelock:Attempting to release lock 47245151973160 on /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c.lock
+INFO:filelock:Lock 47245151973160 released on /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c.lock
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/distilgpt2-pytorch_model.bin from cache at /home/gretatu/.cache/torch/transformers/cd250f30004d0dee11ff1af311bd3facb6f38739fd870b9c8aa9321333a550be.ffe4c53a2a410b15148cf4170cc408d2d2f98adeecdde146ef8e71843039ff3c
 INFO:transformers.modeling_utils:Weights of GPT2Model not initialized from pretrained model: ['transformer.h.0.attn.masked_bias', 'transformer.h.1.attn.masked_bias', 'transformer.h.2.attn.masked_bias', 'transformer.h.3.attn.masked_bias', 'transformer.h.4.attn.masked_bias', 'transformer.h.5.attn.masked_bias']
 DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
 INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
@@ -1612,7 +1702,10 @@ DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer as
 DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
 INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
-DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled1.ceiling
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Downloading Pereira2018-encoding-ceiling.nc to /home/gretatu/.neural_nlp/Pereira2018-encoding-ceiling.nc
+
+Pereira2018-encoding-ceiling.nc:   0%|          | 0.00/8.43k [00:00<?, ?B/s][APereira2018-encoding-ceiling.nc: 100%|██████████| 8.43k/8.43k [00:00<00:00, 99.2kB/s]
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
@@ -1782,7 +1875,7 @@ DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrap
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
 INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
-DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled1.ceiling
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
@@ -1952,3 +2045,703 @@ DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrap
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
 DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
 INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences73
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences74
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences75
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences76
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences77
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences78
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences79
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences80
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences81
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences82
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences83
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences84
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences85
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences86
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences87
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences88
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences89
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences90
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences91
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences92
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences93
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences94
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
+INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences73
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences74
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences75
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences76
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences77
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences78
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences79
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences80
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences81
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences82
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences83
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences84
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences85
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences86
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences87
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences88
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences89
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences90
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences91
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences92
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences93
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences94
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
+INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences73
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences74
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences75
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences76
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences77
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences78
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences79
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences80
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences81
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences82
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences83
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences84
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences85
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences86
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences87
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences88
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences89
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences90
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences91
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences92
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences93
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences94
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
+INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-243sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences35
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences36
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences37
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences38
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences39
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences40
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences41
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences42
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences43
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences44
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences45
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences46
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences47
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences48
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences49
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences50
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences51
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences52
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences53
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences54
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences55
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences56
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences57
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences58
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences59
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences60
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences61
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences62
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences63
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences64
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences65
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences66
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences67
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences68
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences69
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences70
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences71
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences72
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences73
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences74
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences75
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences76
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences77
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences78
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences79
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences80
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences81
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences82
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences83
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences84
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences85
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences86
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences87
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences88
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences89
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences90
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences91
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences92
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences93
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences94
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences95
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=distilgpt2,stimuli_identifier=Pereira2018-384sentences96
+INFO:neural_nlp.benchmarks.neural:Scoring across experiments & atlases
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3.ceiling
+DEBUG:result_caching._DiskStorage:Saving to storage: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled3,model=distilgpt2,subsample=None
+<xarray.Score (layer: 7, aggregation: 2)>
+array([[0.007872, 0.090539],
+       [0.203004, 0.087397],
+       [0.211122, 0.107714],
+       [0.290332, 0.084387],
+       [0.303343, 0.116062],
+       [0.371659, 0.044896],
+       [0.491012, 0.093964]])
+Coordinates:
+  * layer        (layer) object 'drop' 'encoder.h.0' ... 'encoder.h.5'
+  * aggregation  (aggregation) <U6 'center' 'error'
+Attributes:
+    raw:          <xarray.Score (layer: 7, aggregation: 2)>\narray([[0.002508...
+    ceiling:      <xarray.Score (aggregation: 3)>\narray([0.318567, 0.012958,...
+    description:  ceiling-normalized score
+    model:        distilgpt2
+    benchmark:    Pereira2018-encoding-scrambled3
+Duration: 5:28:53.446924
