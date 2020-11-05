@@ -1,277 +1,0 @@
-discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
-prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
-/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
-  xr_data.set_index(append=True, inplace=True, **coords_d)
-layers:   0%|          | 0/13 [00:00<?, ?it/s]
-Downloading:   0%|          | 0.00/665 [00:00<?, ?B/s][ADownloading: 100%|██████████| 665/665 [00:00<00:00, 408kB/s]
-
-Downloading:   0%|          | 0.00/1.04M [00:00<?, ?B/s][ADownloading: 100%|██████████| 1.04M/1.04M [00:00<00:00, 12.3MB/s]
-
-Downloading:   0%|          | 0.00/456k [00:00<?, ?B/s][ADownloading: 100%|██████████| 456k/456k [00:00<00:00, 6.91MB/s]
-
-Downloading:   0%|          | 0.00/548M [00:00<?, ?B/s][A
-Downloading:   0%|          | 2.17M/548M [00:00<00:25, 21.7MB/s][A
-Downloading:   1%|▏         | 7.95M/548M [00:00<00:20, 26.7MB/s][A
-Downloading:   3%|▎         | 15.1M/548M [00:00<00:16, 32.8MB/s][A
-Downloading:   3%|▎         | 18.7M/548M [00:00<00:17, 31.1MB/s][A
-Downloading:   4%|▍         | 24.4M/548M [00:00<00:14, 35.9MB/s][A
-Downloading:   6%|▌         | 31.5M/548M [00:00<00:12, 42.2MB/s][A
-Downloading:   7%|▋         | 38.6M/548M [00:00<00:10, 48.1MB/s][A
-Downloading:   8%|▊         | 45.8M/548M [00:00<00:09, 53.4MB/s][A
-Downloading:  10%|▉         | 53.0M/548M [00:00<00:08, 57.8MB/s][A
-Downloading:  11%|█         | 59.4M/548M [00:01<00:09, 52.2MB/s][A
-Downloading:  12%|█▏        | 65.2M/548M [00:01<00:09, 49.5MB/s][A
-Downloading:  13%|█▎        | 72.2M/548M [00:01<00:08, 54.3MB/s][A
-Downloading:  14%|█▍        | 79.3M/548M [00:01<00:08, 58.5MB/s][A
-Downloading:  16%|█▌        | 85.6M/548M [00:01<00:08, 54.7MB/s][A
-Downloading:  17%|█▋        | 91.4M/548M [00:01<00:09, 46.2MB/s][A
-Downloading:  18%|█▊        | 96.4M/548M [00:02<00:17, 25.6MB/s][A
-Downloading:  19%|█▉        | 103M/548M [00:02<00:14, 31.0MB/s] [A
-Downloading:  20%|█▉        | 107M/548M [00:02<00:14, 29.9MB/s][A
-Downloading:  20%|██        | 111M/548M [00:02<00:16, 26.9MB/s][A
-Downloading:  21%|██▏       | 117M/548M [00:02<00:13, 32.1MB/s][A
-Downloading:  23%|██▎       | 124M/548M [00:02<00:11, 38.4MB/s][A
-Downloading:  24%|██▍       | 132M/548M [00:02<00:09, 44.6MB/s][A
-Downloading:  25%|██▌       | 139M/548M [00:02<00:08, 50.2MB/s][A
-Downloading:  26%|██▋       | 145M/548M [00:03<00:11, 34.9MB/s][A
-Downloading:  27%|██▋       | 151M/548M [00:03<00:09, 39.8MB/s][A
-Downloading:  28%|██▊       | 156M/548M [00:03<00:11, 35.6MB/s][A
-Downloading:  30%|██▉       | 163M/548M [00:03<00:09, 41.7MB/s][A
-Downloading:  31%|███       | 170M/548M [00:03<00:07, 47.7MB/s][A
-Downloading:  32%|███▏      | 177M/548M [00:03<00:06, 53.1MB/s][A
-Downloading:  34%|███▎      | 184M/548M [00:03<00:06, 57.7MB/s][A
-Downloading:  35%|███▍      | 192M/548M [00:04<00:05, 61.5MB/s][A
-Downloading:  36%|███▋      | 199M/548M [00:04<00:05, 64.5MB/s][A
-Downloading:  38%|███▊      | 206M/548M [00:04<00:05, 66.5MB/s][A
-Downloading:  39%|███▉      | 213M/548M [00:04<00:04, 68.2MB/s][A
-Downloading:  40%|████      | 221M/548M [00:04<00:05, 58.3MB/s][A
-Downloading:  41%|████▏     | 227M/548M [00:04<00:05, 58.8MB/s][A
-Downloading:  43%|████▎     | 233M/548M [00:04<00:05, 59.8MB/s][A
-Downloading:  44%|████▎     | 239M/548M [00:04<00:05, 55.8MB/s][A
-Downloading:  45%|████▍     | 245M/548M [00:04<00:05, 55.1MB/s][A
-Downloading:  46%|████▌     | 252M/548M [00:05<00:05, 59.0MB/s][A
-Downloading:  47%|████▋     | 259M/548M [00:05<00:04, 62.2MB/s][A
-Downloading:  49%|████▊     | 266M/548M [00:05<00:04, 64.9MB/s][A
-Downloading:  50%|████▉     | 273M/548M [00:05<00:07, 36.9MB/s][A
-Downloading:  51%|█████     | 278M/548M [00:05<00:07, 36.5MB/s][A
-Downloading:  52%|█████▏    | 284M/548M [00:05<00:06, 40.3MB/s][A
-Downloading:  53%|█████▎    | 288M/548M [00:06<00:06, 38.5MB/s][A
-Downloading:  54%|█████▍    | 295M/548M [00:06<00:05, 43.9MB/s][A
-Downloading:  55%|█████▌    | 302M/548M [00:06<00:05, 46.1MB/s][A
-Downloading:  56%|█████▌    | 307M/548M [00:06<00:05, 46.1MB/s][A
-Downloading:  57%|█████▋    | 314M/548M [00:06<00:04, 51.1MB/s][A
-Downloading:  58%|█████▊    | 319M/548M [00:06<00:05, 41.9MB/s][A
-Downloading:  59%|█████▉    | 324M/548M [00:06<00:05, 43.9MB/s][A
-Downloading:  60%|██████    | 331M/548M [00:06<00:04, 48.0MB/s][A
-Downloading:  61%|██████▏   | 336M/548M [00:06<00:04, 46.9MB/s][A
-Downloading:  62%|██████▏   | 341M/548M [00:07<00:04, 46.9MB/s][A
-Downloading:  63%|██████▎   | 347M/548M [00:07<00:04, 49.9MB/s][A
-Downloading:  64%|██████▍   | 352M/548M [00:07<00:05, 37.8MB/s][A
-Downloading:  65%|██████▍   | 356M/548M [00:07<00:05, 34.1MB/s][A
-Downloading:  66%|██████▌   | 362M/548M [00:07<00:04, 38.4MB/s][A
-Downloading:  67%|██████▋   | 369M/548M [00:07<00:04, 44.5MB/s][A
-Downloading:  68%|██████▊   | 374M/548M [00:07<00:03, 46.3MB/s][A
-Downloading:  69%|██████▉   | 379M/548M [00:08<00:04, 37.0MB/s][A
-Downloading:  70%|███████   | 384M/548M [00:08<00:04, 40.9MB/s][A
-Downloading:  71%|███████▏  | 391M/548M [00:08<00:03, 45.5MB/s][A
-Downloading:  73%|███████▎  | 398M/548M [00:08<00:02, 50.8MB/s][A
-Downloading:  74%|███████▎  | 403M/548M [00:08<00:04, 35.2MB/s][A
-Downloading:  74%|███████▍  | 408M/548M [00:08<00:03, 38.2MB/s][A
-Downloading:  76%|███████▌  | 415M/548M [00:08<00:03, 44.1MB/s][A
-Downloading:  77%|███████▋  | 420M/548M [00:08<00:03, 40.7MB/s][A
-Downloading:  78%|███████▊  | 425M/548M [00:09<00:03, 37.6MB/s][A
-Downloading:  78%|███████▊  | 429M/548M [00:09<00:03, 34.5MB/s][A
-Downloading:  79%|███████▉  | 435M/548M [00:09<00:02, 38.7MB/s][A
-Downloading:  81%|████████  | 442M/548M [00:09<00:02, 44.8MB/s][A
-Downloading:  82%|████████▏ | 447M/548M [00:09<00:02, 47.4MB/s][A
-Downloading:  83%|████████▎ | 453M/548M [00:09<00:02, 46.1MB/s][A
-Downloading:  84%|████████▎ | 458M/548M [00:09<00:01, 45.6MB/s][A
-Downloading:  85%|████████▍ | 465M/548M [00:09<00:01, 50.4MB/s][A
-Downloading:  86%|████████▌ | 472M/548M [00:10<00:01, 54.8MB/s][A
-Downloading:  87%|████████▋ | 478M/548M [00:10<00:01, 56.7MB/s][A
-Downloading:  88%|████████▊ | 484M/548M [00:10<00:01, 51.0MB/s][A
-Downloading:  89%|████████▉ | 489M/548M [00:10<00:01, 50.4MB/s][A
-Downloading:  91%|█████████ | 497M/548M [00:10<00:00, 55.3MB/s][A
-Downloading:  92%|█████████▏| 504M/548M [00:10<00:00, 59.4MB/s][A
-Downloading:  93%|█████████▎| 510M/548M [00:10<00:00, 38.4MB/s][A
-Downloading:  94%|█████████▍| 516M/548M [00:10<00:00, 43.2MB/s][A
-Downloading:  95%|█████████▌| 523M/548M [00:11<00:00, 49.1MB/s][A
-Downloading:  97%|█████████▋| 531M/548M [00:11<00:00, 54.4MB/s][A
-Downloading:  98%|█████████▊| 538M/548M [00:11<00:00, 58.8MB/s][A
-Downloading:  99%|█████████▉| 545M/548M [00:11<00:00, 62.3MB/s][ADownloading: 100%|██████████| 548M/548M [00:11<00:00, 47.7MB/s]
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 635, in from_pretrained
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 260, in cached_path
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 439, in get_from_cache
-    http_get(url, temp_file, proxies=proxies, resume_size=resume_size, user_agent=user_agent)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/tempfile.py", line 503, in __exit__
-    result = self.file.__exit__(exc, value, tb)
-OSError: [Errno 122] Disk quota exceeded
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
-    "__main__", mod_spec)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
-    exec(code, run_globals)
-  File "neural_nlp/__main__.py", line 32, in <module>
-    fire.Fire(command=FIRE_FLAGS)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 138, in Fire
-    component_trace = _Fire(component, args, parsed_flag_args, context, name)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 471, in _Fire
-    target=component.__name__)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 675, in _CallAndUpdateTrace
-    component = fn(*varargs, **kwargs)
-  File "neural_nlp/__main__.py", line 22, in run
-    score = score_function(model=model, layers=layers, subsample=subsample, benchmark=benchmark)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 62, in wrapper
-    result = function(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 36, in score
-    layer_score = benchmark_impl(candidate)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
-    return self.content(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 508, in __call__
-    model_activations = listen_to(candidate, stimulus_set, reset_column='passage_id')
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 613, in listen_to
-    story_activations = candidate(stimuli=story_stimuli, average_sentence=average_sentence)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 55, in __call__
-    self._model(*args, **kwargs, layers=self._prerun)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 79, in __call__
-    self._ensure_loaded()
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 73, in _ensure_loaded
-    self.content = self.load_fnc()
-  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 1167, in model_instantiation
-    output_hidden_states=True, state_dict=state_dict)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 645, in from_pretrained
-    raise EnvironmentError(msg)
-OSError: Can't load weights for 'gpt2'. Make sure that:
-
-- 'gpt2' is a correct model identifier listed on 'https://huggingface.co/models'
-
-- or 'gpt2' is the correct path to a directory containing a file named one of pytorch_model.bin, tf_model.h5, model.ckpt.
-
-
-layers:   0%|          | 0/13 [00:25<?, ?it/s]
-/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
-  xr_data.set_index(append=True, inplace=True, **coords_d)
-layers:   0%|          | 0/13 [00:00<?, ?it/s]layers:   0%|          | 0/13 [00:06<?, ?it/s]
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 635, in from_pretrained
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 260, in cached_path
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 436, in get_from_cache
-    with temp_file_manager() as temp_file:
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/tempfile.py", line 551, in NamedTemporaryFile
-    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/tempfile.py", line 262, in _mkstemp_inner
-    fd = _os.open(file, flags, 0o600)
-OSError: [Errno 122] Disk quota exceeded: '/home/gretatu/.cache/torch/transformers/tmp5pn5hwx2'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
-    "__main__", mod_spec)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
-    exec(code, run_globals)
-  File "neural_nlp/__main__.py", line 32, in <module>
-    fire.Fire(command=FIRE_FLAGS)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 138, in Fire
-    component_trace = _Fire(component, args, parsed_flag_args, context, name)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 471, in _Fire
-    target=component.__name__)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 675, in _CallAndUpdateTrace
-    component = fn(*varargs, **kwargs)
-  File "neural_nlp/__main__.py", line 22, in run
-    score = score_function(model=model, layers=layers, subsample=subsample, benchmark=benchmark)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 62, in wrapper
-    result = function(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 36, in score
-    layer_score = benchmark_impl(candidate)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
-    return self.content(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 508, in __call__
-    model_activations = listen_to(candidate, stimulus_set, reset_column='passage_id')
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 613, in listen_to
-    story_activations = candidate(stimuli=story_stimuli, average_sentence=average_sentence)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 55, in __call__
-    self._model(*args, **kwargs, layers=self._prerun)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 79, in __call__
-    self._ensure_loaded()
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 73, in _ensure_loaded
-    self.content = self.load_fnc()
-  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 1167, in model_instantiation
-    output_hidden_states=True, state_dict=state_dict)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 645, in from_pretrained
-    raise EnvironmentError(msg)
-OSError: Can't load weights for 'gpt2'. Make sure that:
-
-- 'gpt2' is a correct model identifier listed on 'https://huggingface.co/models'
-
-- or 'gpt2' is the correct path to a directory containing a file named one of pytorch_model.bin, tf_model.h5, model.ckpt.
-
-
-/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
-  xr_data.set_index(append=True, inplace=True, **coords_d)
-layers:   0%|          | 0/13 [00:00<?, ?it/s]layers:   0%|          | 0/13 [00:06<?, ?it/s]
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 635, in from_pretrained
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 260, in cached_path
-    local_files_only=local_files_only,
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/file_utils.py", line 436, in get_from_cache
-    with temp_file_manager() as temp_file:
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/tempfile.py", line 551, in NamedTemporaryFile
-    (fd, name) = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/tempfile.py", line 262, in _mkstemp_inner
-    fd = _os.open(file, flags, 0o600)
-OSError: [Errno 122] Disk quota exceeded: '/home/gretatu/.cache/torch/transformers/tmp1x98j4i4'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
-    "__main__", mod_spec)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
-    exec(code, run_globals)
-  File "neural_nlp/__main__.py", line 32, in <module>
-    fire.Fire(command=FIRE_FLAGS)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 138, in Fire
-    component_trace = _Fire(component, args, parsed_flag_args, context, name)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 471, in _Fire
-    target=component.__name__)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 675, in _CallAndUpdateTrace
-    component = fn(*varargs, **kwargs)
-  File "neural_nlp/__main__.py", line 22, in run
-    score = score_function(model=model, layers=layers, subsample=subsample, benchmark=benchmark)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 62, in wrapper
-    result = function(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 36, in score
-    layer_score = benchmark_impl(candidate)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
-    return self.content(*args, **kwargs)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 508, in __call__
-    model_activations = listen_to(candidate, stimulus_set, reset_column='passage_id')
-  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 613, in listen_to
-    story_activations = candidate(stimuli=story_stimuli, average_sentence=average_sentence)
-  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 55, in __call__
-    self._model(*args, **kwargs, layers=self._prerun)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 79, in __call__
-    self._ensure_loaded()
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 73, in _ensure_loaded
-    self.content = self.load_fnc()
-  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 1167, in model_instantiation
-    output_hidden_states=True, state_dict=state_dict)
-  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_utils.py", line 645, in from_pretrained
-    raise EnvironmentError(msg)
-OSError: Can't load weights for 'gpt2'. Make sure that:
-
-- 'gpt2' is a correct model identifier listed on 'https://huggingface.co/models'
-
-- or 'gpt2' is the correct path to a directory containing a file named one of pytorch_model.bin, tf_model.h5, model.ckpt.
-
-
