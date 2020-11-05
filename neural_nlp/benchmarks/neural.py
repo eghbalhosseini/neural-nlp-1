@@ -469,10 +469,12 @@ class _PereiraBenchmarkScrambled(Benchmark):
                               'Scr5': os.path.join(scrambled_data_dir, 'stimuli_Scr5.pkl'),
                               'Scr7': os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl')}
 
+
         for key in STIMULI_TO_PKL_MAP.keys():
             if scrambled_version == key:
                 _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
                 stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
+                stimuli.name = f"Pereira2018-{scrambled_version}" #added this
 
         self._target_assembly.attrs['stimulus_set'] = stimuli
 
@@ -495,7 +497,6 @@ class _PereiraBenchmarkScrambled(Benchmark):
 
     @load_s3(key='Pereira2018')
     def _load_assembly(self, version='base'):
-    #def _load_assembly(self, version='Scr'):
         assembly = load_Pereira2018_scrambled(version=version)
         assembly = assembly.sel(atlas_selection_lower=90)
         assembly = assembly[{'neuroid': [filter_strategy in [np.nan, 'HminusE', 'FIXminusH']
