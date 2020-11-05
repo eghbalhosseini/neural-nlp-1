@@ -469,34 +469,14 @@ class _PereiraBenchmarkScrambled(Benchmark):
                               'Scr5': os.path.join(scrambled_data_dir, 'stimuli_Scr5.pkl'),
                               'Scr7': os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl')}
 
-        if scrambled_version == 'lowPMI':
-            _logger.debug("I AM USING THIS DATA VERSION: lowPMI")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['lowPMI'])
-        elif scrambled_version == 'Original':
-            _logger.debug("I AM USING THIS DATA VERSION: Original")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['Original'])
-        elif scrambled_version == 'Scr1':
-            _logger.debug("I AM USING THIS DATA VERSION: Scr1")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['Scr1'])
-        elif scrambled_version == 'Scr3':
-            _logger.debug("I AM USING THIS DATA VERSION: Scr3")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['Scr3'])
-        elif scrambled_version == 'Scr5':
-            _logger.debug("I AM USING THIS DATA VERSION: Scr5")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['Scr5'])
-        else:
-            _logger.debug("I AM USING THIS DATA VERSION: Scr7")
-            stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP['Scr7'])
+
+        for key in STIMULI_TO_PKL_MAP.keys():
+            if scrambled_version == key:
+                _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
+                stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
+                stimuli.name = f"Pereira2018-{scrambled_version}" #added this
 
         self._target_assembly.attrs['stimulus_set'] = stimuli
-
-
-        #for key in STIMULI_TO_PKL_MAP.keys():
-        #    if scrambled_version == mykey:
-        #        _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
-        #        stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
-
-        #self._target_assembly.attrs['stimulus_set'] = stimuli
 
         self._single_metric = metric
         self._ceiler = self.PereiraExtrapolationCeiling(subject_column='subject', num_bootstraps=100)

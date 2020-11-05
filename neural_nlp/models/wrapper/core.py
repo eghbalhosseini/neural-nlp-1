@@ -61,7 +61,7 @@ class ActivationsExtractorHelper:
             fnc = self._from_sentences
         return fnc(layers=layers, sentences=sentences)
 
-    #@store_xarray(identifier_ignore=['sentences', 'layers'], combine_fields={'layers': 'layer'})
+    @store_xarray(identifier_ignore=['sentences', 'layers'], combine_fields={'layers': 'layer'})
     def _from_sentences_stored(self, identifier, layers, stimuli_identifier, sentences):
         return self._from_sentences(layers=layers, sentences=sentences)
 
