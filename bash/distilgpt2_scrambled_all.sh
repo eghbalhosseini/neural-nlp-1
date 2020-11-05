@@ -21,14 +21,14 @@ filename="run_scrambled_$(date '+%Y%m%d%T').txt"
 cd /om/user/gretatu/neural-nlp
 source activate brainmodeling
 
-export MODELNAME=gpt2
+export MODELNAME=distilgpt2
 
 #for i in scrambled-original scrambled1 scrambled3 scrambled5 scrambled7 scrambled-lowpmi
 
 for i in scrambled3 scrambled5 scrambled7
 
 do
-    python neural_nlp run --benchmark Pereira2018-encoding-${i} --model ${MODELNAME}  --log_level DEBUG > "/om/user/ckauf/neural-nlp/bash_scripts/$filename"
+    python neural_nlp run --benchmark Pereira2018-encoding-${i} --model ${MODELNAME}  --log_level DEBUG > "/om/user/gretatu/neural-nlp/bash/$filename"
 
     echo 'Finished benchmark!'
     timestamp

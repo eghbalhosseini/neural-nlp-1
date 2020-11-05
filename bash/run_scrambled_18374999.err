@@ -1,0 +1,5 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+/var/slurm/slurmd/job18374999/slurm_script: line 31: /om/user/ckauf/neural-nlp/bash_scripts/run_scrambled_2020110420:36:53.txt: Permission denied
+/var/slurm/slurmd/job18374999/slurm_script: line 31: /om/user/ckauf/neural-nlp/bash_scripts/run_scrambled_2020110420:36:53.txt: Permission denied
+/var/slurm/slurmd/job18374999/slurm_script: line 31: /om/user/ckauf/neural-nlp/bash_scripts/run_scrambled_2020110420:36:53.txt: Permission denied
