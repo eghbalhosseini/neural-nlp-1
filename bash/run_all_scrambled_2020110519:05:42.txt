@@ -1,0 +1,3 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-', '--model', 'distilgpt2']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-,model=distilgpt2,subsample=None
+INFO:neural_nlp:Loading benchmark

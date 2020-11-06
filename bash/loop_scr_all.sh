@@ -25,7 +25,7 @@ export MODELNAME=distilgpt2
 
 #for i in scrambled-original scrambled1 scrambled3 scrambled5 scrambled7 scrambled-lowpmi
 
-python neural_nlp run --benchmark Pereira2018-encoding-${i} --model ${MODELNAME}  --log_level DEBUG > "/om/user/`whoami`/neural-nlp/bash/$filename"
+python neural_nlp run --benchmark Pereira2018-encoding-"${1}" --model ${MODELNAME}  --log_level DEBUG > "/om/user/`whoami`/neural-nlp/bash/$filename"
 
 timestamp
 
