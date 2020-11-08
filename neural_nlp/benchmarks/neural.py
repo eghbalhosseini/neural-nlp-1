@@ -781,6 +781,63 @@ class PereiraEncodingScrambledLowPMI(_PereiraBenchmarkScrambled):
     @load_s3(key='Pereira2018-encoding-ceiling')
     def ceiling(self):
         return super(PereiraEncodingScrambledLowPMI, self).ceiling
+    
+class PereiraEncodingScrambledBackward(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="backward", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambledBackward, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled-backward'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambledBackward, self).ceiling
+
+class PereiraEncodingScrambledRandom(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="random", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambledRandom, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled-random'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambledRandom, self).ceiling
+    
+class PereiraEncodingScrambledEAWRandom(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="eaw-random", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingScrambledEAWRandom, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-scrambled-eaw-random'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingScrambledEAWRandom, self).ceiling
 
 
 class _PereiraSubjectWise(_PereiraBenchmark):
@@ -1112,6 +1169,9 @@ benchmark_pool = [
     ('Pereira2018-encoding-scrambled5', PereiraEncodingScrambled5),
     ('Pereira2018-encoding-scrambled7', PereiraEncodingScrambled7),
     ('Pereira2018-encoding-scrambled-lowpmi', PereiraEncodingScrambledLowPMI),
+    ('Pereira2018-encoding-scrambled-backward', PereiraEncodingScrambledBackward),
+    ('Pereira2018-encoding-scrambled-random', PereiraEncodingScrambledRandom),
+    ('Pereira2018-encoding-scrambled-eaw-random', PereiraEncodingScrambledEAWRandom),
     # secondary benchmarks
     ('Pereira2018-rdm', PereiraRDM),
     ('Fedorenko2016v3-rdm', Fedorenko2016V3RDM),
