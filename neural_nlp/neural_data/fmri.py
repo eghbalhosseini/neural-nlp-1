@@ -180,7 +180,7 @@ def load_Pereira2018_scrambled(version='Scr1'): # edit of load_Pereira2018_Blank
                     }
 
     for key in STIMULI_TO_PKL_MAP.keys():
-        if version == key:
+        if scrambled_version == key:
             _logger.info('I AM USING THIS DATA VERSION', key)
             stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
             stimuli.name = f"Pereira2018-{scrambled_version}" #added this
