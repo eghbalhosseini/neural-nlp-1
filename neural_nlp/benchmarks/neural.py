@@ -23,7 +23,7 @@ from neural_nlp.neural_data.ecog import load_Fedorenko2016
 from neural_nlp.neural_data.fmri import load_voxels, load_rdm_sentences, \
     load_Pereira2018_Blank
 from neural_nlp.benchmarks.weight_extract_utils import CrossRegressedCorrelationWithWeights,linear_regression_with_weights,\
-    RegressedCorrelationWithWeights,CartesianProductWeight
+    CartesianProductWeight
 from neural_nlp.stimuli import load_stimuli, StimulusSet
 from neural_nlp.utils import ordered_set
 from result_caching import store
@@ -806,7 +806,7 @@ class Fedorenko2016EncodingWithWeights(_Fedorenko2016_weights):
         metric = CrossRegressedCorrelationWithWeights(regression=regression, correlation=correlation,
                                            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id',
                                                                        stratification_coord='sentence_id'))
-        super(_Fedorenko2016_weights, self).__init__(identifier=identifier, metric=metric)
+        super(Fedorenko2016EncodingWithWeights, self).__init__(identifier=identifier, metric=metric)
 
 class Fedorenko2016V3Encoding(Fedorenko2016Encoding):
     """
@@ -939,7 +939,7 @@ def aggregate_neuroid_scores(neuroid_scores, subject_column):
 
 
 def consistency_neuroids(neuroids, ceiling_neuroids):
-    assert set(neuroids['neuroid_id'].values) == set(ceiling_neuroids['neuroid_id'].values)
+    assert set(neuroids['neuroid_id'].values) == set(ceiling_neuroids['neuroid'].values) # changed to neuroid
     ceiling_neuroids = ceiling_neuroids[{'neuroid': [neuroids['neuroid_id'].values.tolist().index(neuroid_id)
                                                      for neuroid_id in neuroids['neuroid_id'].values]}]  # align
     ceiling_neuroids = ceiling_neuroids.sel(aggregation='center')

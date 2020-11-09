@@ -37,10 +37,12 @@ def score(benchmark, model, layers=None, model_impl=None, subsample=None):
         layer_score = layer_score.expand_dims('layer')
         layer_score['layer'] = [layer]
         layer_scores.append(layer_score)
+    layer_weights = [score.attrs['weights'] for score in layer_scores if 'weights' in score.attrs]
     layer_scores = Score.merge(*layer_scores)
     layer_scores = layer_scores.sel(layer=layers)  # preserve layer ordering
     layer_scores.attrs['model'] = model
     layer_scores.attrs['benchmark'] = benchmark
+    layer_scores.attrs['layer_weights'] = layer_weights
     return layer_scores
 
 

@@ -344,7 +344,7 @@ class KplusOneCrossValidationWithWeight(TransformationWeight):
         for split_iterator, (train_indices, test_indices), done \
                 in tqdm(enumerate_done(splits), total=len(splits), desc='cross-validation'):
             train_values, test_values = cross_validation_values[train_indices], cross_validation_values[test_indices]
-            print(f'size of training data= {len(train_indices)}')
+            print(f'\n Size of training data= {len(train_indices)}')
             train_source = subset(source_assembly, train_values, dims_must_match=False)
             train_target = subset(target_assembly, train_values, dims_must_match=False)
             assert len(train_source[self._split_coord]) == len(train_target[self._split_coord])
@@ -356,7 +356,7 @@ class KplusOneCrossValidationWithWeight(TransformationWeight):
             # do one full regression for the weights
             if split_iterator == len(splits)-1:
                     #split_weight['split'] = [split_iterator]
-                    print('full regression for weight extraction :)')
+                    print('\n Full regression for weight extraction :)')
                     split_weights.append(split_weight)
             else:
                 split_score = split_score.expand_dims('split')
