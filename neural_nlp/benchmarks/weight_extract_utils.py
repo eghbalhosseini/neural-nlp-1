@@ -24,10 +24,15 @@ class Defaults:
     neuroid_dim = 'neuroid'
     neuroid_coord = 'neuroid_id'
 
+
 def linear_regression_with_weights(xarray_kwargs=None):
-    regression = LinearRegression()
+    """
+    This function is being called in the neural.py benchmarks, and all the saving happens in XarrayRegressionWithWeights.
+
+    """
+    regression_base = LinearRegression()
     xarray_kwargs = xarray_kwargs or {}
-    regression = XarrayRegressionWithWeights(regression, **xarray_kwargs)
+    regression = XarrayRegressionWithWeights(regression_base, **xarray_kwargs)
     return regression
 
 class FakeSplit(BaseShuffleSplit):
@@ -310,84 +315,6 @@ class CrossRegressedCorrelationWithWeights:
     def aggregate(self, scores):
         return scores.median(dim='neuroid')
 
-class RegressedCorrelationWithWeights:
-    def __init__(self, regression, correlation,return_weights=False, crossvalidation_kwargs=None):
-        regression = regression or pls_regression()
-        crossvalidation_defaults = dict(train_size=.9, test_size=None)
-        self.return_weights=return_weights
-        crossvalidation_kwargs = {**crossvalidation_defaults, **(crossvalidation_kwargs or {})}
-
-        self.cross_validation = NoCrossValidationWithWeight(**crossvalidation_kwargs)
-        self.regression = regression
-        self.correlation = correlation
-
-    def __call__(self, source, target):
-        return self.cross_validation(source, target, apply=self.apply, aggregate=self.aggregate)
-
-    def apply(self, source_train, target_train, source_test, target_test):
-        self.regression.fit(source_train, target_train)
-        prediction = self.regression.predict(source_test)
-        weights = self.regression.extract_coeff(source_train)
-        score = self.correlation(prediction, target_test)
-        if self.return_weights:
-            return score , weights
-        else:
-            return score ,[]
-
-    def aggregate(self, scores):
-        return scores.median(dim='neuroid')
-
-
-class CrossValidationWithWeight(TransformationWeight):
-    """
-    Performs multiple splits over a source and target assembly.
-    No guarantees are given for data-alignment, use the metadata.
-    """
-
-    def __init__(self, *args, split_coord=Split.Defaults.split_coord,
-                 stratification_coord=Split.Defaults.stratification_coord, **kwargs):
-        self._split_coord = split_coord
-        self._stratification_coord = stratification_coord
-        self._split = Split(*args, split_coord=split_coord, stratification_coord=stratification_coord, **kwargs)
-        self._logger = logging.getLogger(fullname(self))
-
-    def pipe(self, source_assembly, target_assembly):
-        # check only for equal values, alignment is given by metadata
-        assert sorted(source_assembly[self._split_coord].values) == sorted(target_assembly[self._split_coord].values)
-        if self._split.do_stratify:
-            assert hasattr(source_assembly, self._stratification_coord)
-            assert sorted(source_assembly[self._stratification_coord].values) == \
-                   sorted(target_assembly[self._stratification_coord].values)
-        cross_validation_values, splits = self._split.build_splits(target_assembly)
-    # here splits has values
-        split_scores = []
-        split_weights = []
-        for split_iterator, (train_indices, test_indices), done \
-                in tqdm(enumerate_done(splits), total=len(splits), desc='cross-validation'):
-            train_values, test_values = cross_validation_values[train_indices], cross_validation_values[test_indices]
-            train_source = subset(source_assembly, train_values, dims_must_match=False)
-            train_target = subset(target_assembly, train_values, dims_must_match=False)
-            assert len(train_source[self._split_coord]) == len(train_target[self._split_coord])
-            test_source = subset(source_assembly, test_values, dims_must_match=False)
-            test_target = subset(target_assembly, test_values, dims_must_match=False)
-            assert len(test_source[self._split_coord]) == len(test_target[self._split_coord])
-
-            split_score,split_weight = yield from self._get_result(train_source, train_target, test_source, test_target,
-                                                      done=done)
-            split_score = split_score.expand_dims('split')
-            split_weight = split_weight.expand_dims('split')
-            split_score['split'] = [split_iterator]
-            split_weight['split'] = [split_iterator]
-            split_scores.append(split_score)
-            split_weights.append(split_weight)
-
-        split_scores = Score.merge(*split_scores)
-        split_weights=merge_data_arrays(split_weights)
-
-        yield split_scores, split_weights
-
-    def aggregate(self, score):
-        return self._split.aggregate(score)
 
 class KplusOneCrossValidationWithWeight(TransformationWeight):
     """
@@ -435,57 +362,6 @@ class KplusOneCrossValidationWithWeight(TransformationWeight):
                 split_score = split_score.expand_dims('split')
                 split_score['split'] = [split_iterator]
                 split_scores.append(split_score)
-
-        split_scores = Score.merge(*split_scores)
-        split_weights=merge_data_arrays(split_weights)
-
-        yield split_scores, split_weights
-
-    def aggregate(self, score):
-        return self._split.aggregate(score)
-
-class NoCrossValidationWithWeight(TransformationWeight):
-    """
-    Performs multiple splits over a source and target assembly.
-    No guarantees are given for data-alignment, use the metadata.
-    """
-
-    def __init__(self, *args, split_coord=Split.Defaults.split_coord,
-                 stratification_coord=Split.Defaults.stratification_coord, **kwargs):
-        self._split_coord = split_coord
-        self._stratification_coord = stratification_coord
-        self._split = NoSplit(*args, split_coord=split_coord, stratification_coord=stratification_coord, **kwargs)
-        self._logger = logging.getLogger(fullname(self))
-
-    def pipe(self, source_assembly, target_assembly):
-        # check only for equal values, alignment is given by metadata
-        assert sorted(source_assembly[self._split_coord].values) == sorted(target_assembly[self._split_coord].values)
-        if self._split.do_stratify:
-            assert hasattr(source_assembly, self._stratification_coord)
-            assert sorted(source_assembly[self._stratification_coord].values) == \
-                   sorted(target_assembly[self._stratification_coord].values)
-        cross_validation_values, splits = self._split.build_splits(target_assembly)
-
-        split_scores = []
-        split_weights = []
-        for split_iterator, (train_indices, test_indices), done \
-                in tqdm(enumerate_done(splits), total=len(splits), desc='cross-validation'):
-            train_values, test_values = cross_validation_values[train_indices], cross_validation_values[test_indices]
-            train_source = subset(source_assembly, train_values, dims_must_match=False)
-            train_target = subset(target_assembly, train_values, dims_must_match=False)
-            assert len(train_source[self._split_coord]) == len(train_target[self._split_coord])
-            test_source = subset(source_assembly, test_values, dims_must_match=False)
-            test_target = subset(target_assembly, test_values, dims_must_match=False)
-            assert len(test_source[self._split_coord]) == len(test_target[self._split_coord])
-
-            split_score,split_weight = yield from self._get_result(train_source, train_target, test_source, test_target,
-                                                      done=done)
-            split_score = split_score.expand_dims('split')
-            split_weight = split_weight.expand_dims('split')
-            split_score['split'] = [split_iterator]
-            split_weight['split'] = [split_iterator]
-            split_scores.append(split_score)
-            split_weights.append(split_weight)
 
         split_scores = Score.merge(*split_scores)
         split_weights=merge_data_arrays(split_weights)
