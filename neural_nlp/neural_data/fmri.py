@@ -173,12 +173,17 @@ def load_Pereira2018_scrambled(version='Scr1'): # edit of load_Pereira2018_Blank
                    'Scr1' : os.path.join(scrambled_data_dir, 'stimuli_Scr1.pkl'),
                    'Scr3' : os.path.join(scrambled_data_dir, 'stimuli_Scr3.pkl'),
                    'Scr5' : os.path.join(scrambled_data_dir, 'stimuli_Scr5.pkl'),
-                   'Scr7' : os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl')}
+                   'Scr7' : os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl'),
+                   'backward' : os.path.join(scrambled_data_dir, 'stimuli_backward.pkl'),
+                   'random' : os.path.join(scrambled_data_dir, 'stimuli_random.pkl'),
+                   'eaw-random' : os.path.join(scrambled_data_dir, 'stimuli_every_other_word_random.pkl')
+                    }
 
     for key in STIMULI_TO_PKL_MAP.keys():
-        if version == key:
+        if scrambled_version == key:
             _logger.info('I AM USING THIS DATA VERSION', key)
             stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
+            stimuli.name = f"Pereira2018-{scrambled_version}" #added this
     
     assembly.attrs['stimulus_set'] = stimuli
 
