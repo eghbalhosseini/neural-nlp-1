@@ -1,0 +1,20 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
+  xr_data.set_index(append=True, inplace=True, **coords_d)
+Traceback (most recent call last):
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "neural_nlp/__main__.py", line 7, in <module>
+    from neural_nlp import score as score_function
+  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 6, in <module>
+    from neural_nlp.benchmarks import benchmark_pool
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/__init__.py", line 1, in <module>
+    from .neural import benchmark_pool as _neural_pool
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 25, in <module>
+    from neural_nlp.benchmarks.weight_extract_utils import CrossRegressedCorrelationWithWeights,linear_regression_with_weights,\
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/weight_extract_utils.py", line 11, in <module>
+    from sklearn.utils import _deprecate_positional_args
+ImportError: cannot import name '_deprecate_positional_args'
