@@ -8,7 +8,7 @@ from brainscore.metrics.transformations import Split, enumerate_done, apply_aggr
     standard_error_of_the_mean
 from sklearn.model_selection import StratifiedShuffleSplit, ShuffleSplit, KFold, StratifiedKFold
 from sklearn.model_selection._split import BaseShuffleSplit, _validate_shuffle_split
-from sklearn.utils import _deprecate_positional_args
+# from sklearn.utils import _deprecate_positional_args
 from sklearn.utils.validation import _num_samples, check_random_state
 from brainscore.metrics.utils import unique_ordered
 import itertools
@@ -35,69 +35,69 @@ def linear_regression_with_weights(xarray_kwargs=None):
     regression = XarrayRegressionWithWeights(regression_base, **xarray_kwargs)
     return regression
 
-class FakeSplit(BaseShuffleSplit):
-    @_deprecate_positional_args
-    def __init__(self, n_splits=1, *, test_size=None, train_size=None,
-                 random_state=None):
-        super().__init__(
-            n_splits=n_splits,
-            test_size=test_size,
-            train_size=train_size,
-            random_state=random_state)
-        self._default_test_size = 0.1
-    def _iter_indices(self, X, y=None, groups=None):
-        n_samples = _num_samples(X)
-        rng = check_random_state(self.random_state)
-        for i in range(self.n_splits):
-            # random partition
-            permutation = rng.permutation(n_samples)
-            ind_test = permutation[0:n_samples]
-            ind_train = permutation[0:n_samples]
-            yield ind_train, ind_test
+# class FakeSplit(BaseShuffleSplit):
+#     # @_deprecate_positional_args
+#     def __init__(self, n_splits=1, *, test_size=None, train_size=None,
+#                  random_state=None):
+#         super().__init__(
+#             n_splits=n_splits,
+#             test_size=test_size,
+#             train_size=train_size,
+#             random_state=random_state)
+#         self._default_test_size = 0.1
+#     def _iter_indices(self, X, y=None, groups=None):
+#         n_samples = _num_samples(X)
+#         rng = check_random_state(self.random_state)
+#         for i in range(self.n_splits):
+#             # random partition
+#             permutation = rng.permutation(n_samples)
+#             ind_test = permutation[0:n_samples]
+#             ind_train = permutation[0:n_samples]
+#             yield ind_train, ind_test
 
-class NoSplit:
-    class Defaults:
-        splits = 1
-        train_size = 1
-        split_coord = 'image_id'
-        stratification_coord = 'object_name'  # cross-validation across images, balancing objects
-        unique_split_values = False
-        random_state = 1
-
-    def __init__(self,
-                 splits=Defaults.splits, train_size=None, test_size=None,
-                 split_coord=Defaults.split_coord, stratification_coord=Defaults.stratification_coord, kfold=False,
-                 unique_split_values=Defaults.unique_split_values, random_state=Defaults.random_state):
-        super().__init__()
-        if train_size is None and test_size is None:
-            train_size = self.Defaults.train_size
-
-        self._split = FakeSplit(n_splits=splits, random_state=random_state)
-
-        self._split_coord = split_coord
-        self._stratification_coord = stratification_coord
-        self._unique_split_values = unique_split_values
-
-        self._logger = logging.getLogger(fullname(self))
-
-    @property
-    def do_stratify(self):
-        return bool(self._stratification_coord)
-
-    def build_splits(self, assembly):
-        cross_validation_values, indices = extract_coord(assembly, self._split_coord, unique=self._unique_split_values)
-        data_shape = np.zeros(len(cross_validation_values))
-        args = [assembly[self._stratification_coord].values[indices]] if self.do_stratify else []
-        splits = self._split.split(data_shape, *args)
-        return cross_validation_values, list(splits)
-    @classmethod
-    def aggregate(cls, values):
-        center = values.mean('split')
-        error = standard_error_of_the_mean(values, 'split')
-        return Score([center, error],
-                     coords={**{'aggregation': ['center', 'error']},
-                             **{coord: (dims, values) for coord, dims, values in walk_coords(center)}},
-                     dims=('aggregation',) + center.dims)
+# class NoSplit:
+#     class Defaults:
+#         splits = 1
+#         train_size = 1
+#         split_coord = 'image_id'
+#         stratification_coord = 'object_name'  # cross-validation across images, balancing objects
+#         unique_split_values = False
+#         random_state = 1
+#
+#     def __init__(self,
+#                  splits=Defaults.splits, train_size=None, test_size=None,
+#                  split_coord=Defaults.split_coord, stratification_coord=Defaults.stratification_coord, kfold=False,
+#                  unique_split_values=Defaults.unique_split_values, random_state=Defaults.random_state):
+#         super().__init__()
+#         if train_size is None and test_size is None:
+#             train_size = self.Defaults.train_size
+#
+#         self._split = FakeSplit(n_splits=splits, random_state=random_state)
+#
+#         self._split_coord = split_coord
+#         self._stratification_coord = stratification_coord
+#         self._unique_split_values = unique_split_values
+#
+#         self._logger = logging.getLogger(fullname(self))
+#
+#     @property
+#     def do_stratify(self):
+#         return bool(self._stratification_coord)
+#
+#     def build_splits(self, assembly):
+#         cross_validation_values, indices = extract_coord(assembly, self._split_coord, unique=self._unique_split_values)
+#         data_shape = np.zeros(len(cross_validation_values))
+#         args = [assembly[self._stratification_coord].values[indices]] if self.do_stratify else []
+#         splits = self._split.split(data_shape, *args)
+#         return cross_validation_values, list(splits)
+#     @classmethod
+#     def aggregate(cls, values):
+#         center = values.mean('split')
+#         error = standard_error_of_the_mean(values, 'split')
+#         return Score([center, error],
+#                      coords={**{'aggregation': ['center', 'error']},
+#                              **{coord: (dims, values) for coord, dims, values in walk_coords(center)}},
+#                      dims=('aggregation',) + center.dims)
 
 class TransformationWeight(object):
     """
