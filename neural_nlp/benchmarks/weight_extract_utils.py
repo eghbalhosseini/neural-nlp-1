@@ -201,8 +201,13 @@ class CartesianProductWeight(TransformationWeight):
                     kwargs = dict(_apply_raw=False)
                 result = result.expand_dims(coord_name, **kwargs)
                 result.__setitem__(coord_name, [coord_value], **kwargs)
+
+                # append divider attrs
+                weight.attrs['divider'] = [divider['experiment'], divider['atlas']]
+
             scores.append(result)
             weights.append(weight)
+
         scores = Score.merge(*scores)
         #weights = merge_data_arrays(weights)
         yield scores, weights
