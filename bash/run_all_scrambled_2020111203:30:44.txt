@@ -1,0 +1,13 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled-random', '--model', 'skip-thougDEBUG:DEDEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled-original,model=skip-thoughts,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.neural:I AM USING THIS DATDEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambled3._load_assembly/version=base
+INFO:theano.gof.compilelock:Waiting for existing lock by unknown process (I am process '28436')IINFO:theaLoading model parameters...
+ly release the lock, delete /home/gretatu/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-centos-7.7.1908-Core-x86_64-3.6.10-64/lock_dirIWARNING:theano.tenWARNING:theano.tensor.blas:Using NumPy C-API based implementation for BLAS functions.
+Loading model parameters...
+eters...
+se the lock, delete /home/gretatu/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-centos-7.7.1908-Core-x86_64-3.6.10-64/lock_dir
+INFO:theano.gof.compilelock:Waiting for existing lock by unknown process (I am process '16804')
+INFO:theano.gof.compilelock:To manually release the lock, delete /home/gretatu/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-centos-7.7.1908-Core-x86_64-3.6.10-64/lock_dir
+WARNING:theano.tensor.blas:Using NumPy C-API based implementation for BLAS functions.
+Loading model parameters...
