@@ -1,0 +1,2395 @@
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
+  xr_data.set_index(append=True, inplace=True, **coords_d)
+layers:   0%|          | 0/13 [00:00<?, ?it/s]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:47<03:10, 47.56s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:34<02:22, 47.39s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:21<01:34, 47.14s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:08<00:47, 47.08s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:54<00:00, 46.94s/it][A[Across-validation: 100%|██████████| 5/5 [03:54<00:00, 46.93s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:56<35:24, 236.05s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:56<35:24, 236.05s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:29, 37.42s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:15<01:52, 37.53s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:52<01:14, 37.49s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:30<00:37, 37.52s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:07<00:00, 37.45s/it][A[Across-validation: 100%|██████████| 5/5 [03:07<00:00, 37.49s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:04<29:34, 221.82s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:04<29:34, 221.82s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:33<10:12, 153.07s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:07<07:40, 153.35s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:40<05:06, 153.27s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:13<02:33, 153.31s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:48<00:00, 153.66s/it][A[Across-validation: 100%|██████████| 5/5 [12:48<00:00, 153.61s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:54<45:03, 386.19s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:54<45:03, 386.19s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.32s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:57, 19.31s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:57<00:38, 19.30s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.36s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.32s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.32s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:31<29:57, 299.60s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:31<29:57, 299.60s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:45<07:00, 105.21s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:31<05:16, 105.49s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:19<03:32, 106.15s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:04<01:45, 105.98s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:50<00:00, 105.91s/it][A[Across-validation: 100%|██████████| 5/5 [08:50<00:00, 106.07s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:23<30:46, 369.25s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:23<30:46, 369.25s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:57, 29.29s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:27, 29.32s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:28<00:59, 29.58s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:58<00:29, 29.72s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:29<00:00, 29.84s/it][A[Across-validation: 100%|██████████| 5/5 [02:29<00:00, 29.80s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:53<20:13, 303.47s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:53<20:13, 303.47s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.04s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.03s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:12<00:48, 24.04s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:36<00:24, 24.07s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:00<00:00, 24.25s/it][A[Across-validation: 100%|██████████| 5/5 [02:00<00:00, 24.19s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:55<12:27, 249.05s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:55<12:27, 249.05s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:31<06:07, 91.92s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:02<04:34, 91.52s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:33<03:02, 91.39s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:04<01:31, 91.33s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:35<00:00, 91.28s/it][A[Across-validation: 100%|██████████| 5/5 [07:35<00:00, 91.19s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:33<10:23, 311.52s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:33<10:23, 311.52s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:50, 12.73s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.72s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.73s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:51<00:12, 12.78s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.77s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.77s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:37<03:57, 237.49s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:37<03:57, 237.49s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:06<04:27, 66.76s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:11<03:18, 66.27s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:17<02:12, 66.02s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:22<01:05, 65.91s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:28<00:00, 65.87s/it][A[Across-validation: 100%|██████████| 5/5 [05:28<00:00, 65.75s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [49:07<00:00, 265.24s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [49:07<00:00, 294.78s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:   8%|▊         | 1/13 [51:02<10:12:35, 3062.97s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:03, 45.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:32<02:18, 46.22s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:20<01:33, 46.67s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:08<00:47, 47.01s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:56<00:00, 47.19s/it][A[Across-validation: 100%|██████████| 5/5 [03:56<00:00, 47.22s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:57<35:35, 237.29s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:57<35:35, 237.29s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:38<02:32, 38.02s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:16<01:54, 38.30s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:55<01:16, 38.26s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:33<00:38, 38.23s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:11<00:00, 38.22s/it][A[Across-validation: 100%|██████████| 5/5 [03:11<00:00, 38.30s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:09<29:50, 223.86s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:09<29:50, 223.86s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:38<10:33, 158.28s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:16<07:54, 158.21s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:56<05:17, 158.87s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:34<02:38, 158.54s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [13:11<00:00, 158.02s/it][A[Across-validation: 100%|██████████| 5/5 [13:11<00:00, 158.26s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [20:22<46:02, 394.62s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [20:22<46:02, 394.62s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:19, 19.77s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:39<00:59, 19.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:59<00:39, 19.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:19<00:19, 19.79s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:38<00:00, 19.78s/it][A[Across-validation: 100%|██████████| 5/5 [01:38<00:00, 19.80s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [22:03<30:37, 306.30s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [22:03<30:37, 306.30s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:47<07:08, 107.10s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:34<05:21, 107.17s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:21<03:34, 107.23s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:09<01:47, 107.24s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:56<00:00, 107.33s/it][A[Across-validation: 100%|██████████| 5/5 [08:56<00:00, 107.32s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [31:01<31:18, 375.79s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [31:01<31:18, 375.79s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:30<02:00, 30.16s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:00<01:30, 30.16s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:30<01:00, 30.24s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:00<00:30, 30.21s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:30<00:00, 30.17s/it][A[Across-validation: 100%|██████████| 5/5 [02:30<00:00, 30.19s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [33:32<20:34, 308.64s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [33:32<20:34, 308.64s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:38, 24.54s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:49<01:13, 24.55s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:13<00:49, 24.59s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:38<00:24, 24.60s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:03<00:00, 24.65s/it][A[Across-validation: 100%|██████████| 5/5 [02:03<00:00, 24.64s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [35:37<12:40, 253.35s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [35:37<12:40, 253.35s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:32<06:09, 92.49s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:04<04:37, 92.48s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:37<03:04, 92.48s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:10<01:32, 92.54s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:43<00:00, 92.66s/it][A[Across-validation: 100%|██████████| 5/5 [07:43<00:00, 92.61s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [43:21<10:33, 316.65s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [43:21<10:33, 316.65s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:13<00:52, 13.11s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:26<00:39, 13.11s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:39<00:26, 13.10s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:52<00:13, 13.08s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:05<00:00, 13.09s/it][A[Across-validation: 100%|██████████| 5/5 [01:05<00:00, 13.09s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [44:28<04:01, 241.61s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [44:28<04:01, 241.61s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:06<04:27, 66.97s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:14<03:20, 67.00s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:20<02:13, 66.94s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:27<01:06, 66.96s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:34<00:00, 66.96s/it][A[Across-validation: 100%|██████████| 5/5 [05:34<00:00, 66.96s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:04<00:00, 269.95s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:04<00:00, 300.43s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  15%|█▌        | 2/13 [1:41:46<9:20:26, 3056.99s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:46<03:07, 46.76s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:33<02:20, 46.69s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:20<01:33, 46.85s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:07<00:46, 46.89s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:54<00:00, 46.88s/it][A[Across-validation: 100%|██████████| 5/5 [03:54<00:00, 46.87s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:55<35:18, 235.38s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:55<35:18, 235.38s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:31, 37.92s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:15<01:53, 37.91s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:53<01:15, 37.82s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:31<00:37, 37.84s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:08<00:00, 37.78s/it][A[Across-validation: 100%|██████████| 5/5 [03:08<00:00, 37.79s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:05<29:34, 221.76s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:05<29:34, 221.76s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:34<10:18, 154.53s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:10<07:45, 155.02s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:47<05:11, 155.63s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:24<02:35, 155.99s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [13:00<00:00, 155.84s/it][A[Across-validation: 100%|██████████| 5/5 [13:00<00:00, 156.01s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [20:07<45:28, 389.77s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [20:07<45:28, 389.77s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:19, 19.89s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:39<00:59, 19.86s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:59<00:39, 19.85s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:19<00:19, 19.83s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:39<00:00, 19.81s/it][A[Across-validation: 100%|██████████| 5/5 [01:39<00:00, 19.82s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:47<30:17, 302.90s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:47<30:17, 302.90s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:46<07:07, 106.77s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:34<05:21, 107.14s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:21<03:34, 107.11s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:09<01:47, 107.19s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:56<00:00, 107.25s/it][A[Across-validation: 100%|██████████| 5/5 [08:56<00:00, 107.32s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:45<31:07, 373.41s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:45<31:07, 373.41s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:30<02:03, 30.82s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:00<01:31, 30.56s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:30<01:00, 30.40s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:00<00:30, 30.25s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:30<00:00, 30.19s/it][A[Across-validation: 100%|██████████| 5/5 [02:30<00:00, 30.15s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [33:17<20:27, 306.91s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [33:17<20:27, 306.91s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:37, 24.33s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.32s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:13<00:48, 24.44s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:37<00:24, 24.47s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:02<00:00, 24.46s/it][A[Across-validation: 100%|██████████| 5/5 [02:02<00:00, 24.47s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [35:20<12:35, 251.83s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [35:20<12:35, 251.83s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:32<06:09, 92.31s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:03<04:36, 92.00s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:36<03:04, 92.25s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:08<01:32, 92.35s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:41<00:00, 92.47s/it][A[Across-validation: 100%|██████████| 5/5 [07:41<00:00, 92.35s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [43:03<10:30, 315.28s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [43:03<10:30, 315.28s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:13<00:52, 13.00s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 13.00s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:39<00:26, 13.03s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:52<00:13, 13.06s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:05<00:00, 13.09s/it][A[Across-validation: 100%|██████████| 5/5 [01:05<00:00, 13.08s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [44:10<04:00, 240.64s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [44:10<04:00, 240.64s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:07<04:30, 67.75s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:15<03:22, 67.62s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:22<02:14, 67.50s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:29<01:07, 67.39s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:35<00:00, 67.10s/it][A[Across-validation: 100%|██████████| 5/5 [05:35<00:00, 67.17s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [49:47<00:00, 269.58s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [49:47<00:00, 298.73s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  23%|██▎       | 3/13 [2:32:12<8:27:58, 3047.84s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:46<03:07, 46.91s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:33<02:20, 46.90s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:21<01:34, 47.04s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:07<00:46, 46.96s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:55<00:00, 47.10s/it][A[Across-validation: 100%|██████████| 5/5 [03:55<00:00, 47.07s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:56<35:27, 236.39s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:56<35:27, 236.39s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:38<02:33, 38.25s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:16<01:54, 38.21s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:54<01:16, 38.11s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:32<00:38, 38.11s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:10<00:00, 38.00s/it][A[Across-validation: 100%|██████████| 5/5 [03:10<00:00, 38.02s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:07<29:42, 222.81s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:07<29:42, 222.81s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:36<10:24, 156.18s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:12<07:49, 156.36s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:55<05:16, 158.20s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:33<02:38, 158.02s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [13:10<00:00, 157.93s/it][A[Across-validation: 100%|██████████| 5/5 [13:10<00:00, 158.16s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [20:19<45:55, 393.68s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [20:19<45:55, 393.68s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:20<01:20, 20.03s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:39<00:59, 19.93s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:59<00:39, 19.90s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:19<00:19, 19.88s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:39<00:00, 19.84s/it][A[Across-validation: 100%|██████████| 5/5 [01:39<00:00, 19.83s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [22:00<30:33, 305.61s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [22:00<30:33, 305.61s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:47<07:11, 107.78s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:35<05:23, 107.85s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:25<03:36, 108.31s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:14<01:48, 108.56s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [09:02<00:00, 108.46s/it][A[Across-validation: 100%|██████████| 5/5 [09:02<00:00, 108.51s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [31:03<31:25, 377.09s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [31:03<31:25, 377.09s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:59, 29.87s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:59<01:29, 29.95s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:30<01:00, 30.02s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:00<00:30, 30.12s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:30<00:00, 30.22s/it][A[Across-validation: 100%|██████████| 5/5 [02:30<00:00, 30.20s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [33:36<20:38, 309.60s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [33:36<20:38, 309.60s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:56, 29.21s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:53<01:23, 27.83s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:18<00:53, 26.88s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:43<00:26, 26.42s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:08<00:00, 25.99s/it][A[Across-validation: 100%|██████████| 5/5 [02:08<00:00, 25.77s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [35:45<12:47, 255.67s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [35:45<12:47, 255.67s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:33<06:12, 93.08s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:06<04:39, 93.05s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:39<03:06, 93.14s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:13<01:33, 93.37s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:46<00:00, 93.38s/it][A[Across-validation: 100%|██████████| 5/5 [07:46<00:00, 93.34s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [43:34<10:38, 319.44s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [43:34<10:38, 319.44s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:13<00:52, 13.06s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:26<00:39, 13.07s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:39<00:26, 13.17s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:52<00:13, 13.13s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:05<00:00, 13.20s/it][A[Across-validation: 100%|██████████| 5/5 [01:05<00:00, 13.19s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [44:40<04:03, 243.68s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [44:40<04:03, 243.68s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:07<04:29, 67.30s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:15<03:22, 67.50s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:22<02:14, 67.40s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:30<01:07, 67.50s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:37<00:00, 67.59s/it][A[Across-validation: 100%|██████████| 5/5 [05:37<00:00, 67.59s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:20<00:00, 272.35s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:20<00:00, 302.02s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  31%|███       | 4/13 [3:23:12<7:37:43, 3051.46s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:47<03:10, 47.59s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:35<02:23, 47.75s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:23<01:35, 47.80s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:12<00:47, 47.98s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:59<00:00, 47.90s/it][A[Across-validation: 100%|██████████| 5/5 [03:59<00:00, 47.95s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [04:00<36:08, 240.89s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [04:00<36:08, 240.89s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:38<02:32, 38.16s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:16<01:55, 38.36s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:55<01:16, 38.49s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:34<00:38, 38.54s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:12<00:00, 38.50s/it][A[Across-validation: 100%|██████████| 5/5 [03:12<00:00, 38.57s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:14<30:14, 226.78s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:14<30:14, 226.78s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:36<10:25, 156.39s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:13<07:50, 156.70s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:55<05:16, 158.18s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:33<02:38, 158.06s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [13:10<00:00, 157.72s/it][A[Across-validation: 100%|██████████| 5/5 [13:10<00:00, 158.03s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [20:26<46:14, 396.35s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [20:26<46:14, 396.35s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:20<01:21, 20.29s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:40<01:00, 20.23s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [01:00<00:40, 20.28s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:21<00:20, 20.30s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:41<00:00, 20.21s/it][A[Across-validation: 100%|██████████| 5/5 [01:41<00:00, 20.22s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [22:08<30:48, 308.09s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [22:08<30:48, 308.09s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:53<07:34, 113.62s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:41<05:36, 112.01s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:30<03:42, 111.09s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:19<01:50, 110.47s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [09:08<00:00, 109.88s/it][A[Across-validation: 100%|██████████| 5/5 [09:08<00:00, 109.67s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [31:18<31:42, 380.60s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [31:18<31:42, 380.60s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:30<02:00, 30.16s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:00<01:30, 30.12s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:30<01:00, 30.18s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:04<00:31, 31.39s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:35<00:00, 31.15s/it][A[Across-validation: 100%|██████████| 5/5 [02:35<00:00, 31.06s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [33:54<20:53, 313.31s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [33:54<20:53, 313.31s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:38, 24.68s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:49<01:13, 24.67s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:14<00:49, 24.80s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:39<00:24, 24.77s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:04<00:00, 24.93s/it][A[Across-validation: 100%|██████████| 5/5 [02:04<00:00, 24.88s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [36:00<12:50, 256.99s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [36:00<12:50, 256.99s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:33<06:13, 93.50s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:06<04:39, 93.32s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:39<03:06, 93.19s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:12<01:33, 93.29s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:46<00:00, 93.40s/it][A[Across-validation: 100%|██████████| 5/5 [07:46<00:00, 93.30s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [43:48<10:40, 320.24s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [43:48<10:40, 320.24s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:13<00:53, 13.43s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:26<00:40, 13.34s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:39<00:26, 13.27s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:52<00:13, 13.21s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:06<00:00, 13.27s/it][A[Across-validation: 100%|██████████| 5/5 [01:06<00:00, 13.23s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [44:55<04:04, 244.35s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [44:55<04:04, 244.35s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:07<04:29, 67.31s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:14<03:21, 67.28s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:21<02:14, 67.32s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:29<01:07, 67.39s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:37<00:00, 67.59s/it][A[Across-validation: 100%|██████████| 5/5 [05:37<00:00, 67.51s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:34<00:00, 272.68s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:34<00:00, 303.45s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  38%|███▊      | 5/13 [4:14:26<6:47:45, 3058.15s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:48<03:14, 48.67s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:36<02:25, 48.37s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:24<01:36, 48.20s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:11<00:47, 47.96s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:59<00:00, 47.91s/it][A[Across-validation: 100%|██████████| 5/5 [03:59<00:00, 47.87s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [04:00<36:03, 240.37s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [04:00<36:03, 240.37s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:38<02:32, 38.19s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:16<01:54, 38.21s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:54<01:16, 38.25s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:33<00:38, 38.31s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:11<00:00, 38.41s/it][A[Across-validation: 100%|██████████| 5/5 [03:11<00:00, 38.38s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:13<30:09, 226.13s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:13<30:09, 226.13s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:39<10:37, 159.45s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:16<07:56, 158.77s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:54<05:16, 158.43s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:33<02:38, 158.54s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [13:09<00:00, 157.92s/it][A[Across-validation: 100%|██████████| 5/5 [13:09<00:00, 157.91s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [20:24<46:09, 395.66s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [20:24<46:09, 395.66s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:19, 19.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:39<00:59, 19.80s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:59<00:39, 19.82s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:19<00:19, 19.84s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:39<00:00, 19.82s/it][A[Across-validation: 100%|██████████| 5/5 [01:39<00:00, 19.82s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [22:04<30:42, 307.08s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [22:04<30:42, 307.08s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:49<07:18, 109.75s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:38<05:28, 109.48s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:26<03:37, 108.89s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:13<01:48, 108.42s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [09:01<00:00, 108.38s/it][A[Across-validation: 100%|██████████| 5/5 [09:01<00:00, 108.34s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [31:07<31:29, 377.88s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [31:07<31:29, 377.88s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:30<02:02, 30.65s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:00<01:31, 30.49s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:31<01:00, 30.49s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:01<00:30, 30.40s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:31<00:00, 30.32s/it][A[Across-validation: 100%|██████████| 5/5 [02:31<00:00, 30.32s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [33:40<20:41, 310.29s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [33:40<20:41, 310.29s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:38, 24.64s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:49<01:13, 24.64s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:13<00:49, 24.62s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:38<00:24, 24.60s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:03<00:00, 24.60s/it][A[Across-validation: 100%|██████████| 5/5 [02:03<00:00, 24.60s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [35:44<12:43, 254.42s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [35:44<12:43, 254.42s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:32<06:11, 92.96s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:06<04:39, 93.01s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:39<03:06, 93.23s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:12<01:33, 93.01s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:45<00:00, 93.05s/it][A[Across-validation: 100%|██████████| 5/5 [07:45<00:00, 93.09s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [43:31<10:36, 318.18s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [43:31<10:36, 318.18s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:13<00:52, 13.05s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:26<00:39, 13.03s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:39<00:26, 13.04s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:52<00:13, 13.01s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:05<00:00, 13.01s/it][A[Across-validation: 100%|██████████| 5/5 [01:05<00:00, 13.01s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [44:37<04:02, 242.56s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [44:37<04:02, 242.56s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:07<04:30, 67.63s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:14<03:21, 67.33s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:22<02:14, 67.48s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:28<01:07, 67.27s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:36<00:00, 67.24s/it][A[Across-validation: 100%|██████████| 5/5 [05:36<00:00, 67.21s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:15<00:00, 270.99s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [50:15<00:00, 301.50s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  46%|████▌     | 6/13 [5:05:21<5:56:41, 3057.36s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:47<03:08, 47.00s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:34<02:21, 47.06s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:21<01:34, 47.10s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:08<00:47, 47.06s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:55<00:00, 47.05s/it][A[Across-validation: 100%|██████████| 5/5 [03:55<00:00, 47.08s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:56<35:27, 236.43s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:56<35:27, 236.43s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:38<02:32, 38.04s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:16<01:54, 38.09s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:54<01:16, 38.21s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:32<00:38, 38.05s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:09<00:00, 37.90s/it][A[Across-validation: 100%|██████████| 5/5 [03:09<00:00, 37.99s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [07:07<29:42, 222.80s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [07:07<29:42, 222.80s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:32<10:11, 152.79s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:05<07:37, 152.63s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:37<05:05, 152.56s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:09<02:32, 152.45s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:41<00:00, 152.35s/it][A[Across-validation: 100%|██████████| 5/5 [12:41<00:00, 152.35s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:50<44:54, 384.96s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:50<44:54, 384.96s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.33s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:57, 19.32s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:58<00:38, 19.35s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.36s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.36s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.36s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:28<29:52, 298.79s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:28<29:52, 298.79s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:45<07:00, 105.23s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:31<05:16, 105.55s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:16<03:31, 105.52s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:02<01:45, 105.49s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:47<00:00, 105.41s/it][A[Across-validation: 100%|██████████| 5/5 [08:47<00:00, 105.52s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:17<30:39, 367.84s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:17<30:39, 367.84s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:58, 29.54s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:28, 29.49s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:28<00:58, 29.48s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:57<00:29, 29.51s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:27<00:00, 29.47s/it][A[Across-validation: 100%|██████████| 5/5 [02:27<00:00, 29.47s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:45<20:08, 302.02s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:45<20:08, 302.02s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.11s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.06s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:12<00:48, 24.04s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:36<00:24, 24.04s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:00<00:00, 24.10s/it][A[Across-validation: 100%|██████████| 5/5 [02:00<00:00, 24.07s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:47<12:23, 247.81s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:47<12:23, 247.81s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:00, 90.25s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:00<04:30, 90.21s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:30<03:00, 90.26s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:01<01:30, 90.28s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:31<00:00, 90.36s/it][A[Across-validation: 100%|██████████| 5/5 [07:31<00:00, 90.33s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:20<10:18, 309.45s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:20<10:18, 309.45s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:50, 12.72s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.73s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.73s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:50<00:12, 12.74s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.80s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.78s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:25<03:56, 236.06s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:25<03:56, 236.06s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.26s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:15, 65.27s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:15<02:10, 65.25s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:21<01:05, 65.26s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:26<00:00, 65.27s/it][A[Across-validation: 100%|██████████| 5/5 [05:26<00:00, 65.26s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:52<00:00, 263.50s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:52<00:00, 293.28s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  54%|█████▍    | 7/13 [5:54:53<5:03:09, 3031.63s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:02, 45.59s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:16, 45.60s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:16<01:31, 45.60s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:02<00:45, 45.66s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:48<00:00, 45.71s/it][A[Across-validation: 100%|██████████| 5/5 [03:48<00:00, 45.69s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:49<34:25, 229.45s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:49<34:25, 229.45s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:36<02:27, 36.87s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:14<01:50, 36.96s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:51<01:14, 37.04s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:28<00:37, 37.05s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:05<00:00, 37.10s/it][A[Across-validation: 100%|██████████| 5/5 [03:05<00:00, 37.11s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:56<28:52, 216.59s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:56<28:52, 216.59s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:31<10:07, 151.89s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:04<07:36, 152.09s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:36<05:04, 152.14s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:10<02:32, 152.54s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:42<00:00, 152.41s/it][A[Across-validation: 100%|██████████| 5/5 [12:42<00:00, 152.46s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:40<44:26, 380.88s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:40<44:26, 380.88s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:16, 19.20s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:57, 19.27s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:57<00:38, 19.27s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.27s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.29s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.30s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:17<29:35, 295.88s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:17<29:35, 295.88s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:59, 104.85s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:29<05:14, 104.72s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:13<03:29, 104.72s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:58<01:44, 104.73s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:43<00:00, 104.84s/it][A[Across-validation: 100%|██████████| 5/5 [08:43<00:00, 104.77s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:02<30:23, 364.66s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:02<30:23, 364.66s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:57, 29.33s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:28, 29.36s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:28<00:58, 29.42s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:57<00:29, 29.38s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:26<00:00, 29.38s/it][A[Across-validation: 100%|██████████| 5/5 [02:26<00:00, 29.40s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:30<19:58, 299.65s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:30<19:58, 299.65s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.12s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.05s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:11<00:48, 24.02s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:35<00:24, 24.02s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:00<00:00, 24.06s/it][A[Across-validation: 100%|██████████| 5/5 [02:00<00:00, 24.03s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:31<12:18, 246.08s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:31<12:18, 246.08s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:01, 90.31s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:00<04:31, 90.34s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:31<03:00, 90.35s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:01<01:30, 90.27s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:32<00:00, 90.48s/it][A[Across-validation: 100%|██████████| 5/5 [07:32<00:00, 90.43s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:05<10:16, 308.28s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:05<10:16, 308.28s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:50, 12.72s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.72s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.73s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:51<00:12, 12.82s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.80s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.80s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:10<03:55, 235.27s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:10<03:55, 235.27s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.30s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:16, 65.35s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:16<02:10, 65.36s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:21<01:05, 65.34s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:27<00:00, 65.44s/it][A[Across-validation: 100%|██████████| 5/5 [05:27<00:00, 65.42s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:38<00:00, 263.19s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:38<00:00, 291.86s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  62%|██████▏   | 8/13 [6:44:11<4:10:47, 3009.52s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:02, 45.73s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:17, 45.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:17<01:31, 45.85s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:03<00:45, 45.83s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:49<00:00, 45.87s/it][A[Across-validation: 100%|██████████| 5/5 [03:49<00:00, 45.88s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:50<34:33, 230.44s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:50<34:33, 230.44s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:28, 37.16s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:14<01:51, 37.11s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:51<01:14, 37.15s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:28<00:37, 37.15s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:05<00:00, 37.09s/it][A[Across-validation: 100%|██████████| 5/5 [03:05<00:00, 37.10s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:57<28:58, 217.30s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:57<28:58, 217.30s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:32<10:08, 152.12s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:04<07:36, 152.13s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:36<05:04, 152.17s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:08<02:32, 152.08s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:40<00:00, 151.97s/it][A[Across-validation: 100%|██████████| 5/5 [12:40<00:00, 152.02s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:38<44:24, 380.63s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:38<44:24, 380.63s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.27s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:57, 19.29s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:57<00:38, 19.31s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.34s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.33s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.34s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:16<29:34, 295.73s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:16<29:34, 295.73s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:59, 104.82s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:29<05:14, 104.86s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:14<03:29, 104.76s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:59<01:44, 104.85s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:43<00:00, 104.71s/it][A[Across-validation: 100%|██████████| 5/5 [08:43<00:00, 104.75s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:01<30:22, 364.53s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:01<30:22, 364.53s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:57, 29.28s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:27, 29.29s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:27<00:58, 29.31s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:57<00:29, 29.39s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:27<00:00, 29.43s/it][A[Across-validation: 100%|██████████| 5/5 [02:27<00:00, 29.41s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:29<19:58, 299.63s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:29<19:58, 299.63s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.14s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.10s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:12<00:48, 24.07s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:36<00:24, 24.06s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:00<00:00, 24.04s/it][A[Across-validation: 100%|██████████| 5/5 [02:00<00:00, 24.04s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:30<12:18, 246.08s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:30<12:18, 246.08s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:00, 90.08s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:00<04:30, 90.06s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:30<03:00, 90.14s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:01<01:30, 90.27s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:31<00:00, 90.23s/it][A[Across-validation: 100%|██████████| 5/5 [07:31<00:00, 90.23s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:03<10:16, 308.03s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:03<10:16, 308.03s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:51, 12.77s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.75s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.74s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:50<00:12, 12.75s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.79s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.77s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:08<03:55, 235.05s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:08<03:55, 235.05s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.29s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:15, 65.29s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:15<02:10, 65.27s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:21<01:05, 65.32s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:26<00:00, 65.32s/it][A[Across-validation: 100%|██████████| 5/5 [05:26<00:00, 65.31s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:35<00:00, 262.87s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:35<00:00, 291.60s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  69%|██████▉   | 9/13 [7:33:25<3:19:31, 2992.86s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:03, 45.86s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:17, 45.89s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:17<01:31, 45.90s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:03<00:45, 45.84s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:49<00:00, 45.89s/it][A[Across-validation: 100%|██████████| 5/5 [03:49<00:00, 45.89s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:50<34:35, 230.61s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:50<34:35, 230.61s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:28, 37.01s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:14<01:51, 37.04s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:51<01:14, 37.07s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:28<00:37, 37.09s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:05<00:00, 37.03s/it][A[Across-validation: 100%|██████████| 5/5 [03:05<00:00, 37.06s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:56<28:58, 217.32s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:56<28:58, 217.32s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:33<10:12, 153.23s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:05<07:39, 153.03s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:38<05:05, 152.82s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:11<02:33, 153.06s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:44<00:00, 152.84s/it][A[Across-validation: 100%|██████████| 5/5 [12:44<00:00, 152.81s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:42<44:33, 381.88s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:42<44:33, 381.88s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:18, 19.51s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:58, 19.44s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:58<00:38, 19.41s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.40s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.39s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.37s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:20<29:40, 296.68s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:20<29:40, 296.68s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:59, 104.88s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:29<05:14, 104.94s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:14<03:29, 104.80s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:59<01:44, 104.97s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:45<00:00, 105.05s/it][A[Across-validation: 100%|██████████| 5/5 [08:45<00:00, 105.00s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:07<30:28, 365.68s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:07<30:28, 365.68s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:57, 29.34s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:27, 29.30s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:27<00:58, 29.31s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:57<00:29, 29.39s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:26<00:00, 29.37s/it][A[Across-validation: 100%|██████████| 5/5 [02:26<00:00, 29.35s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:35<20:01, 300.35s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:35<20:01, 300.35s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:23<01:35, 23.89s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:11, 23.96s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:11<00:47, 23.96s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:35<00:23, 23.96s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:59<00:00, 23.98s/it][A[Across-validation: 100%|██████████| 5/5 [01:59<00:00, 23.99s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:36<12:19, 246.52s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:36<12:19, 246.52s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:00, 90.21s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:00<04:30, 90.22s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:30<03:00, 90.20s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:00<01:30, 90.15s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:30<00:00, 90.12s/it][A[Across-validation: 100%|██████████| 5/5 [07:30<00:00, 90.14s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:08<10:16, 308.20s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:08<10:16, 308.20s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:50, 12.72s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.72s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.72s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:50<00:12, 12.73s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.75s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.74s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:13<03:55, 235.17s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:13<03:55, 235.17s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.27s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:15, 65.30s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:15<02:10, 65.31s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:21<01:05, 65.38s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:26<00:00, 65.40s/it][A[Across-validation: 100%|██████████| 5/5 [05:26<00:00, 65.39s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:41<00:00, 263.08s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:41<00:00, 292.12s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  77%|███████▋  | 10/13 [8:22:45<2:29:08, 2982.97s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:03, 45.96s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:17, 45.90s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:17<01:31, 45.91s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:03<00:45, 45.84s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:49<00:00, 45.81s/it][A[Across-validation: 100%|██████████| 5/5 [03:49<00:00, 45.81s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:50<34:30, 230.06s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:50<34:30, 230.06s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:28, 37.14s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:14<01:51, 37.08s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:50<01:14, 37.01s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:28<00:37, 37.05s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:04<00:00, 36.97s/it][A[Across-validation: 100%|██████████| 5/5 [03:04<00:00, 36.97s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:55<28:54, 216.80s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:55<28:54, 216.80s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:31<10:07, 151.96s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:04<07:36, 152.02s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:36<05:04, 152.01s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:07<02:31, 151.92s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:39<00:00, 151.74s/it][A[Across-validation: 100%|██████████| 5/5 [12:39<00:00, 151.83s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:36<44:19, 379.98s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:36<44:19, 379.98s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.47s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:58, 19.41s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:58<00:38, 19.39s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.38s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.34s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.33s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:14<29:31, 295.27s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:14<29:31, 295.27s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:56, 104.25s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:30<05:14, 104.75s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:14<03:29, 104.70s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [07:00<01:44, 104.87s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:44<00:00, 104.86s/it][A[Across-validation: 100%|██████████| 5/5 [08:44<00:00, 104.97s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [30:00<30:22, 364.58s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [30:00<30:22, 364.58s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:58, 29.67s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:59<01:28, 29.58s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:28<00:59, 29.59s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:58<00:29, 29.55s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:27<00:00, 29.52s/it][A[Across-validation: 100%|██████████| 5/5 [02:27<00:00, 29.51s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:29<19:59, 299.77s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:29<19:59, 299.77s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.22s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.14s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:12<00:48, 24.10s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:36<00:24, 24.10s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:00<00:00, 24.08s/it][A[Across-validation: 100%|██████████| 5/5 [02:00<00:00, 24.06s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:30<12:18, 246.22s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:30<12:18, 246.22s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:00, 90.19s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:00<04:30, 90.26s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:30<03:00, 90.28s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:01<01:30, 90.28s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:31<00:00, 90.39s/it][A[Across-validation: 100%|██████████| 5/5 [07:31<00:00, 90.37s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:03<10:16, 308.34s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:03<10:16, 308.34s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:51, 12.80s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.77s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.75s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:50<00:12, 12.75s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:03<00:00, 12.75s/it][A[Across-validation: 100%|██████████| 5/5 [01:03<00:00, 12.74s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:08<03:55, 235.29s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:08<03:55, 235.29s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.43s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:16, 65.40s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:16<02:10, 65.44s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:21<01:05, 65.44s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:27<00:00, 65.44s/it][A[Across-validation: 100%|██████████| 5/5 [05:27<00:00, 65.43s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:36<00:00, 263.22s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:36<00:00, 291.69s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  85%|████████▍ | 11/13 [9:11:59<1:39:09, 2974.54s/it]
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:02, 45.68s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:17, 45.75s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:17<01:31, 45.81s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:03<00:45, 45.78s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:49<00:00, 45.78s/it][A[Across-validation: 100%|██████████| 5/5 [03:49<00:00, 45.80s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:50<34:30, 230.05s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:50<34:30, 230.05s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:37<02:28, 37.03s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:13<01:50, 36.97s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:50<01:14, 37.02s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:27<00:36, 36.98s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it][A[Across-validation: 100%|██████████| 5/5 [03:04<00:00, 36.93s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:55<28:53, 216.73s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:55<28:53, 216.73s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:31<10:06, 151.70s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:04<07:35, 151.95s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:36<05:03, 151.99s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:08<02:32, 152.09s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:40<00:00, 152.06s/it][A[Across-validation: 100%|██████████| 5/5 [12:40<00:00, 152.12s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:38<44:23, 380.44s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:38<44:23, 380.44s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.29s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:57, 19.26s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:57<00:38, 19.26s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.26s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.27s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.26s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:15<29:32, 295.49s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:15<29:32, 295.49s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:57, 104.39s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:29<05:13, 104.48s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:13<03:28, 104.48s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:58<01:44, 104.58s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:42<00:00, 104.55s/it][A[Across-validation: 100%|██████████| 5/5 [08:42<00:00, 104.57s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [29:59<30:20, 364.09s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [29:59<30:20, 364.09s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:29<01:57, 29.29s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:58<01:27, 29.27s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:27<00:58, 29.31s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:57<00:29, 29.38s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:26<00:00, 29.38s/it][A[Across-validation: 100%|██████████| 5/5 [02:26<00:00, 29.37s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:27<19:57, 299.26s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:27<19:57, 299.26s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:24<01:36, 24.10s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:48<01:12, 24.05s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:12<00:48, 24.03s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:36<00:24, 24.02s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:59<00:00, 24.00s/it][A[Across-validation: 100%|██████████| 5/5 [01:59<00:00, 23.99s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:28<12:17, 245.76s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:28<12:17, 245.76s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:30<06:01, 90.27s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:59<04:30, 90.09s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:30<03:00, 90.12s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:00<01:30, 90.29s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:31<00:00, 90.30s/it][A[Across-validation: 100%|██████████| 5/5 [07:31<00:00, 90.23s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [42:01<10:15, 307.80s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [42:01<10:15, 307.80s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:51, 12.78s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:25<00:38, 12.75s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:38<00:25, 12.79s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:51<00:12, 12.81s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:04<00:00, 13.09s/it][A[Across-validation: 100%|██████████| 5/5 [01:04<00:00, 12.99s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [43:06<03:55, 235.22s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [43:06<03:55, 235.22s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:05<04:21, 65.30s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:10<03:15, 65.31s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:16<02:10, 65.46s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:22<01:05, 65.58s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:27<00:00, 65.51s/it][A[Across-validation: 100%|██████████| 5/5 [05:27<00:00, 65.53s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:35<00:00, 263.31s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [48:35<00:00, 291.58s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers:  92%|█████████▏| 12/13 [10:01:14<49:28, 2968.54s/it] 
+cartesian product:   0%|          | 0/10 [00:00<?, ?it/s][A
+{'experiment': '384sentences', 'atlas': 'language'}:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:45<03:01, 45.47s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [01:31<02:16, 45.55s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [02:16<01:31, 45.62s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [03:02<00:45, 45.63s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [03:48<00:00, 45.64s/it][A[Across-validation: 100%|██████████| 5/5 [03:48<00:00, 45.66s/it]
+
+{'experiment': '384sentences', 'atlas': 'language'}:  10%|█         | 1/10 [03:49<34:25, 229.50s/it][A
+{'experiment': '384sentences', 'atlas': 'DMN'}:  10%|█         | 1/10 [03:49<34:25, 229.50s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:36<02:27, 36.82s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [01:13<01:50, 36.86s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:50<01:13, 36.85s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [02:27<00:36, 36.90s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it][A[Across-validation: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [06:54<28:50, 216.30s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [06:54<28:50, 216.30s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [02:31<10:06, 151.51s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [05:04<07:35, 151.97s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [07:37<05:04, 152.30s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [10:10<02:32, 152.53s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [12:42<00:00, 152.35s/it][A[Across-validation: 100%|██████████| 5/5 [12:42<00:00, 152.52s/it]
+
+{'experiment': '384sentences', 'atlas': 'visual'}:  30%|███       | 3/10 [19:39<44:24, 380.68s/it][A
+{'experiment': '384sentences', 'atlas': 'auditory'}:  30%|███       | 3/10 [19:39<44:24, 380.68s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  20%|██        | 1/5 [00:19<01:17, 19.47s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  40%|████      | 2/5 [00:38<00:58, 19.39s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  60%|██████    | 3/5 [00:57<00:38, 19.34s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [01:17<00:19, 19.32s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation: 100%|██████████| 5/5 [01:36<00:00, 19.31s/it][A[Across-validation: 100%|██████████| 5/5 [01:36<00:00, 19.29s/it]
+
+{'experiment': '384sentences', 'atlas': 'auditory'}:  40%|████      | 4/10 [21:16<29:34, 295.77s/it][A
+{'experiment': '384sentences', 'atlas': 'MD'}:  40%|████      | 4/10 [21:16<29:34, 295.77s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:44<06:57, 104.42s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [03:29<05:13, 104.52s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [05:14<03:29, 104.73s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [06:52<01:42, 102.69s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [08:26<00:00, 100.26s/it][A[Across-validation: 100%|██████████| 5/5 [08:26<00:00, 101.39s/it]
+
+{'experiment': '384sentences', 'atlas': 'MD'}:  50%|█████     | 5/10 [29:45<29:57, 359.55s/it][A
+{'experiment': '243sentences', 'atlas': 'language'}:  50%|█████     | 5/10 [29:45<29:57, 359.55s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:27<01:50, 27.55s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:55<01:22, 27.57s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:24<00:56, 28.03s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:53<00:28, 28.38s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [02:22<00:00, 28.57s/it][A[Across-validation: 100%|██████████| 5/5 [02:22<00:00, 28.50s/it]
+
+{'experiment': '243sentences', 'atlas': 'language'}:  60%|██████    | 6/10 [32:08<19:39, 294.76s/it][A
+{'experiment': '243sentences', 'atlas': 'DMN'}:  60%|██████    | 6/10 [32:08<19:39, 294.76s/it]     [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:23<01:34, 23.75s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:47<01:11, 23.78s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [01:11<00:47, 23.75s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [01:35<00:23, 23.77s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:58<00:00, 23.78s/it][A[Across-validation: 100%|██████████| 5/5 [01:58<00:00, 23.78s/it]
+
+{'experiment': '243sentences', 'atlas': 'DMN'}:  70%|███████   | 7/10 [34:08<12:06, 242.28s/it][A
+{'experiment': '243sentences', 'atlas': 'visual'}:  70%|███████   | 7/10 [34:08<12:06, 242.28s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:29<05:57, 89.44s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:58<04:27, 89.33s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [04:27<02:58, 89.35s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [05:57<01:29, 89.30s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [07:25<00:00, 89.15s/it][A[Across-validation: 100%|██████████| 5/5 [07:25<00:00, 89.18s/it]
+
+{'experiment': '243sentences', 'atlas': 'visual'}:  80%|████████  | 8/10 [41:35<10:07, 303.78s/it][A
+{'experiment': '243sentences', 'atlas': 'auditory'}:  80%|████████  | 8/10 [41:35<10:07, 303.78s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [00:12<00:49, 12.41s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [00:24<00:37, 12.40s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [00:37<00:24, 12.40s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [00:49<00:12, 12.41s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [01:02<00:00, 12.41s/it][A[Across-validation: 100%|██████████| 5/5 [01:02<00:00, 12.40s/it]
+
+{'experiment': '243sentences', 'atlas': 'auditory'}:  90%|█████████ | 9/10 [42:38<03:51, 231.55s/it][A
+{'experiment': '243sentences', 'atlas': 'MD'}:  90%|█████████ | 9/10 [42:38<03:51, 231.55s/it]      [A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+cross-validation:  20%|██        | 1/5 [01:04<04:16, 64.05s/it][A[A
+
+cross-validation:  40%|████      | 2/5 [02:07<03:11, 63.98s/it][A[A
+
+cross-validation:  60%|██████    | 3/5 [03:11<02:07, 63.97s/it][A[A
+
+cross-validation:  80%|████████  | 4/5 [04:15<01:03, 63.93s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [05:19<00:00, 63.89s/it][A[Across-validation: 100%|██████████| 5/5 [05:19<00:00, 63.89s/it]
+
+{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [47:59<00:00, 258.27s/it][A{'experiment': '243sentences', 'atlas': 'MD'}: 100%|██████████| 10/10 [47:59<00:00, 287.96s/it]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/xarray/core/nanops.py:159: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis=axis, dtype=dtype)
+layers: 100%|██████████| 13/13 [10:49:52<00:00, 2953.26s/it]layers: 100%|██████████| 13/13 [10:49:52<00:00, 2999.39s/it]
