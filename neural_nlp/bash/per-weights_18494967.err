@@ -3179,3 +3179,5 @@ prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
 cross-validation:   0%|          | 0/6 [00:00<?, ?it/s][A[A
 
 cross-validation:  17%|█▋        | 1/6 [01:34<07:50, 94.14s/it][A[A
+
+cross-validation:  33%|███▎      | 2/6 [03:08<06:16, 94.07s/it][A[A
