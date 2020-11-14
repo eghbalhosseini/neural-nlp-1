@@ -12,6 +12,6 @@
 cd /om/user/`whoami`/neural-nlp
 source activate brainmodeling
 
-export MODELNAME=distilgpt2
+export MODELNAME=roberta-base
 
 python neural_nlp run --benchmark Pereira2018-encoding-weights --model ${MODELNAME}  --log_level DEBUG
