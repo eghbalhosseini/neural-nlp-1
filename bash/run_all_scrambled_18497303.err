@@ -3174,3 +3174,10 @@ If you want to use the Tesla K20Xm GPU with PyTorch, please check the instructio
 cross-validation:  60%|██████    | 3/5 [02:46<01:50, 55.37s/it][A[A
 
 cross-validation:  80%|████████  | 4/5 [03:43<00:55, 55.82s/it][A[A
+
+cross-validation: 100%|██████████| 5/5 [04:39<00:00, 55.88s/it][A[Across-validation: 100%|██████████| 5/5 [04:39<00:00, 55.84s/it]
+
+{'experiment': '384sentences', 'atlas': 'DMN'}:  20%|██        | 2/10 [10:21<43:01, 322.74s/it][A
+{'experiment': '384sentences', 'atlas': 'visual'}:  20%|██        | 2/10 [10:21<43:01, 322.74s/it][A
+
+cross-validation:   0%|          | 0/5 [00:00<?, ?it/s][A[A
