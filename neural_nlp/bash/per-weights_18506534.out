@@ -1,0 +1,154 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-weights', '--model', 'transfo-xl-wt103']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-weights,model=transfo-xl-wt103,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingWithWeights._load_assembly/version=base
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/transfo-xl-wt103-config.json HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47668791743600 on /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710.lock
+INFO:filelock:Lock 47668791743600 acquired on /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-config.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpbrbhphxd
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/transfo-xl-wt103-config.json HTTP/1.1" 200 856
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-config.json in cache at /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710
+DEBUG:filelock:Attempting to release lock 47668791743600 on /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710.lock
+INFO:filelock:Lock 47668791743600 released on /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710.lock
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-config.json from cache at /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710
+INFO:transformers.configuration_utils:Model config TransfoXLConfig {
+  "adaptive": true,
+  "architectures": [
+    "TransfoXLLMHeadModel"
+  ],
+  "attn_type": 0,
+  "clamp_len": 1000,
+  "cutoffs": [
+    20000,
+    40000,
+    200000
+  ],
+  "d_embed": 1024,
+  "d_head": 64,
+  "d_inner": 4096,
+  "d_model": 1024,
+  "div_val": 4,
+  "dropatt": 0.0,
+  "dropout": 0.1,
+  "eos_token_id": 0,
+  "ext_len": 0,
+  "init": "normal",
+  "init_range": 0.01,
+  "init_std": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "mem_len": 1600,
+  "model_type": "transfo-xl",
+  "n_head": 16,
+  "n_layer": 18,
+  "pre_lnorm": false,
+  "proj_init_std": 0.01,
+  "same_length": true,
+  "sample_softmax": -1,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 250
+    }
+  },
+  "tgt_len": 128,
+  "tie_projs": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "tie_weight": true,
+  "untie_r": true,
+  "vocab_size": 267735
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/transfo-xl-wt103-vocab.bin HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47668791744944 on /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1.lock
+INFO:filelock:Lock 47668791744944 acquired on /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-vocab.bin not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmp3bwiqvav
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/transfo-xl-wt103-vocab.bin HTTP/1.1" 200 9143613
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-vocab.bin in cache at /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1
+DEBUG:filelock:Attempting to release lock 47668791744944 on /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1.lock
+INFO:filelock:Lock 47668791744944 released on /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1.lock
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-vocab.bin from cache at /home/gretatu/.cache/torch/transformers/b24cb708726fd43cbf1a382da9ed3908263e4fb8a156f9e0a4f45b7540c69caa.a6a9c41b856e5c31c9f125dd6a7ed4b833fbcefda148b627871d4171b25cffd1
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/transfo-xl-wt103-config.json HTTP/1.1" 200 0
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/transfo-xl-wt103-config.json from cache at /home/gretatu/.cache/torch/transformers/a6dfd6a3896b3ae4c1a3c5f26ff1f1827c26c15b679de9212a04060eaf1237df.56eeb6b31a156c318094519c209fd981407611878595e7228c64fe784eb7b710
+INFO:transformers.configuration_utils:Model config TransfoXLConfig {
+  "adaptive": true,
+  "architectures": [
+    "TransfoXLLMHeadModel"
+  ],
+  "attn_type": 0,
+  "clamp_len": 1000,
+  "cutoffs": [
+    20000,
+    40000,
+    200000
+  ],
+  "d_embed": 1024,
+  "d_head": 64,
+  "d_inner": 4096,
+  "d_model": 1024,
+  "div_val": 4,
+  "dropatt": 0.0,
+  "dropout": 0.1,
+  "eos_token_id": 0,
+  "ext_len": 0,
+  "init": "normal",
+  "init_range": 0.01,
+  "init_std": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "mem_len": 1600,
+  "model_type": "transfo-xl",
+  "n_head": 16,
+  "n_layer": 18,
+  "output_hidden_states": true,
+  "pre_lnorm": false,
+  "proj_init_std": 0.01,
+  "same_length": true,
+  "sample_softmax": -1,
+  "task_specific_params": {
+    "text-generation": {
+      "do_sample": true,
+      "max_length": 250
+    }
+  },
+  "tgt_len": 128,
+  "tie_projs": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "tie_weight": true,
+  "untie_r": true,
+  "vocab_size": 267735
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "HEAD /transfo-xl-wt103-pytorch_model.bin HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47668791745112 on /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671.lock
+INFO:filelock:Lock 47668791745112 acquired on /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671.lock
+INFO:transformers.file_utils:https://cdn.huggingface.co/transfo-xl-wt103-pytorch_model.bin not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmp3vcq6jiw
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "GET /transfo-xl-wt103-pytorch_model.bin HTTP/1.1" 200 1140884800
+INFO:transformers.file_utils:storing https://cdn.huggingface.co/transfo-xl-wt103-pytorch_model.bin in cache at /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671
+DEBUG:filelock:Attempting to release lock 47668791745112 on /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671.lock
+INFO:filelock:Lock 47668791745112 released on /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671.lock
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/transfo-xl-wt103-pytorch_model.bin from cache at /home/gretatu/.cache/torch/transformers/b9361b6618263b29d2ded6a6b6c03cc3b459a6b514b795e0745909633f524f61.e9704971f27275ec067a00a67e6a5f0b05b4306b3f714a96e9f763d8fb612671
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=transfo-xl-wt103,stimuli_identifier=Pereira2018-243sentences1
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+ERROR:transformers.tokenization_utils:Using cls_token, but it is not set yet.
+WARNING:transformers.tokenization_transfo_xl:You might want to consider setting `add_space_before_punct_symbol=True` as an argument to the `tokenizer.encode()` to avoid tokenizing words with punctuation symbols to the `<unk>` token
+WARNING:transformers.tokenization_transfo_xl:You might want to consider setting `add_space_before_punct_symbol=True` as an argument to the `tokenizer.encode()` to avoid tokenizing words with punctuation symbols to the `<unk>` token
+WARNING:transformers.tokenization_transfo_xl:You might want to consider setting `add_space_before_punct_symbol=True` as an argument to the `tokenizer.encode()` to avoid tokenizing words with punctuation symbols to the `<unk>` token
+WARNING:transformers.tokenization_transfo_xl:You might want to consider setting `add_space_before_punct_symbol=True` as an argument to the `tokenizer.encode()` to avoid tokenizing words with punctuation symbols to the `<unk>` token

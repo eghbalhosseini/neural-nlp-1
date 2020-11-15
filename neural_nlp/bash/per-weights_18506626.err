@@ -1,0 +1,66 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
+  xr_data.set_index(append=True, inplace=True, **coords_d)
+layers:   0%|          | 0/13 [00:00<?, ?it/s]/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/torch/cuda/__init__.py:125: UserWarning: 
+Tesla K20m with CUDA capability sm_35 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70 sm_75.
+If you want to use the Tesla K20m GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+
+token features:   0%|          | 0/72 [00:00<?, ?it/s][A
+                                                      [Alayers:   0%|          | 0/13 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "neural_nlp/__main__.py", line 32, in <module>
+    fire.Fire(command=FIRE_FLAGS)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 138, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 471, in _Fire
+    target=component.__name__)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 675, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "neural_nlp/__main__.py", line 22, in run
+    score = score_function(model=model, layers=layers, subsample=subsample, benchmark=benchmark)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 62, in wrapper
+    result = function(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 36, in score
+    layer_score = benchmark_impl(candidate)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
+    return self.content(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 491, in __call__
+    model_activations = listen_to(candidate, stimulus_set, reset_column='passage_id')
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 603, in listen_to
+    story_activations = candidate(stimuli=story_stimuli, average_sentence=average_sentence)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 57, in __call__
+    self._model(*args, **kwargs, layers=self._prerun)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
+    return self.content(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 560, in __call__
+    sentence_averaging=self._sentence_average, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 930, in _call_conditional_average
+    result = extractor(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 34, in __call__
+    return self.from_stimulus_set(stimulus_set=stimuli, layers=layers, stimuli_identifier=stimuli_identifier)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 49, in from_stimulus_set
+    stimuli_identifier=stimuli_identifier)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 62, in from_sentences
+    return fnc(layers=layers, sentences=sentences)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 287, in wrapper
+    result = function(**reduced_call_args)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 66, in _from_sentences_stored
+    return self._from_sentences(layers=layers, sentences=sentences)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 71, in _from_sentences
+    layer_activations = self.get_activations(sentences, layers=layers)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 726, in __call__
+    context_encoding, = self.model(tokens_tensor)[-1:]
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_albert.py", line 547, in forward
+    attention_mask = torch.ones(input_shape, device=device)
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+token features:   0%|          | 0/72 [00:00<?, ?it/s]

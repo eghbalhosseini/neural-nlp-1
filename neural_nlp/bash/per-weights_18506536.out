@@ -1,0 +1,215 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-weights', '--model', 'xlm-mlm-xnli15-1024']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-weights,model=xlm-mlm-xnli15-1024,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingWithWeights._load_assembly/version=base
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47201244288112 on /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d.lock
+INFO:filelock:Lock 47201244288112 acquired on /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpri3aj37x
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json HTTP/1.1" 200 1399
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json in cache at /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d
+DEBUG:filelock:Attempting to release lock 47201244288112 on /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d.lock
+INFO:filelock:Lock 47201244288112 released on /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d.lock
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json from cache at /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d
+INFO:transformers.configuration_utils:Model config XLMConfig {
+  "architectures": [
+    "XLMWithLMHeadModel"
+  ],
+  "asm": false,
+  "attention_dropout": 0.1,
+  "bos_index": 0,
+  "bos_token_id": 0,
+  "causal": false,
+  "dropout": 0.1,
+  "emb_dim": 1024,
+  "embed_init_std": 0.02209708691207961,
+  "end_n_top": 5,
+  "eos_index": 1,
+  "gelu_activation": true,
+  "id2lang": {
+    "0": "ar",
+    "1": "bg",
+    "10": "th",
+    "11": "tr",
+    "12": "ur",
+    "13": "vi",
+    "14": "zh",
+    "2": "de",
+    "3": "el",
+    "4": "en",
+    "5": "es",
+    "6": "fr",
+    "7": "hi",
+    "8": "ru",
+    "9": "sw"
+  },
+  "init_std": 0.02,
+  "is_encoder": true,
+  "lang2id": {
+    "ar": 0,
+    "bg": 1,
+    "de": 2,
+    "el": 3,
+    "en": 4,
+    "es": 5,
+    "fr": 6,
+    "hi": 7,
+    "ru": 8,
+    "sw": 9,
+    "th": 10,
+    "tr": 11,
+    "ur": 12,
+    "vi": 13,
+    "zh": 14
+  },
+  "lang_id": 0,
+  "layer_norm_eps": 1e-12,
+  "mask_index": 5,
+  "mask_token_id": 0,
+  "max_position_embeddings": 512,
+  "max_vocab": 95000,
+  "min_count": 0,
+  "model_type": "xlm",
+  "n_heads": 8,
+  "n_langs": 15,
+  "n_layers": 12,
+  "pad_index": 2,
+  "pad_token_id": 2,
+  "same_enc_dec": true,
+  "share_inout_emb": true,
+  "sinusoidal_embeddings": false,
+  "start_n_top": 5,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "first",
+  "summary_use_proj": true,
+  "unk_index": 3,
+  "use_lang_emb": true,
+  "vocab_size": 95000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/xlm-mlm-xnli15-1024-vocab.json HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47201244289624 on /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f.lock
+INFO:filelock:Lock 47201244289624 acquired on /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-vocab.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpfmxh80jl
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/xlm-mlm-xnli15-1024-vocab.json HTTP/1.1" 200 2952532
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-vocab.json in cache at /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f
+DEBUG:filelock:Attempting to release lock 47201244289624 on /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f.lock
+INFO:filelock:Lock 47201244289624 released on /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f.lock
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/xlm-mlm-xnli15-1024-merges.txt HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47201244289456 on /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395.lock
+INFO:filelock:Lock 47201244289456 acquired on /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-merges.txt not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpgqu71d6u
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/xlm-mlm-xnli15-1024-merges.txt HTTP/1.1" 200 1434601
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-merges.txt in cache at /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395
+DEBUG:filelock:Attempting to release lock 47201244289456 on /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395.lock
+INFO:filelock:Lock 47201244289456 released on /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395.lock
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-vocab.json from cache at /home/gretatu/.cache/torch/transformers/f7543cfb257cef44954faaee39fc0138e347c6f37a582de49748f43442c3e2e3.99234596be1c0bb1a86f577138f0aedbc1c6daa4255ff975a609f07ca9f5fb4f
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-merges.txt from cache at /home/gretatu/.cache/torch/transformers/6030b233c7d85f489ec6b1568b2b94adad869dabf2ce77376eb27c1c42737998.972e07b26e2b41e5f03918bd0ccf208262a02873efdebd9702803e6bd078d395
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json HTTP/1.1" 200 0
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-config.json from cache at /home/gretatu/.cache/torch/transformers/a9630f93adc3dcb97be7c3de7126a82ec0d32b23c8e6f5e382bd267458856e05.5fa534dc68f444e832bcf0fbf7b68e28800befed2e9aabd55bcdb11b27cd5f5d
+INFO:transformers.configuration_utils:Model config XLMConfig {
+  "architectures": [
+    "XLMWithLMHeadModel"
+  ],
+  "asm": false,
+  "attention_dropout": 0.1,
+  "bos_index": 0,
+  "bos_token_id": 0,
+  "causal": false,
+  "dropout": 0.1,
+  "emb_dim": 1024,
+  "embed_init_std": 0.02209708691207961,
+  "end_n_top": 5,
+  "eos_index": 1,
+  "gelu_activation": true,
+  "id2lang": {
+    "0": "ar",
+    "1": "bg",
+    "10": "th",
+    "11": "tr",
+    "12": "ur",
+    "13": "vi",
+    "14": "zh",
+    "2": "de",
+    "3": "el",
+    "4": "en",
+    "5": "es",
+    "6": "fr",
+    "7": "hi",
+    "8": "ru",
+    "9": "sw"
+  },
+  "init_std": 0.02,
+  "is_encoder": true,
+  "lang2id": {
+    "ar": 0,
+    "bg": 1,
+    "de": 2,
+    "el": 3,
+    "en": 4,
+    "es": 5,
+    "fr": 6,
+    "hi": 7,
+    "ru": 8,
+    "sw": 9,
+    "th": 10,
+    "tr": 11,
+    "ur": 12,
+    "vi": 13,
+    "zh": 14
+  },
+  "lang_id": 0,
+  "layer_norm_eps": 1e-12,
+  "mask_index": 5,
+  "mask_token_id": 0,
+  "max_position_embeddings": 512,
+  "max_vocab": 95000,
+  "min_count": 0,
+  "model_type": "xlm",
+  "n_heads": 8,
+  "n_langs": 15,
+  "n_layers": 12,
+  "output_hidden_states": true,
+  "pad_index": 2,
+  "pad_token_id": 2,
+  "same_enc_dec": true,
+  "share_inout_emb": true,
+  "sinusoidal_embeddings": false,
+  "start_n_top": 5,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "first",
+  "summary_use_proj": true,
+  "unk_index": 3,
+  "use_lang_emb": true,
+  "vocab_size": 95000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "HEAD /xlm-mlm-xnli15-1024-pytorch_model.bin HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47201251929112 on /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7.lock
+INFO:filelock:Lock 47201251929112 acquired on /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7.lock
+INFO:transformers.file_utils:https://cdn.huggingface.co/xlm-mlm-xnli15-1024-pytorch_model.bin not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpbh88oxle
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "GET /xlm-mlm-xnli15-1024-pytorch_model.bin HTTP/1.1" 200 1385437546
+INFO:transformers.file_utils:storing https://cdn.huggingface.co/xlm-mlm-xnli15-1024-pytorch_model.bin in cache at /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7
+DEBUG:filelock:Attempting to release lock 47201251929112 on /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7.lock
+INFO:filelock:Lock 47201251929112 released on /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7.lock
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/xlm-mlm-xnli15-1024-pytorch_model.bin from cache at /home/gretatu/.cache/torch/transformers/f9deada52b783d0b2d4f6ebe43f1b68fcab23568ead560099ede671e4a0e888b.3550bb947f8af230902db483526f54c7698b99004c6833e8985b081ec5153bd7
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=xlm-mlm-xnli15-1024,stimuli_identifier=Pereira2018-243sentences1
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences

@@ -1,0 +1,107 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-weights', '--model', 'albert-base-v2']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-weights,model=albert-base-v2,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingWithWeights._load_assembly/version=base
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-base-v2-config.json HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47643702441072 on /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca.lock
+INFO:filelock:Lock 47643702441072 acquired on /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-config.json not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpfqo0lft7
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/albert-base-v2-config.json HTTP/1.1" 200 684
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-config.json in cache at /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca
+DEBUG:filelock:Attempting to release lock 47643702441072 on /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca.lock
+INFO:filelock:Lock 47643702441072 released on /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca.lock
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-config.json from cache at /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca
+INFO:transformers.configuration_utils:Model config AlbertConfig {
+  "architectures": [
+    "AlbertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0,
+  "bos_token_id": 2,
+  "classifier_dropout_prob": 0.1,
+  "down_scale_factor": 1,
+  "embedding_size": 128,
+  "eos_token_id": 3,
+  "gap_size": 0,
+  "hidden_act": "gelu_new",
+  "hidden_dropout_prob": 0,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "inner_group_num": 1,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "albert",
+  "net_structure_type": 0,
+  "num_attention_heads": 12,
+  "num_hidden_groups": 1,
+  "num_hidden_layers": 12,
+  "num_memory_blocks": 0,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-base-v2-spiece.model HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47643702441296 on /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf.lock
+INFO:filelock:Lock 47643702441296 acquired on /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf.lock
+INFO:transformers.file_utils:https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-spiece.model not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmp66cvkesx
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "GET /models.huggingface.co/bert/albert-base-v2-spiece.model HTTP/1.1" 200 760289
+INFO:transformers.file_utils:storing https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-spiece.model in cache at /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf
+DEBUG:filelock:Attempting to release lock 47643702441296 on /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf.lock
+INFO:filelock:Lock 47643702441296 released on /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf.lock
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-spiece.model from cache at /home/gretatu/.cache/torch/transformers/dd1588b85b6fdce1320e224d29ad062e97588e17326b9d05a0b29ee84b8f5f93.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-base-v2-config.json HTTP/1.1" 200 0
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/albert-base-v2-config.json from cache at /home/gretatu/.cache/torch/transformers/0bbb1531ce82f042a813219ffeed7a1fa1f44cd8f78a652c47fc5311e0d40231.978ff53dd976bbf4bc66f09bf4205da0542be753d025263787842df74d15bbca
+INFO:transformers.configuration_utils:Model config AlbertConfig {
+  "architectures": [
+    "AlbertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0,
+  "bos_token_id": 2,
+  "classifier_dropout_prob": 0.1,
+  "down_scale_factor": 1,
+  "embedding_size": 128,
+  "eos_token_id": 3,
+  "gap_size": 0,
+  "hidden_act": "gelu_new",
+  "hidden_dropout_prob": 0,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "inner_group_num": 1,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "albert",
+  "net_structure_type": 0,
+  "num_attention_heads": 12,
+  "num_hidden_groups": 1,
+  "num_hidden_layers": 12,
+  "num_memory_blocks": 0,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "HEAD /albert-base-v2-pytorch_model.bin HTTP/1.1" 200 0
+DEBUG:filelock:Attempting to acquire lock 47643702442472 on /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24.lock
+INFO:filelock:Lock 47643702442472 acquired on /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24.lock
+INFO:transformers.file_utils:https://cdn.huggingface.co/albert-base-v2-pytorch_model.bin not found in cache or force_download set to True, downloading to /home/gretatu/.cache/torch/transformers/tmpydvy1bpg
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "GET /albert-base-v2-pytorch_model.bin HTTP/1.1" 200 47376696
+INFO:transformers.file_utils:storing https://cdn.huggingface.co/albert-base-v2-pytorch_model.bin in cache at /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24
+INFO:transformers.file_utils:creating metadata file for /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24
+DEBUG:filelock:Attempting to release lock 47643702442472 on /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24.lock
+INFO:filelock:Lock 47643702442472 released on /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24.lock
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/albert-base-v2-pytorch_model.bin from cache at /home/gretatu/.cache/torch/transformers/c7c1b2b621933bfa9a5f6ed18b1d6dc2f445001779b13d37286a806117ebeb10.ab806923413c2af99835e13fdbb6014b24af86b0de8edc2d71ef5c646fc54f24
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-base-v2,stimuli_identifier=Pereira2018-243sentences1
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences

@@ -1,0 +1,418 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainio_base/assemblies.py:213: FutureWarning: The inplace argument has been deprecated and will be removed in a future version of xarray.
+  xr_data.set_index(append=True, inplace=True, **coords_d)
+layers:   0%|          | 0/13 [00:00<?, ?it/s]
+Downloading:   0%|          | 0.00/1.40k [00:00<?, ?B/s][ADownloading: 100%|██████████| 1.40k/1.40k [00:00<00:00, 1.21MB/s]
+
+Downloading:   0%|          | 0.00/2.95M [00:00<?, ?B/s][A
+Downloading:  47%|████▋     | 1.40M/2.95M [00:00<00:00, 14.0MB/s][ADownloading: 100%|██████████| 2.95M/2.95M [00:00<00:00, 21.1MB/s]
+
+Downloading:   0%|          | 0.00/1.43M [00:00<?, ?B/s][A
+Downloading:  92%|█████████▏| 1.32M/1.43M [00:00<00:00, 13.2MB/s][ADownloading: 100%|██████████| 1.43M/1.43M [00:00<00:00, 13.7MB/s]
+
+Downloading:   0%|          | 0.00/1.39G [00:00<?, ?B/s][A
+Downloading:   0%|          | 2.03M/1.39G [00:00<01:08, 20.3MB/s][A
+Downloading:   0%|          | 5.99M/1.39G [00:00<00:58, 23.8MB/s][A
+Downloading:   1%|          | 8.38M/1.39G [00:00<01:13, 18.8MB/s][A
+Downloading:   1%|          | 9.89M/1.39G [00:00<01:21, 16.9MB/s][A
+Downloading:   1%|          | 14.0M/1.39G [00:00<01:06, 20.5MB/s][A
+Downloading:   1%|          | 16.8M/1.39G [00:00<01:03, 21.5MB/s][A
+Downloading:   2%|▏         | 20.9M/1.39G [00:00<00:54, 25.1MB/s][A
+Downloading:   2%|▏         | 25.0M/1.39G [00:00<00:47, 28.4MB/s][A
+Downloading:   2%|▏         | 29.1M/1.39G [00:01<00:43, 31.4MB/s][A
+Downloading:   2%|▏         | 33.3M/1.39G [00:01<00:39, 33.8MB/s][A
+Downloading:   3%|▎         | 37.4M/1.39G [00:01<00:37, 35.8MB/s][A
+Downloading:   3%|▎         | 41.6M/1.39G [00:01<00:35, 37.3MB/s][A
+Downloading:   3%|▎         | 45.7M/1.39G [00:01<00:34, 38.6MB/s][A
+Downloading:   4%|▎         | 49.9M/1.39G [00:01<00:33, 39.5MB/s][A
+Downloading:   4%|▍         | 54.1M/1.39G [00:01<00:33, 40.1MB/s][A
+Downloading:   4%|▍         | 58.3M/1.39G [00:01<00:32, 40.6MB/s][A
+Downloading:   5%|▍         | 62.5M/1.39G [00:01<00:32, 41.0MB/s][A
+Downloading:   5%|▍         | 66.6M/1.39G [00:01<00:31, 41.2MB/s][A
+Downloading:   5%|▌         | 70.8M/1.39G [00:02<00:31, 41.5MB/s][A
+Downloading:   5%|▌         | 75.0M/1.39G [00:02<00:31, 41.5MB/s][A
+Downloading:   6%|▌         | 79.2M/1.39G [00:02<00:31, 41.6MB/s][A
+Downloading:   6%|▌         | 83.4M/1.39G [00:02<00:31, 41.6MB/s][A
+Downloading:   6%|▋         | 87.5M/1.39G [00:02<00:31, 41.6MB/s][A
+Downloading:   7%|▋         | 91.7M/1.39G [00:02<00:31, 41.6MB/s][A
+Downloading:   7%|▋         | 95.9M/1.39G [00:02<00:30, 41.6MB/s][A
+Downloading:   7%|▋         | 100M/1.39G [00:02<00:30, 41.6MB/s] [A
+Downloading:   8%|▊         | 104M/1.39G [00:02<00:30, 41.7MB/s][A
+Downloading:   8%|▊         | 108M/1.39G [00:02<00:30, 41.7MB/s][A
+Downloading:   8%|▊         | 113M/1.39G [00:03<00:30, 41.7MB/s][A
+Downloading:   8%|▊         | 117M/1.39G [00:03<00:30, 41.7MB/s][A
+Downloading:   9%|▊         | 121M/1.39G [00:03<00:33, 37.8MB/s][A
+Downloading:   9%|▉         | 125M/1.39G [00:03<00:33, 37.3MB/s][A
+Downloading:   9%|▉         | 129M/1.39G [00:03<00:33, 38.1MB/s][A
+Downloading:  10%|▉         | 133M/1.39G [00:03<00:32, 39.0MB/s][A
+Downloading:  10%|▉         | 137M/1.39G [00:03<00:33, 36.8MB/s][A
+Downloading:  10%|█         | 141M/1.39G [00:03<00:33, 37.2MB/s][A
+Downloading:  10%|█         | 144M/1.39G [00:03<00:33, 37.1MB/s][A
+Downloading:  11%|█         | 148M/1.39G [00:03<00:32, 37.5MB/s][A
+Downloading:  11%|█         | 152M/1.39G [00:04<00:31, 38.6MB/s][A
+Downloading:  11%|█▏        | 157M/1.39G [00:04<00:31, 39.5MB/s][A
+Downloading:  12%|█▏        | 161M/1.39G [00:04<00:30, 40.2MB/s][A
+Downloading:  12%|█▏        | 165M/1.39G [00:04<00:30, 40.5MB/s][A
+Downloading:  12%|█▏        | 169M/1.39G [00:04<00:29, 40.8MB/s][A
+Downloading:  13%|█▎        | 173M/1.39G [00:04<00:29, 41.0MB/s][A
+Downloading:  13%|█▎        | 177M/1.39G [00:04<00:29, 41.2MB/s][A
+Downloading:  13%|█▎        | 182M/1.39G [00:04<00:29, 41.3MB/s][A
+Downloading:  13%|█▎        | 186M/1.39G [00:04<00:28, 41.6MB/s][A
+Downloading:  14%|█▎        | 190M/1.39G [00:04<00:28, 41.6MB/s][A
+Downloading:  14%|█▍        | 194M/1.39G [00:05<00:28, 41.8MB/s][A
+Downloading:  14%|█▍        | 198M/1.39G [00:05<00:28, 41.9MB/s][A
+Downloading:  15%|█▍        | 203M/1.39G [00:05<00:28, 42.1MB/s][A
+Downloading:  15%|█▍        | 207M/1.39G [00:05<00:28, 42.1MB/s][A
+Downloading:  15%|█▌        | 211M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  16%|█▌        | 215M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  16%|█▌        | 219M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  16%|█▌        | 224M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  16%|█▋        | 228M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  17%|█▋        | 232M/1.39G [00:05<00:27, 42.1MB/s][A
+Downloading:  17%|█▋        | 236M/1.39G [00:06<00:27, 42.1MB/s][A
+Downloading:  17%|█▋        | 241M/1.39G [00:06<00:27, 42.1MB/s][A
+Downloading:  18%|█▊        | 245M/1.39G [00:06<00:27, 42.1MB/s][A
+Downloading:  18%|█▊        | 249M/1.39G [00:06<00:26, 42.1MB/s][A
+Downloading:  18%|█▊        | 253M/1.39G [00:06<00:26, 42.1MB/s][A
+Downloading:  19%|█▊        | 257M/1.39G [00:06<00:26, 41.9MB/s][A
+Downloading:  19%|█▉        | 262M/1.39G [00:06<00:26, 41.8MB/s][A
+Downloading:  19%|█▉        | 266M/1.39G [00:06<00:26, 41.9MB/s][A
+Downloading:  19%|█▉        | 270M/1.39G [00:06<00:26, 42.0MB/s][A
+Downloading:  20%|█▉        | 274M/1.39G [00:06<00:26, 41.9MB/s][A
+Downloading:  20%|██        | 278M/1.39G [00:07<00:26, 42.0MB/s][A
+Downloading:  20%|██        | 283M/1.39G [00:07<00:26, 42.1MB/s][A
+Downloading:  21%|██        | 287M/1.39G [00:07<00:26, 42.1MB/s][A
+Downloading:  21%|██        | 291M/1.39G [00:07<00:25, 42.1MB/s][A
+Downloading:  21%|██▏       | 295M/1.39G [00:07<00:25, 42.1MB/s][A
+Downloading:  22%|██▏       | 300M/1.39G [00:07<00:25, 42.1MB/s][A
+Downloading:  22%|██▏       | 304M/1.39G [00:07<00:25, 42.2MB/s][A
+Downloading:  22%|██▏       | 308M/1.39G [00:07<00:25, 42.1MB/s][A
+Downloading:  23%|██▎       | 312M/1.39G [00:07<00:25, 42.2MB/s][A
+Downloading:  23%|██▎       | 316M/1.39G [00:07<00:25, 42.1MB/s][A
+Downloading:  23%|██▎       | 321M/1.39G [00:08<00:25, 42.2MB/s][A
+Downloading:  23%|██▎       | 325M/1.39G [00:08<00:25, 42.3MB/s][A
+Downloading:  24%|██▍       | 329M/1.39G [00:08<00:24, 42.4MB/s][A
+Downloading:  24%|██▍       | 333M/1.39G [00:08<00:24, 42.4MB/s][A
+Downloading:  24%|██▍       | 338M/1.39G [00:08<00:24, 42.3MB/s][A
+Downloading:  25%|██▍       | 342M/1.39G [00:08<00:24, 42.3MB/s][A
+Downloading:  25%|██▍       | 346M/1.39G [00:08<00:24, 42.1MB/s][A
+Downloading:  25%|██▌       | 350M/1.39G [00:08<00:24, 42.0MB/s][A
+Downloading:  26%|██▌       | 355M/1.39G [00:08<00:24, 42.1MB/s][A
+Downloading:  26%|██▌       | 359M/1.39G [00:08<00:24, 42.1MB/s][A
+Downloading:  26%|██▌       | 363M/1.39G [00:09<00:24, 42.0MB/s][A
+Downloading:  27%|██▋       | 367M/1.39G [00:09<00:24, 42.0MB/s][A
+Downloading:  27%|██▋       | 371M/1.39G [00:09<00:24, 42.1MB/s][A
+Downloading:  27%|██▋       | 376M/1.39G [00:09<00:23, 42.2MB/s][A
+Downloading:  27%|██▋       | 380M/1.39G [00:09<00:23, 42.2MB/s][A
+Downloading:  28%|██▊       | 384M/1.39G [00:09<00:23, 42.2MB/s][A
+Downloading:  28%|██▊       | 388M/1.39G [00:09<00:23, 42.3MB/s][A
+Downloading:  28%|██▊       | 393M/1.39G [00:09<00:23, 42.3MB/s][A
+Downloading:  29%|██▊       | 397M/1.39G [00:09<00:23, 42.4MB/s][A
+Downloading:  29%|██▉       | 401M/1.39G [00:09<00:23, 42.3MB/s][A
+Downloading:  29%|██▉       | 405M/1.39G [00:10<00:23, 42.1MB/s][A
+Downloading:  30%|██▉       | 410M/1.39G [00:10<00:23, 42.2MB/s][A
+Downloading:  30%|██▉       | 414M/1.39G [00:10<00:22, 42.3MB/s][A
+Downloading:  30%|███       | 418M/1.39G [00:10<00:22, 42.1MB/s][A
+Downloading:  30%|███       | 422M/1.39G [00:10<00:22, 42.0MB/s][A
+Downloading:  31%|███       | 427M/1.39G [00:10<00:22, 42.1MB/s][A
+Downloading:  31%|███       | 431M/1.39G [00:10<00:22, 42.2MB/s][A
+Downloading:  31%|███▏      | 435M/1.39G [00:10<00:22, 42.2MB/s][A
+Downloading:  32%|███▏      | 439M/1.39G [00:10<00:22, 42.1MB/s][A
+Downloading:  32%|███▏      | 443M/1.39G [00:10<00:22, 41.9MB/s][A
+Downloading:  32%|███▏      | 448M/1.39G [00:11<00:22, 41.9MB/s][A
+Downloading:  33%|███▎      | 452M/1.39G [00:11<00:22, 41.9MB/s][A
+Downloading:  33%|███▎      | 456M/1.39G [00:11<00:22, 42.0MB/s][A
+Downloading:  33%|███▎      | 460M/1.39G [00:11<00:21, 42.1MB/s][A
+Downloading:  34%|███▎      | 464M/1.39G [00:11<00:21, 42.2MB/s][A
+Downloading:  34%|███▍      | 469M/1.39G [00:11<00:21, 42.1MB/s][A
+Downloading:  34%|███▍      | 473M/1.39G [00:11<00:21, 42.2MB/s][A
+Downloading:  34%|███▍      | 477M/1.39G [00:11<00:21, 42.2MB/s][A
+Downloading:  35%|███▍      | 481M/1.39G [00:11<00:21, 42.3MB/s][A
+Downloading:  35%|███▌      | 486M/1.39G [00:12<00:21, 41.8MB/s][A
+Downloading:  35%|███▌      | 490M/1.39G [00:12<00:21, 42.0MB/s][A
+Downloading:  36%|███▌      | 494M/1.39G [00:12<00:21, 42.1MB/s][A
+Downloading:  36%|███▌      | 498M/1.39G [00:12<00:21, 42.1MB/s][A
+Downloading:  36%|███▋      | 503M/1.39G [00:12<00:20, 42.2MB/s][A
+Downloading:  37%|███▋      | 507M/1.39G [00:12<00:20, 42.3MB/s][A
+Downloading:  37%|███▋      | 511M/1.39G [00:12<00:20, 42.3MB/s][A
+Downloading:  37%|███▋      | 515M/1.39G [00:12<00:20, 42.3MB/s][A
+Downloading:  38%|███▊      | 520M/1.39G [00:12<00:20, 42.4MB/s][A
+Downloading:  38%|███▊      | 524M/1.39G [00:12<00:20, 42.3MB/s][A
+Downloading:  38%|███▊      | 528M/1.39G [00:13<00:20, 42.3MB/s][A
+Downloading:  38%|███▊      | 532M/1.39G [00:13<00:20, 42.4MB/s][A
+Downloading:  39%|███▊      | 537M/1.39G [00:13<00:20, 42.4MB/s][A
+Downloading:  39%|███▉      | 541M/1.39G [00:13<00:19, 42.4MB/s][A
+Downloading:  39%|███▉      | 545M/1.39G [00:13<00:19, 42.3MB/s][A
+Downloading:  40%|███▉      | 549M/1.39G [00:13<00:20, 41.3MB/s][A
+Downloading:  40%|███▉      | 553M/1.39G [00:13<00:20, 39.8MB/s][A
+Downloading:  40%|████      | 557M/1.39G [00:13<00:21, 38.8MB/s][A
+Downloading:  41%|████      | 562M/1.39G [00:13<00:20, 39.8MB/s][A
+Downloading:  41%|████      | 566M/1.39G [00:13<00:20, 40.5MB/s][A
+Downloading:  41%|████      | 570M/1.39G [00:14<00:19, 40.9MB/s][A
+Downloading:  41%|████▏     | 574M/1.39G [00:14<00:19, 41.3MB/s][A
+Downloading:  42%|████▏     | 578M/1.39G [00:14<00:19, 40.6MB/s][A
+Downloading:  42%|████▏     | 582M/1.39G [00:14<00:21, 38.2MB/s][A
+Downloading:  42%|████▏     | 586M/1.39G [00:14<00:21, 38.0MB/s][A
+Downloading:  43%|████▎     | 590M/1.39G [00:14<00:21, 37.5MB/s][A
+Downloading:  43%|████▎     | 594M/1.39G [00:14<00:21, 37.0MB/s][A
+Downloading:  43%|████▎     | 598M/1.39G [00:14<00:21, 36.4MB/s][A
+Downloading:  43%|████▎     | 601M/1.39G [00:14<00:21, 35.9MB/s][A
+Downloading:  44%|████▎     | 605M/1.39G [00:14<00:22, 35.4MB/s][A
+Downloading:  44%|████▍     | 608M/1.39G [00:15<00:22, 35.0MB/s][A
+Downloading:  44%|████▍     | 612M/1.39G [00:15<00:22, 34.6MB/s][A
+Downloading:  44%|████▍     | 615M/1.39G [00:15<00:22, 34.2MB/s][A
+Downloading:  45%|████▍     | 619M/1.39G [00:15<00:22, 34.2MB/s][A
+Downloading:  45%|████▍     | 622M/1.39G [00:15<00:22, 34.4MB/s][A
+Downloading:  45%|████▌     | 626M/1.39G [00:15<00:21, 34.6MB/s][A
+Downloading:  45%|████▌     | 630M/1.39G [00:15<00:21, 35.1MB/s][A
+Downloading:  46%|████▌     | 633M/1.39G [00:15<00:21, 35.5MB/s][A
+Downloading:  46%|████▌     | 637M/1.39G [00:15<00:21, 35.5MB/s][A
+Downloading:  46%|████▌     | 640M/1.39G [00:16<00:20, 35.7MB/s][A
+Downloading:  46%|████▋     | 644M/1.39G [00:16<00:20, 36.0MB/s][A
+Downloading:  47%|████▋     | 648M/1.39G [00:16<00:19, 37.5MB/s][A
+Downloading:  47%|████▋     | 652M/1.39G [00:16<00:18, 38.9MB/s][A
+Downloading:  47%|████▋     | 657M/1.39G [00:16<00:18, 39.9MB/s][A
+Downloading:  48%|████▊     | 661M/1.39G [00:16<00:17, 40.7MB/s][A
+Downloading:  48%|████▊     | 665M/1.39G [00:16<00:17, 41.3MB/s][A
+Downloading:  48%|████▊     | 669M/1.39G [00:16<00:17, 41.7MB/s][A
+Downloading:  49%|████▊     | 674M/1.39G [00:16<00:16, 42.0MB/s][A
+Downloading:  49%|████▉     | 678M/1.39G [00:16<00:16, 42.1MB/s][A
+Downloading:  49%|████▉     | 682M/1.39G [00:17<00:16, 41.4MB/s][A
+Downloading:  50%|████▉     | 686M/1.39G [00:17<00:17, 40.7MB/s][A
+Downloading:  50%|████▉     | 691M/1.39G [00:17<00:16, 41.3MB/s][A
+Downloading:  50%|█████     | 695M/1.39G [00:17<00:16, 41.6MB/s][A
+Downloading:  50%|█████     | 699M/1.39G [00:17<00:16, 41.9MB/s][A
+Downloading:  51%|█████     | 703M/1.39G [00:17<00:16, 41.4MB/s][A
+Downloading:  51%|█████     | 707M/1.39G [00:17<00:16, 39.9MB/s][A
+Downloading:  51%|█████▏    | 711M/1.39G [00:17<00:17, 38.8MB/s][A
+Downloading:  52%|█████▏    | 715M/1.39G [00:17<00:17, 38.4MB/s][A
+Downloading:  52%|█████▏    | 719M/1.39G [00:17<00:17, 37.2MB/s][A
+Downloading:  52%|█████▏    | 723M/1.39G [00:18<00:18, 36.2MB/s][A
+Downloading:  52%|█████▏    | 727M/1.39G [00:18<00:17, 37.8MB/s][A
+Downloading:  53%|█████▎    | 731M/1.39G [00:18<00:17, 37.9MB/s][A
+Downloading:  53%|█████▎    | 735M/1.39G [00:18<00:18, 35.5MB/s][A
+Downloading:  53%|█████▎    | 739M/1.39G [00:18<00:17, 36.6MB/s][A
+Downloading:  54%|█████▎    | 743M/1.39G [00:18<00:16, 37.8MB/s][A
+Downloading:  54%|█████▍    | 747M/1.39G [00:18<00:16, 38.9MB/s][A
+Downloading:  54%|█████▍    | 751M/1.39G [00:18<00:15, 39.7MB/s][A
+Downloading:  55%|█████▍    | 755M/1.39G [00:18<00:15, 40.4MB/s][A
+Downloading:  55%|█████▍    | 760M/1.39G [00:18<00:15, 41.0MB/s][A
+Downloading:  55%|█████▌    | 764M/1.39G [00:19<00:14, 41.5MB/s][A
+Downloading:  55%|█████▌    | 768M/1.39G [00:19<00:14, 41.8MB/s][A
+Downloading:  56%|█████▌    | 772M/1.39G [00:19<00:14, 42.0MB/s][A
+Downloading:  56%|█████▌    | 777M/1.39G [00:19<00:15, 40.1MB/s][A
+Downloading:  56%|█████▋    | 781M/1.39G [00:19<00:15, 38.1MB/s][A
+Downloading:  57%|█████▋    | 785M/1.39G [00:19<00:16, 36.8MB/s][A
+Downloading:  57%|█████▋    | 788M/1.39G [00:19<00:16, 35.9MB/s][A
+Downloading:  57%|█████▋    | 792M/1.39G [00:19<00:16, 35.5MB/s][A
+Downloading:  57%|█████▋    | 795M/1.39G [00:19<00:16, 35.2MB/s][A
+Downloading:  58%|█████▊    | 799M/1.39G [00:20<00:16, 35.0MB/s][A
+Downloading:  58%|█████▊    | 803M/1.39G [00:20<00:16, 35.1MB/s][A
+Downloading:  58%|█████▊    | 806M/1.39G [00:20<00:16, 35.1MB/s][A
+Downloading:  58%|█████▊    | 810M/1.39G [00:20<00:16, 35.0MB/s][A
+Downloading:  59%|█████▊    | 813M/1.39G [00:20<00:16, 35.0MB/s][A
+Downloading:  59%|█████▉    | 817M/1.39G [00:20<00:16, 34.9MB/s][A
+Downloading:  59%|█████▉    | 820M/1.39G [00:20<00:16, 35.1MB/s][A
+Downloading:  59%|█████▉    | 824M/1.39G [00:20<00:16, 34.7MB/s][A
+Downloading:  60%|█████▉    | 827M/1.39G [00:20<00:16, 34.5MB/s][A
+Downloading:  60%|█████▉    | 831M/1.39G [00:20<00:16, 34.3MB/s][A
+Downloading:  60%|██████    | 834M/1.39G [00:21<00:16, 34.4MB/s][A
+Downloading:  60%|██████    | 838M/1.39G [00:21<00:15, 34.7MB/s][A
+Downloading:  61%|██████    | 841M/1.39G [00:21<00:15, 34.6MB/s][A
+Downloading:  61%|██████    | 844M/1.39G [00:21<00:15, 34.3MB/s][A
+Downloading:  61%|██████    | 848M/1.39G [00:21<00:15, 34.6MB/s][A
+Downloading:  61%|██████▏   | 851M/1.39G [00:21<00:15, 33.9MB/s][A
+Downloading:  62%|██████▏   | 855M/1.39G [00:21<00:15, 34.4MB/s][A
+Downloading:  62%|██████▏   | 859M/1.39G [00:21<00:15, 34.9MB/s][A
+Downloading:  62%|██████▏   | 862M/1.39G [00:21<00:14, 35.4MB/s][A
+Downloading:  63%|██████▎   | 866M/1.39G [00:21<00:14, 35.5MB/s][A
+Downloading:  63%|██████▎   | 869M/1.39G [00:22<00:14, 35.6MB/s][A
+Downloading:  63%|██████▎   | 873M/1.39G [00:22<00:14, 35.8MB/s][A
+Downloading:  63%|██████▎   | 877M/1.39G [00:22<00:14, 35.7MB/s][A
+Downloading:  64%|██████▎   | 880M/1.39G [00:22<00:13, 36.2MB/s][A
+Downloading:  64%|██████▍   | 884M/1.39G [00:22<00:13, 36.1MB/s][A
+Downloading:  64%|██████▍   | 888M/1.39G [00:22<00:13, 36.2MB/s][A
+Downloading:  64%|██████▍   | 891M/1.39G [00:22<00:13, 35.9MB/s][A
+Downloading:  65%|██████▍   | 895M/1.39G [00:22<00:13, 36.4MB/s][A
+Downloading:  65%|██████▍   | 899M/1.39G [00:22<00:13, 36.9MB/s][A
+Downloading:  65%|██████▌   | 903M/1.39G [00:22<00:13, 37.0MB/s][A
+Downloading:  65%|██████▌   | 907M/1.39G [00:23<00:12, 38.3MB/s][A
+Downloading:  66%|██████▌   | 911M/1.39G [00:23<00:12, 39.4MB/s][A
+Downloading:  66%|██████▌   | 915M/1.39G [00:23<00:11, 40.2MB/s][A
+Downloading:  66%|██████▋   | 919M/1.39G [00:23<00:11, 40.8MB/s][A
+Downloading:  67%|██████▋   | 924M/1.39G [00:23<00:16, 28.6MB/s][A
+Downloading:  67%|██████▋   | 928M/1.39G [00:23<00:14, 31.5MB/s][A
+Downloading:  67%|██████▋   | 932M/1.39G [00:23<00:13, 33.7MB/s][A
+Downloading:  68%|██████▊   | 935M/1.39G [00:23<00:13, 34.1MB/s][A
+Downloading:  68%|██████▊   | 939M/1.39G [00:24<00:12, 35.3MB/s][A
+Downloading:  68%|██████▊   | 943M/1.39G [00:24<00:11, 37.1MB/s][A
+Downloading:  68%|██████▊   | 948M/1.39G [00:24<00:11, 38.5MB/s][A
+Downloading:  69%|██████▊   | 952M/1.39G [00:24<00:10, 39.6MB/s][A
+Downloading:  69%|██████▉   | 956M/1.39G [00:24<00:10, 40.2MB/s][A
+Downloading:  69%|██████▉   | 960M/1.39G [00:24<00:10, 40.7MB/s][A
+Downloading:  70%|██████▉   | 964M/1.39G [00:24<00:10, 41.0MB/s][A
+Downloading:  70%|██████▉   | 969M/1.39G [00:24<00:10, 41.3MB/s][A
+Downloading:  70%|███████   | 973M/1.39G [00:24<00:09, 41.4MB/s][A
+Downloading:  71%|███████   | 977M/1.39G [00:24<00:09, 41.6MB/s][A
+Downloading:  71%|███████   | 981M/1.39G [00:25<00:09, 41.8MB/s][A
+Downloading:  71%|███████   | 985M/1.39G [00:25<00:09, 41.9MB/s][A
+Downloading:  71%|███████▏  | 990M/1.39G [00:25<00:09, 42.0MB/s][A
+Downloading:  72%|███████▏  | 994M/1.39G [00:25<00:09, 42.1MB/s][A
+Downloading:  72%|███████▏  | 998M/1.39G [00:25<00:09, 42.2MB/s][A
+Downloading:  72%|███████▏  | 1.00G/1.39G [00:25<00:09, 42.2MB/s][A
+Downloading:  73%|███████▎  | 1.01G/1.39G [00:25<00:08, 42.2MB/s][A
+Downloading:  73%|███████▎  | 1.01G/1.39G [00:25<00:08, 42.2MB/s][A
+Downloading:  73%|███████▎  | 1.02G/1.39G [00:25<00:08, 42.3MB/s][A
+Downloading:  74%|███████▎  | 1.02G/1.39G [00:25<00:08, 42.4MB/s][A
+Downloading:  74%|███████▍  | 1.02G/1.39G [00:26<00:08, 42.4MB/s][A
+Downloading:  74%|███████▍  | 1.03G/1.39G [00:26<00:08, 42.4MB/s][A
+Downloading:  74%|███████▍  | 1.03G/1.39G [00:26<00:08, 42.4MB/s][A
+Downloading:  75%|███████▍  | 1.04G/1.39G [00:26<00:08, 42.4MB/s][A
+Downloading:  75%|███████▌  | 1.04G/1.39G [00:26<00:08, 42.5MB/s][A
+Downloading:  75%|███████▌  | 1.04G/1.39G [00:26<00:08, 42.5MB/s][A
+Downloading:  76%|███████▌  | 1.05G/1.39G [00:26<00:07, 42.5MB/s][A
+Downloading:  76%|███████▌  | 1.05G/1.39G [00:26<00:07, 42.5MB/s][A
+Downloading:  76%|███████▋  | 1.06G/1.39G [00:26<00:07, 42.4MB/s][A
+Downloading:  77%|███████▋  | 1.06G/1.39G [00:26<00:07, 42.5MB/s][A
+Downloading:  77%|███████▋  | 1.07G/1.39G [00:27<00:07, 42.4MB/s][A
+Downloading:  77%|███████▋  | 1.07G/1.39G [00:27<00:07, 42.4MB/s][A
+Downloading:  78%|███████▊  | 1.07G/1.39G [00:27<00:07, 42.4MB/s][A
+Downloading:  78%|███████▊  | 1.08G/1.39G [00:27<00:07, 42.3MB/s][A
+Downloading:  78%|███████▊  | 1.08G/1.39G [00:27<00:07, 42.2MB/s][A
+Downloading:  78%|███████▊  | 1.09G/1.39G [00:27<00:07, 42.1MB/s][A
+Downloading:  79%|███████▉  | 1.09G/1.39G [00:27<00:06, 42.0MB/s][A
+Downloading:  79%|███████▉  | 1.10G/1.39G [00:27<00:06, 42.0MB/s][A
+Downloading:  79%|███████▉  | 1.10G/1.39G [00:27<00:06, 42.0MB/s][A
+Downloading:  80%|███████▉  | 1.10G/1.39G [00:27<00:06, 42.0MB/s][A
+Downloading:  80%|███████▉  | 1.11G/1.39G [00:28<00:06, 42.0MB/s][A
+Downloading:  80%|████████  | 1.11G/1.39G [00:28<00:06, 42.0MB/s][A
+Downloading:  81%|████████  | 1.12G/1.39G [00:28<00:06, 41.9MB/s][A
+Downloading:  81%|████████  | 1.12G/1.39G [00:28<00:06, 41.9MB/s][A
+Downloading:  81%|████████  | 1.13G/1.39G [00:28<00:06, 41.9MB/s][A
+Downloading:  82%|████████▏ | 1.13G/1.39G [00:28<00:06, 41.9MB/s][A
+Downloading:  82%|████████▏ | 1.13G/1.39G [00:28<00:06, 41.9MB/s][A
+Downloading:  82%|████████▏ | 1.14G/1.39G [00:28<00:05, 41.9MB/s][A
+Downloading:  82%|████████▏ | 1.14G/1.39G [00:28<00:05, 41.9MB/s][A
+Downloading:  83%|████████▎ | 1.15G/1.39G [00:28<00:05, 41.9MB/s][A
+Downloading:  83%|████████▎ | 1.15G/1.39G [00:29<00:05, 41.9MB/s][A
+Downloading:  83%|████████▎ | 1.15G/1.39G [00:29<00:05, 42.0MB/s][A
+Downloading:  84%|████████▎ | 1.16G/1.39G [00:29<00:05, 41.8MB/s][A
+Downloading:  84%|████████▍ | 1.16G/1.39G [00:29<00:05, 41.9MB/s][A
+Downloading:  84%|████████▍ | 1.17G/1.39G [00:29<00:05, 41.9MB/s][A
+Downloading:  85%|████████▍ | 1.17G/1.39G [00:29<00:05, 41.9MB/s][A
+Downloading:  85%|████████▍ | 1.18G/1.39G [00:29<00:05, 41.9MB/s][A
+Downloading:  85%|████████▌ | 1.18G/1.39G [00:29<00:04, 41.6MB/s][A
+Downloading:  85%|████████▌ | 1.18G/1.39G [00:29<00:04, 41.5MB/s][A
+Downloading:  86%|████████▌ | 1.19G/1.39G [00:29<00:04, 41.7MB/s][A
+Downloading:  86%|████████▌ | 1.19G/1.39G [00:30<00:04, 41.7MB/s][A
+Downloading:  86%|████████▋ | 1.20G/1.39G [00:30<00:04, 41.8MB/s][A
+Downloading:  87%|████████▋ | 1.20G/1.39G [00:30<00:04, 41.8MB/s][A
+Downloading:  87%|████████▋ | 1.20G/1.39G [00:30<00:04, 41.9MB/s][A
+Downloading:  87%|████████▋ | 1.21G/1.39G [00:30<00:04, 41.9MB/s][A
+Downloading:  88%|████████▊ | 1.21G/1.39G [00:30<00:04, 41.9MB/s][A
+Downloading:  88%|████████▊ | 1.22G/1.39G [00:30<00:04, 41.7MB/s][A
+Downloading:  88%|████████▊ | 1.22G/1.39G [00:30<00:03, 41.6MB/s][A
+Downloading:  88%|████████▊ | 1.23G/1.39G [00:30<00:03, 41.5MB/s][A
+Downloading:  89%|████████▉ | 1.23G/1.39G [00:30<00:03, 41.5MB/s][A
+Downloading:  89%|████████▉ | 1.23G/1.39G [00:31<00:03, 41.5MB/s][A
+Downloading:  89%|████████▉ | 1.24G/1.39G [00:31<00:03, 40.9MB/s][A
+Downloading:  90%|████████▉ | 1.24G/1.39G [00:31<00:03, 40.0MB/s][A
+Downloading:  90%|████████▉ | 1.25G/1.39G [00:31<00:03, 40.5MB/s][A
+Downloading:  90%|█████████ | 1.25G/1.39G [00:31<00:03, 40.9MB/s][A
+Downloading:  91%|█████████ | 1.25G/1.39G [00:31<00:03, 41.2MB/s][A
+Downloading:  91%|█████████ | 1.26G/1.39G [00:31<00:03, 41.4MB/s][A
+Downloading:  91%|█████████ | 1.26G/1.39G [00:31<00:02, 41.6MB/s][A
+Downloading:  91%|█████████▏| 1.27G/1.39G [00:31<00:02, 41.7MB/s][A
+Downloading:  92%|█████████▏| 1.27G/1.39G [00:31<00:02, 41.8MB/s][A
+Downloading:  92%|█████████▏| 1.28G/1.39G [00:32<00:02, 41.8MB/s][A
+Downloading:  92%|█████████▏| 1.28G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  93%|█████████▎| 1.28G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  93%|█████████▎| 1.29G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  93%|█████████▎| 1.29G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  94%|█████████▎| 1.30G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  94%|█████████▍| 1.30G/1.39G [00:32<00:02, 41.9MB/s][A
+Downloading:  94%|█████████▍| 1.31G/1.39G [00:32<00:01, 42.0MB/s][A
+Downloading:  95%|█████████▍| 1.31G/1.39G [00:32<00:01, 42.0MB/s][A
+Downloading:  95%|█████████▍| 1.31G/1.39G [00:32<00:01, 41.9MB/s][A
+Downloading:  95%|█████████▌| 1.32G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  95%|█████████▌| 1.32G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  96%|█████████▌| 1.33G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  96%|█████████▌| 1.33G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  96%|█████████▋| 1.33G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  97%|█████████▋| 1.34G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  97%|█████████▋| 1.34G/1.39G [00:33<00:01, 41.9MB/s][A
+Downloading:  97%|█████████▋| 1.35G/1.39G [00:33<00:00, 41.9MB/s][A
+Downloading:  98%|█████████▊| 1.35G/1.39G [00:33<00:00, 41.9MB/s][A
+Downloading:  98%|█████████▊| 1.36G/1.39G [00:33<00:00, 41.9MB/s][A
+Downloading:  98%|█████████▊| 1.36G/1.39G [00:34<00:00, 40.2MB/s][A
+Downloading:  98%|█████████▊| 1.36G/1.39G [00:34<00:00, 39.0MB/s][A
+Downloading:  99%|█████████▊| 1.37G/1.39G [00:34<00:00, 39.6MB/s][A
+Downloading:  99%|█████████▉| 1.37G/1.39G [00:34<00:00, 30.4MB/s][A
+Downloading:  99%|█████████▉| 1.38G/1.39G [00:34<00:00, 33.0MB/s][A
+Downloading: 100%|█████████▉| 1.38G/1.39G [00:34<00:00, 35.3MB/s][A
+Downloading: 100%|█████████▉| 1.38G/1.39G [00:34<00:00, 37.0MB/s][ADownloading: 100%|██████████| 1.39G/1.39G [00:34<00:00, 39.8MB/s]
+/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/torch/cuda/__init__.py:125: UserWarning: 
+Tesla K20m with CUDA capability sm_35 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70 sm_75.
+If you want to use the Tesla K20m GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+
+token features:   0%|          | 0/90 [00:00<?, ?it/s][ATraceback (most recent call last):
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "neural_nlp/__main__.py", line 32, in <module>
+    fire.Fire(command=FIRE_FLAGS)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 138, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 471, in _Fire
+    target=component.__name__)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/fire/core.py", line 675, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "neural_nlp/__main__.py", line 22, in run
+    score = score_function(model=model, layers=layers, subsample=subsample, benchmark=benchmark)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 62, in wrapper
+    result = function(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 36, in score
+    layer_score = benchmark_impl(candidate)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
+    return self.content(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 491, in __call__
+    model_activations = listen_to(candidate, stimulus_set, reset_column='passage_id')
+  File "/om/user/gretatu/neural-nlp/neural_nlp/benchmarks/neural.py", line 603, in listen_to
+    story_activations = candidate(stimuli=story_stimuli, average_sentence=average_sentence)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/__init__.py", line 57, in __call__
+    self._model(*args, **kwargs, layers=self._prerun)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/brainscore/utils/__init__.py", line 80, in __call__
+    return self.content(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 560, in __call__
+    sentence_averaging=self._sentence_average, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 930, in _call_conditional_average
+    result = extractor(*args, **kwargs)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 34, in __call__
+    return self.from_stimulus_set(stimulus_set=stimuli, layers=layers, stimuli_identifier=stimuli_identifier)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 49, in from_stimulus_set
+    stimuli_identifier=stimuli_identifier)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 62, in from_sentences
+    return fnc(layers=layers, sentences=sentences)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/result_caching/__init__.py", line 287, in wrapper
+    result = function(**reduced_call_args)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 66, in _from_sentences_stored
+    return self._from_sentences(layers=layers, sentences=sentences)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/wrapper/core.py", line 71, in _from_sentences
+    layer_activations = self.get_activations(sentences, layers=layers)
+  File "/om/user/gretatu/neural-nlp/neural_nlp/models/implementations.py", line 726, in __call__
+    context_encoding, = self.model(tokens_tensor)[-1:]
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/transformers/modeling_xlm.py", line 447, in forward
+    lengths = (input_ids != self.pad_index).sum(dim=1).long()
+  File "/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/torch/tensor.py", line 22, in wrapped
+    return f(*args, **kwargs)
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+
+                                                      [Alayers:   0%|          | 0/13 [00:55<?, ?it/s]
+token features:   0%|          | 0/90 [00:00<?, ?it/s]
