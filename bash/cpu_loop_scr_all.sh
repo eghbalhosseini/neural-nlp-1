@@ -4,9 +4,7 @@
 #SBATCH --output=run_all_scrambled_%j.out
 #SBATCH --error=run_all_scrambled_%j.err
 #SBATCH --nodes=1
-#SBATCH --mem=10G
-#SBATCH --gres=gpu:1             # 1 GPU
-#SBATCH --constraint=any-gpu     # Any GPU on the cluster.
+#SBATCH --mem=20G
 #SBATCH -t 24:00:00
 
 timestamp() {

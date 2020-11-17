@@ -1,0 +1,355 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled-original', '--model', 'albert-xxlarge-v2']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled-original,model=albert-xxlarge-v2,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.neural:I AM USING THIS DATA VERSION: Original
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambledOriginal._load_assembly/version=base
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-xxlarge-v2-config.json HTTP/1.1" 200 0
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/albert-xxlarge-v2-config.json from cache at /home/gretatu/.cache/torch/transformers/b3eed512e24335a76694282193217608ead013caa55330de3ff236d1f5695e6c.969ffb8d07aebbe39c189cbb0576be382e85f6960fcc4aec32eb97cd44be53a2
+INFO:transformers.configuration_utils:Model config AlbertConfig {
+  "architectures": [
+    "AlbertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0,
+  "bos_token_id": 2,
+  "classifier_dropout_prob": 0.1,
+  "down_scale_factor": 1,
+  "embedding_size": 128,
+  "eos_token_id": 3,
+  "gap_size": 0,
+  "hidden_act": "gelu_new",
+  "hidden_dropout_prob": 0,
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "inner_group_num": 1,
+  "intermediate_size": 16384,
+  "layer_norm_eps": 1e-12,
+  "layers_to_keep": [],
+  "max_position_embeddings": 512,
+  "model_type": "albert",
+  "net_structure_type": 0,
+  "num_attention_heads": 64,
+  "num_hidden_groups": 1,
+  "num_hidden_layers": 12,
+  "num_memory_blocks": 0,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-xxlarge-v2-spiece.model HTTP/1.1" 200 0
+INFO:transformers.tokenization_utils:loading file https://s3.amazonaws.com/models.huggingface.co/bert/albert-xxlarge-v2-spiece.model from cache at /home/gretatu/.cache/torch/transformers/094b3b4d4ab5e624ae6ba8654d88cdb99b2d5a813b323295c37d58680a1c4127.c81d4deb77aec08ce575b7a39a989a79dd54f321bfb82c2b54dd35f52f8182cf
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
+DEBUG:requests.packages.urllib3.connectionpool:https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/albert-xxlarge-v2-config.json HTTP/1.1" 200 0
+INFO:transformers.configuration_utils:loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/albert-xxlarge-v2-config.json from cache at /home/gretatu/.cache/torch/transformers/b3eed512e24335a76694282193217608ead013caa55330de3ff236d1f5695e6c.969ffb8d07aebbe39c189cbb0576be382e85f6960fcc4aec32eb97cd44be53a2
+INFO:transformers.configuration_utils:Model config AlbertConfig {
+  "architectures": [
+    "AlbertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0,
+  "bos_token_id": 2,
+  "classifier_dropout_prob": 0.1,
+  "down_scale_factor": 1,
+  "embedding_size": 128,
+  "eos_token_id": 3,
+  "gap_size": 0,
+  "hidden_act": "gelu_new",
+  "hidden_dropout_prob": 0,
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "inner_group_num": 1,
+  "intermediate_size": 16384,
+  "layer_norm_eps": 1e-12,
+  "layers_to_keep": [],
+  "max_position_embeddings": 512,
+  "model_type": "albert",
+  "net_structure_type": 0,
+  "num_attention_heads": 64,
+  "num_hidden_groups": 1,
+  "num_hidden_layers": 12,
+  "num_memory_blocks": 0,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30000
+}
+
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cdn.huggingface.co
+DEBUG:requests.packages.urllib3.connectionpool:https://cdn.huggingface.co:443 "HEAD /albert-xxlarge-v2-pytorch_model.bin HTTP/1.1" 200 0
+INFO:transformers.modeling_utils:loading weights file https://cdn.huggingface.co/albert-xxlarge-v2-pytorch_model.bin from cache at /home/gretatu/.cache/torch/transformers/99e96e90f18d97fce1d7b002130aa83f58cbf045d864ac5c1b9489387f9fe9d7.9ac42d6fae7d18840d74eaf2a6d817700ffdd5af9ae1a12c3e96e239e23f76f4
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences1
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences1
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences1
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences2
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences2
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences2
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences3
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences3
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences3
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences4
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences4
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences4
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences5
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences5
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences5
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences6
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences6
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences6
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences7
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences7
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences7
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences8
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences8
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences8
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences9
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences9
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences9
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences10
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences10
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences10
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences11
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences11
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences11
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences12
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences12
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences12
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences13
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences13
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences13
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences14
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences14
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences14
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences15
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences15
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences15
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences16
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences16
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences16
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences17
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences17
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences17
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences18
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences18
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences18
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences19
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences19
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences19
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences20
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences20
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences20
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences21
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences21
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences21
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences22
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences22
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences22
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences23
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences23
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences23
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences24
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences24
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences24
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences25
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences25
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences25
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences26
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences26
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences26
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences27
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences27
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences27
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences28
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences28
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences28
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences29
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences29
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences29
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences30
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences30
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences30
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences31
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences31
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences31
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences32
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences32
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences32
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences33
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096), (3, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences33
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences33
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences34
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging into assembly
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Activations shapes: [(4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096), (4, 4096)]
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Packaging individual layers
+DEBUG:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Merging layer assemblies
+DEBUG:result_caching._XarrayStorage:Saving to storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences34
+DEBUG:result_caching._XarrayStorage:Loading from storage: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences34
+DEBUG:result_caching._XarrayStorage:Running function: neural_nlp.models.wrapper.core.ActivationsExtractorHelper._from_sentences_stored/identifier=albert-xxlarge-v2,stimuli_identifier=Pereira2018-Original-243sentences35
+INFO:neural_nlp.models.wrapper.core.ActivationsExtractorHelper:Running sentences
