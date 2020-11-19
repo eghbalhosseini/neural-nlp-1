@@ -1346,4 +1346,8 @@ prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
   warnings.warn(PearsonRConstantInputWarning())
 
 
-cross-validation:  60%|██████    | 3/5 [08:36<05:44, 172.32s/it][A[A
+cross-validation:  60%|██████    | 3/5 [08:36<05:44, 172.32s/it][A[A/home/gretatu/.conda/envs/brainmodeling/lib/python3.6/site-packages/scipy/stats/stats.py:3845: PearsonRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+  warnings.warn(PearsonRConstantInputWarning())
+
+
+cross-validation:  80%|████████  | 4/5 [11:28<02:52, 172.15s/it][A[A
