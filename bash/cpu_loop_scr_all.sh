@@ -5,7 +5,7 @@
 #SBATCH --error=run_all_scrambled_%j.err
 #SBATCH --nodes=1
 #SBATCH --mem=20G
-#SBATCH -t 24:00:00
+#SBATCH -t 28:00:00
 
 timestamp() {
   date +"%T"
