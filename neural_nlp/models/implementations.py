@@ -715,7 +715,7 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
             max_num_words = 512 if not use_special_tokens else 511
             aligned_tokens = self.align_tokens(
                 tokenized_sentences=tokenized_sentences, sentences=sentences,
-                max_num_words=max_num_words, additional_tokens=additional_tokens, use_special_tokens=use_special_tokens)
+                max_num_words=max_num_words, additional_tokens=additional_tokens, use_special_tokens=use_special_tokens,full_context=False) #added ",full_context=False" CK Nov23, 2020
             encoded_layers = [[]] * len(self.layer_names)
             for context_ids in aligned_tokens:
                 # Convert inputs to PyTorch tensors
@@ -743,7 +743,7 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
                                               if layer in layers])
             return sentence_encodings
 
-        def align_tokens(self, tokenized_sentences, sentences, max_num_words, additional_tokens, use_special_tokens):
+        def align_tokens(self, tokenized_sentences, sentences, max_num_words, additional_tokens, use_special_tokens, full_context=False): # added ',full_context=False' CK Nov 23, 2020
             # sliding window approach (see https://github.com/google-research/bert/issues/66)
             # however, since this is a brain model candidate, we don't let it see future words (just like the brain
             # doesn't receive future word input). Instead, we maximize the past context of each word
@@ -775,7 +775,12 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
                 sentence_index += 1
 
                 context_start = max(0, token_index - max_num_words + 1)
-                context = tokenized_sentences[context_start:token_index + 1]
+                #context = tokenized_sentences[context_start:token_index + 1]
+                if full_context == False: #added CK Nov 23, 2020 #taken out CK Nov 23, 2020
+                    context = tokenized_sentences[context_start:token_index + 1] #added CK Nov 23, 2020
+                else: #added CK Nov 23, 2020
+                    context = tokenized_sentences[context_start:max_num_words + 1] #added CK Nov 23, 2020
+                    
                 if use_special_tokens and context_start > 0:  # `cls_token` has been discarded
                     # insert `cls_token` again following
                     # https://huggingface.co/pytorch-transformers/model_doc/roberta.html#pytorch_transformers.RobertaModel
