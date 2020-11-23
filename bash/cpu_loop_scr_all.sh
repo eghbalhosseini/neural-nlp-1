@@ -19,7 +19,7 @@ filename="run_all_scrambled_$(date '+%Y%m%d%T').txt"
 cd /om/user/`whoami`/neural-nlp
 source activate brainmodeling
 
-export MODELNAME=albert-xxlarge-v2
+export MODELNAME=xlnet-large-cased
 
 #for i in scrambled-original scrambled1 scrambled3 scrambled5 scrambled7 scrambled-lowpmi
 

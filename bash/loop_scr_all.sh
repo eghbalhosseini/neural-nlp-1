@@ -4,10 +4,10 @@
 #SBATCH --output=run_all_scrambled_%j.out
 #SBATCH --error=run_all_scrambled_%j.err
 #SBATCH --nodes=1
-#SBATCH --mem=10G
+#SBATCH --mem=20G
 #SBATCH --gres=gpu:1             # 1 GPU
 #SBATCH --constraint=any-gpu     # Any GPU on the cluster.
-#SBATCH -t 24:00:00
+#SBATCH -t 28:00:00
 
 timestamp() {
   date +"%T"
@@ -21,7 +21,7 @@ filename="run_all_scrambled_$(date '+%Y%m%d%T').txt"
 cd /om/user/`whoami`/neural-nlp
 source activate brainmodeling
 
-export MODELNAME=albert-xxlarge-v2
+export MODELNAME=xlnet-large-cased
 
 #for i in scrambled-original scrambled1 scrambled3 scrambled5 scrambled7 scrambled-lowpmi
 
