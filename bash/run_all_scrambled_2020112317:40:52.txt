@@ -1,0 +1,7 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-scrambled-lowpmi', '--model', 'xlnet-large-cased']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-scrambled-lowpmi,model=xlnet-large-cased,subsample=None
+INFO:neural_nlp:Loading benchmark
+INFO:neural_nlp:Running
+DEBUG:neural_nlp.benchmarks.neural:I AM USING THIS DATA VERSION: lowPMI
+DEBUG:neural_nlp.benchmarks.s3._S3Storage:Loading from storage: neural_nlp.benchmarks.neural.PereiraEncodingScrambledLowPMI._load_assembly/version=base
+DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): s3.amazonaws.com
