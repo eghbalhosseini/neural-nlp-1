@@ -1,0 +1,2 @@
+INFO:__main__:Running with args Namespace(log_level='DEBUG'), ['run', '--benchmark', 'Pereira2018-encoding-weights', '--model', 'xlm-mlm-xnli15-102']
+DEBUG:result_caching._DiskStorage:Running function: neural_nlp.score/benchmark=Pereira2018-encoding-weights,model=xlm-mlm-xnli15-102,subsample=None

@@ -1,0 +1,5 @@
+whoami: cannot find name for user ID 170572
+/var/slurm/slurmd/job18539544/slurm_script: line 10: cd: /om/user//neural-nlp: No such file or directory
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+python: can't open file 'neural_nlp': [Errno 2] No such file or directory
