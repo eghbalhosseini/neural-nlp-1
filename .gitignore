@@ -1,5 +1,6 @@
 # Directories
 ressources/models/glove/*
+ressources/models/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
