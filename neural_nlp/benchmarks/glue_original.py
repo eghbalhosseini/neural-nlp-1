@@ -47,21 +47,10 @@ class DecoderHead(torch.nn.Module):
     def __init__(self, features_size, num_labels):
         super(DecoderHead, self).__init__()
         self.num_labels = num_labels
-
-        import argparse  # CK hotfix, prob. not the best way :P
-        parser = argparse.ArgumentParser(description='glue parser')  # CK
-        parser.add_argument('--log_level', type=str)  # CK
-        parser.add_argument('--model', type=str)  # CK
-        parser.add_argument('--benchmark', type=str)  # CK
-        parser.add_argument('run', type=str)  # CK
-        args = parser.parse_args() # CK
-        if args.benchmark in ['glue-cola', 'glue-sst-2']: #single-sentence benchmarks
-            self.linear = nn.Linear(features_size, num_labels) #like this or concatenate 4 times, i.e., also times 4?
-        else:
-            self.linear = nn.Linear(features_size * 4, num_labels)  # *4 due to concatenation CK
+        self.linear = nn.Linear(features_size, num_labels)
 
     def forward(self, features, labels=None):
-        features = features.view(-1, np.prod(features.shape[1:])) #-1 means that size of first dimension will be inferred CK
+        features = features.view(-1, np.prod(features.shape[1:]))
         logits = self.linear(features)
 
         outputs = (logits,) + (features,)
@@ -135,13 +124,10 @@ def train(train_dataset, features_model, decoder_head, run_evaluation,
         epoch_train_loss = 0
         for step, batch in enumerate(epoch_iterator):
             decoder_head.train()
-            #batch = tuple(t.to(device) for t in batch) CK
-            features = batch[0]
-            labels = batch[-1]
-            #features = features_model(batch=batch) #here we're passing 4 arguments, but we only want to pass 2, CK
-            # i.e., features and labels.
-            outputs = decoder_head(features, labels=labels)
-            loss = outputs[0] # model output is 3-tuple
+            batch = tuple(t.to(device) for t in batch)
+            features = features_model(batch=batch)
+            outputs = decoder_head(features, labels=batch[-1])
+            loss = outputs[0]  # model outputs are always tuple in transformers (see doc)
 
             loss = loss.mean()  # mean() to average on multi-gpu parallel training
             if gradient_accumulation_steps > 1:
@@ -214,11 +200,10 @@ def evaluate(features_model, decoder_head, task_name, eval_dataset, output_mode,
         batch = tuple(t.to(device) for t in batch)
 
         with torch.no_grad():
-            #features = features_model(batch=batch) CK
-            features = batch[0]
+            features = features_model(batch=batch)
             labels = batch[-1]
             outputs = decoder_head(features, labels=labels)
-            tmp_eval_loss, logits = outputs[:2] #Correct? Check with Martin. CK
+            tmp_eval_loss, logits = outputs[:2]
 
             eval_loss += tmp_eval_loss.mean().item()
         nb_eval_steps += 1
@@ -286,8 +271,8 @@ class GLUEBenchmark:
             # Loop to handle MNLI double evaluation (matched, mis-matched)
             for eval_task in eval_task_names:
                 examples, label_list, output_mode = get_examples(data_dir=data_dir, task=eval_task, evaluate=True)
-                eval_dataset = model.glue_dataset(examples=examples, label_list=label_list,
-                                                  output_mode=output_mode) #Inputs changed CK
+                eval_dataset = model.glue_dataset(task=eval_task, examples=examples, label_list=label_list,
+                                                  output_mode=output_mode, max_seq_length=max_seq_length)
                 result = evaluate(features_model=model, decoder_head=decoder_head,
                                   eval_dataset=eval_dataset, task_name=eval_task, output_mode=output_mode,
                                   device=device)
@@ -306,8 +291,8 @@ class GLUEBenchmark:
 
         # Training
         examples, label_list, output_mode = get_examples(data_dir=data_dir, task=self.task_name, evaluate=False)
-        train_dataset = model.glue_dataset(examples=examples, label_list=label_list,
-                                           output_mode=output_mode) #Inputs changed CK
+        train_dataset = model.glue_dataset(task=self.task_name, examples=examples, label_list=label_list,
+                                           output_mode=output_mode, max_seq_length=max_seq_length)
         train(features_model=model, decoder_head=decoder_head,
               train_dataset=train_dataset, run_evaluation=run_evaluation,
               seed=self.seed, device=device)

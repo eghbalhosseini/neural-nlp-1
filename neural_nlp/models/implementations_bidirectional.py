@@ -597,7 +597,7 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
             inputs['encoder_attention_mask'] = inputs['attention_mask']
             del inputs['attention_mask']
         with torch.no_grad():
-            features_outputs = self._model(**inputs)
+            features_outputs = self._model(**inputs) ## INTERJECT HERE
         # https://github.com/huggingface/transformers/blob/520e7f211926e07b2059bc8e21b668db4372e4db/src/transformers/modeling_bert.py#L811-L812
         sequence_output = features_outputs[0]
         if any(self.identifier.startswith(first_token_model) for first_token_model in
@@ -688,6 +688,7 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
             self.model = model.to('cuda' if torch.cuda.is_available() else 'cpu')
             self.layer_names = layer_names
             self.tokenizer_special_tokens = tokenizer_special_tokens
+            self._logger = logging.getLogger(fullname(self)) #added CK
 
         def __call__(self, sentences, layers):
             import torch
@@ -775,7 +776,15 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
                 sentence_index += 1
 
                 context_start = max(0, token_index - max_num_words + 1)
-                context = tokenized_sentences[context_start:token_index + 1]
+                # attempt to allow bert to see both sides of context
+                context = tokenized_sentences[context_start:max_num_words + 1] #changed from original below (CK Nov23 2020),
+                c_length = len(context) #added check CK
+                context_original = tokenized_sentences[context_start:token_index + 1] #added check CK
+                c_orig_length = len(context_original)
+                self._logger.debug(f"******************\n\n THIS IS THE NEW CONTEXT LENGTH: {c_length}!\n\n******************") #added CK
+                self._logger.debug(f"THIS WAS THE OLD CONTEXT LENGTH: {c_orig_length}! \n\n******************") #added CK"
+                #context = tokenized_sentences[context_start:token_index + 1]
+
                 if use_special_tokens and context_start > 0:  # `cls_token` has been discarded
                     # insert `cls_token` again following
                     # https://huggingface.co/pytorch-transformers/model_doc/roberta.html#pytorch_transformers.RobertaModel

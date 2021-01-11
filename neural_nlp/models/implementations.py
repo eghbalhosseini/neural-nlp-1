@@ -65,12 +65,11 @@ class TaskModel:
     def vocab_size(self):
         raise NotImplementedError()
 
-    def glue_dataset(self, task, examples, label_list, output_mode, max_seq_length):
-        """
-        :return: a torch TensorDataset where the last item is the labels
-        """
-        raise NotImplementedError()
-
+#    def glue_dataset(self, task, examples, label_list, output_mode, max_seq_length): #CK
+#        """#CK
+#        :return: a torch TensorDataset where the last item is the labels#CK
+#        """#CK#
+#        raise NotImplementedError()#CK
 
 class SentenceLength(BrainModel, TaskModel):
     """
@@ -305,6 +304,35 @@ class SkipThoughts(BrainModel, TaskModel):
             sentence_encoding.append(word_embeddings)
         sentence_encoding = np.array(sentence_encoding).transpose([1, 0, 2])
         return sentence_encoding
+
+    def glue_dataset(self, examples, label_list, output_mode):  # CK based off of this fn from KeyedVectorModel
+        import torch
+        from torch.utils.data import TensorDataset
+        label_map = {label: i for i, label in enumerate(label_list)}
+        features = []
+
+        if examples[0].text_b is not None: # CK
+            self._logger.debug("************** \n\n THIS BENCHMARK REQUIRES TWO INPUT SEQUENCES \n\n **************")
+            for example in tqdm(examples): # CK
+                sent1 = torch.tensor(self._encode_sentence(example.text_a)[-1][-1]) # CK
+                sent2 = torch.tensor(self._encode_sentence(example.text_b)[-1][-1])# CK
+                f = torch.cat([sent1, sent2, torch.abs(sent1 - sent2), sent1 * sent2], -1) # CK
+                features.append(PytorchWrapper._tensor_to_numpy(f)) # CK
+            all_features = torch.tensor(features) # CK
+        else: # CK
+            self._logger.debug("************** \n\n THIS BENCHMARK REQUIRES ONLY ONE INPUT SEQUENCE \n\n **************")
+            for example in tqdm(examples): # CK, here we could also concatenate 4 times if we want to keep fc layer the same dim
+                f = torch.tensor(self._encode_sentence(example.text_a)[-1][-1]) # CK
+                features.append(PytorchWrapper._tensor_to_numpy(f)) # CK
+            all_features = torch.tensor(features) # CK
+
+        if output_mode == "classification":
+            all_labels = torch.tensor([label_map[example.label] for example in examples], dtype=torch.long)
+        elif output_mode == "regression":
+            all_labels = torch.tensor([label_map[example.label] for example in examples], dtype=torch.float)
+
+        dataset = TensorDataset(all_features, all_labels)
+        return dataset
 
     available_layers = ['encoder']
     default_layers = available_layers
@@ -569,13 +597,13 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
     def _tokens_to_features(self, token_ids):
         import torch
         max_num_words = 512 - 2  # -2 for [cls], [sep]
-        if os.getenv('ALLATONCE', '0') == '1':
+        if os.getenv('ALLATONCE', '0') == '1': #flag for bidirectionality!
             token_tensor = torch.tensor([token_ids])
             token_tensor = token_tensor.to('cuda' if torch.cuda.is_available() else 'cpu')
             features = self._model(token_tensor)[0][0]
             features = PytorchWrapper._tensor_to_numpy(features)
             return features
-        features = []
+        features = [] #default is unidirectionality
         for token_index in range(len(token_ids)):
             context_start = max(0, token_index - max_num_words + 1)
             context_ids = token_ids[context_start:token_index + 1]
@@ -688,7 +716,6 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
             self.model = model.to('cuda' if torch.cuda.is_available() else 'cpu')
             self.layer_names = layer_names
             self.tokenizer_special_tokens = tokenizer_special_tokens
-            self._logger = logging.getLogger(fullname(self)) #added CK
 
         def __call__(self, sentences, layers):
             import torch
@@ -776,15 +803,7 @@ class _PytorchTransformerWrapper(BrainModel, TaskModel):
                 sentence_index += 1
 
                 context_start = max(0, token_index - max_num_words + 1)
-                # attempt to allow bert to see both sides of context
-                context = tokenized_sentences[context_start:max_num_words + 1] #changed from original below (CK Nov23 2020),
-                c_length = len(context) #added check CK
-                context_original = tokenized_sentences[context_start:token_index + 1] #added check CK
-                c_orig_length = len(context_original)
-                self._logger.debug(f"******************\n\n THIS IS THE NEW CONTEXT LENGTH: {c_length}!\n\n******************") #added CK
-                self._logger.debug(f"THIS WAS THE OLD CONTEXT LENGTH: {c_orig_length}! \n\n******************") #added CK"
-                #context = tokenized_sentences[context_start:token_index + 1]
-
+                context = tokenized_sentences[context_start:token_index + 1]
                 if use_special_tokens and context_start > 0:  # `cls_token` has been discarded
                     # insert `cls_token` again following
                     # https://huggingface.co/pytorch-transformers/model_doc/roberta.html#pytorch_transformers.RobertaModel
@@ -852,9 +871,9 @@ class KeyedVectorModel(BrainModel, TaskModel):
     def glue_dataset(self, task, examples, label_list, output_mode, max_seq_length):
         import torch
         from torch.utils.data import TensorDataset
-        tokens = [np.concatenate((self.tokenize(example.text_a),) +
-                                 ((self.tokenize(example.text_b),) if example.text_b is not None else ()))
+        tokens = [np.concatenate((self.tokenize(example.text_a),) + ((self.tokenize(example.text_b),) if example.text_b is not None else ())) #tupel concatenation! tuple need comma at end!
                   for example in examples]
+        # (asd, asd, 12,) + (1, 2,) = (asd, asd, 12, 1, 1,)
         label_map = {label: i for i, label in enumerate(label_list)}
         labels = [label_map[label] for label in label_list]
 
