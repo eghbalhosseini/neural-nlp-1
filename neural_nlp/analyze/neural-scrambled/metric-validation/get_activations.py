@@ -7,16 +7,11 @@ import numpy as np
 from collections import defaultdict
 
 import os
-import getpass
-import sys
-import datetime
-from scipy.spatial import distance
 import pickle
 
 from transformers import BertTokenizer, BertModel, GPT2Tokenizer, GPT2Model
 import torch
 from tqdm import tqdm
-import os
 import argparse
 
 import logging
@@ -39,8 +34,13 @@ class GPT2():
       print(np.shape(outputs['hidden_states'][0])) #torch.Size([1, 8, 768]) > use .squeeze() to get rid of
       dim1 dimension >> torch.Size([8, 768])
       """
-      reps_dict = {}
+      sentence_embedding_dict = {}
       token_dict = {}
+    
+      layers = ['embedding'] + [f'hidden.layer.{i}' for i in range(self.model.config.n_layer)]
+
+      for layer in layers:
+          sentence_embedding_dict[layer] = {}
 
       #encode sentences
       for (index, sent) in tqdm(sentence_index_zip):
@@ -51,11 +51,7 @@ class GPT2():
           print(outputs.keys())
           token_reps = outputs['hidden_states'] #index, e.g. with token_reps[-1] for last layer representation
 
-          layers = ['embedding'] + [f'hidden.layer.{i}' for i in range(self.model.config.n_layer)]
-
-          sentence_embedding_dict = {}
           for ind, layer in enumerate(layers):
-              sentence_embedding_dict[layer] = {}
               token_reps_layer = token_reps[ind]
               if ind == 0:
                 print(f'Shape of model output: {np.shape(token_reps_layer)}')
@@ -95,8 +91,13 @@ class Bert():
       print(np.shape(outputs['hidden_states'][0])) #torch.Size([1, 8, 768]) > use .squeeze() to get rid of
       dim1 dimension >> torch.Size([8, 768])
       """
-      reps_dict = {}
+      sentence_embedding_dict = {}
       token_dict = {}
+        
+      layers = ['embedding'] + [f'hidden.layer.{i}' for i in range(self.model.config.n_layer)]
+
+      for layer in layers:
+          sentence_embedding_dict[layer] = {}
 
       #encode sentences
       for (index, sent) in tqdm(sentence_index_zip):
@@ -106,12 +107,8 @@ class Bert():
           outputs = self.model(**inputs)
           print(outputs.keys())
           token_reps = outputs['hidden_states'] #index, e.g. with token_reps[-1] for last layer representation
-
-          layers = ['embedding'] + [f'hidden.layer.{i}' for i in range(self.model.config.num_hidden_layers)]
-
-          sentence_embedding_dict = {}
+            
           for ind, layer in enumerate(layers):
-              sentence_embedding_dict[layer] = {}
               token_reps_layer = token_reps[ind]
               if ind == 0:
                 print(f'Shape of model output: {np.shape(token_reps_layer)}')
@@ -205,10 +202,10 @@ if __name__ == "__main__":
         os.mkdir(path)
         print("Directory '%s' created" % directory)
     
-    fname_act = os.path.join(path,'activations_model=_{}_{}_{}_{}_Pereira2018.pkl'.format(model.name, args.scrambled_version, args.sentence_embedding, str(args.final_period)))
+    fname_act = os.path.join(path,'activations_model={}_{}_{}_finalperiod={}_Pereira2018.pkl'.format(model.name, args.scrambled_version, args.sentence_embedding, str(args.final_period)))
     with open(fname_act, 'wb') as fout_act:
         pickle.dump(sentence_embedding_dict, fout_act)
 
-    fname_tok = os.path.join(path,'tokens_model=_{}_{}_{}_{}_Pereira2018.pkl'.format(model.name, args.scrambled_version, args.sentence_embedding, str(args.final_period)))
+    fname_tok = os.path.join(path,'tokens_model={}_{}_{}_finalperiod={}_Pereira2018.pkl'.format(model.name, args.scrambled_version, args.sentence_embedding, str(args.final_period)))
     with open(fname_tok, 'wb') as fout_tok:
         pickle.dump(token_dict, fout_tok)

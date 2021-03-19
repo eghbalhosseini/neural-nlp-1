@@ -1,3 +1,0 @@
-I AM USING THIS DATA VERSION: Scr1
-I AM SAVING A NEW PICKLE FILE FOR Scr1!
-Example of preprocessed sentence: beekeeping the encourages conservation of local habitats.
