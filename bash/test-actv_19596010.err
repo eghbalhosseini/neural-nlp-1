@@ -1,0 +1,4 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+/var/slurm/slurmd/job19596010/slurm_script: line 28: unexpected EOF while looking for matching `"'
+/var/slurm/slurmd/job19596010/slurm_script: line 36: syntax error: unexpected end of file

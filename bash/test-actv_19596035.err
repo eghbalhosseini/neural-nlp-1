@@ -1,0 +1,6 @@
+discarding /cm/shared/openmind/miniconda/3.18.9-py3/bin from PATH
+prepending /home/gretatu/.conda/envs/brainmodeling/bin to PATH
+Traceback (most recent call last):
+  File "get_activations.py", line 189, in <module>
+    if args.model.startswith("bert"):
+AttributeError: 'NoneType' object has no attribute 'startswith'
