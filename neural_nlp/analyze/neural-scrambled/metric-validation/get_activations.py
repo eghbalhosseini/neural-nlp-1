@@ -1,4 +1,3 @@
-from utils import *
 import warnings
 
 from pathlib import Path
@@ -6,9 +5,6 @@ import argparse
 import pandas as pd
 import numpy as np
 from collections import defaultdict
-
-from transformers import GPT2Tokenizer, GPT2Model, BertTokenizer, BertModel
-from neural_nlp.models import LM1B
 
 import os
 import getpass
@@ -19,12 +15,9 @@ import pickle
 
 from transformers import BertTokenizer, BertModel, GPT2Tokenizer, GPT2Model
 import torch
-import numpy as np
 from tqdm import tqdm
-import pickle
 import os
 import argparse
-import pandas as pd
 
 import logging
 logger = logging.getLogger(__name__)
