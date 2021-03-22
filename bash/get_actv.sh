@@ -1,24 +1,23 @@
 #!/bin/bash
 #
-#SBATCH --job-name=test-actv
-#SBATCH --output=test-actv_%j.out
-#SBATCH --error=test-actv_%j.err
+#SBATCH --job-name=get-actv
+#SBATCH --output=get-actv_%j.out
+#SBATCH --error=get-actv_%j.err
 #SBATCH --nodes=1
-#SBATCH --mem=50G
-#SBATCH -t 02:00:00
+#SBATCH --mem=15G
+#SBATCH -t 00:30:00
 
 timestamp() {
   date +"%T"
 }
 
-echo 'Executing run_scrambled'
+echo 'Fetching activations'
 timestamp
 
-filename="test-actv_$(date '+%Y%m%d%T').txt"
+filename="get-actv_$(date '+%Y%m%d%T').txt"
 
 source /om2/user/gretatu/anaconda/etc/profile.d/conda.sh
 conda activate control-neural
-
 
 cd /om/user/`whoami`/neural-nlp/neural_nlp/analyze/neural-scrambled/metric-validation/
 
