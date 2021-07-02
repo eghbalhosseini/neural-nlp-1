@@ -470,7 +470,13 @@ class _PereiraBenchmarkScrambled(Benchmark):
                               'Scr7': os.path.join(scrambled_data_dir, 'stimuli_Scr7.pkl'),
                               'backward': os.path.join(scrambled_data_dir, 'stimuli_backward.pkl'),
                               'random': os.path.join(scrambled_data_dir, 'stimuli_random.pkl'),
-                              'eaw-random': os.path.join(scrambled_data_dir, 'stimuli_every_other_word_random.pkl')
+                              'eaw-random': os.path.join(scrambled_data_dir, 'stimuli_every_other_word_random.pkl'),
+                              #ablation pkls
+                              'nouns': os.path.join(scrambled_data_dir, 'stimuli_nouns.pkl'),
+                              'nounsverbs': os.path.join(scrambled_data_dir, 'stimuli_nounsverbs.pkl'),
+                              'nounsverbsadj': os.path.join(scrambled_data_dir, 'stimuli_nounsverbsadj.pkl'),
+                              'functionwords': os.path.join(scrambled_data_dir, 'stimuli_functionwords.pkl'),
+                              'passageshuffle': os.path.join(scrambled_data_dir, 'stimuli_passageshuffle.pkl')
                               }
 
 
@@ -478,7 +484,10 @@ class _PereiraBenchmarkScrambled(Benchmark):
             if scrambled_version == key:
                 _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
                 stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
-                stimuli.name = f"Pereira2018-{scrambled_version}" #added this
+                if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1': #CK
+                    stimuli.name = f"Pereira2018-{scrambled_version}-avgtoken" #added this
+                else:
+                    stimuli.name = f"Pereira2018-{scrambled_version}-lasttoken"  # added this
 
         self._target_assembly.attrs['stimulus_set'] = stimuli
 
@@ -689,7 +698,7 @@ class PereiraEncodingScrambledOriginal(_PereiraBenchmarkScrambled):
     @property
     @load_s3(key='Pereira2018-encoding-ceiling')
     def ceiling(self):
-        return super(PereiraEncodingScrambled1, self).ceiling
+        return super(PereiraEncodingScrambledOriginal, self).ceiling
 
 class PereiraEncodingScrambled1(_PereiraBenchmarkScrambled):
     """
@@ -842,6 +851,112 @@ class PereiraEncodingScrambledEAWRandom(_PereiraBenchmarkScrambled):
     @load_s3(key='Pereira2018-encoding-ceiling')
     def ceiling(self):
         return super(PereiraEncodingScrambledEAWRandom, self).ceiling
+
+###################################
+##### ABLATION BENCHMARKS
+###################################
+
+class PereiraEncodingAblationN(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="nouns", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingAblationN, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-ablation-nouns'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingAblationN, self).ceiling
+
+
+class PereiraEncodingAblationNV(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="nounsverbs", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingAblationNV, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-ablation-nounsverbs'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingAblationNV, self).ceiling
+
+
+class PereiraEncodingAblationNVA(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="nounsverbsadj", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingAblationNVA, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-ablation-nounsverbsadj'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingAblationNVA, self).ceiling
+
+class PereiraEncodingAblationFN(_PereiraBenchmarkScrambled):
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="functionwords", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingAblationFN, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-ablation-functionwords'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingAblationFN, self).ceiling
+
+
+class PereiraEncodingAblationPassageShuffle(_PereiraBenchmarkScrambled): #Sentences are shuffled within a passage (i.e., sentences with the same passageID and same experiment)
+    """
+    data source:
+        Pereira et al., nature communications 2018
+        https://www.nature.com/articles/s41467-018-03068-4?fbclid=IwAR0W7EZrnIFFO1kvANgeOEICaoDG5fhmdHipazy6n-APUJ6lMY98PkvuTyU
+    """
+
+    def __init__(self, scrambled_version="passageshuffle", **kwargs):
+        metric = CrossRegressedCorrelation(
+            regression=linear_regression(xarray_kwargs=dict(stimulus_coord='stimulus_id')),
+            correlation=pearsonr_correlation(xarray_kwargs=dict(correlation_coord='stimulus_id')),
+            crossvalidation_kwargs=dict(splits=5, kfold=True, split_coord='stimulus_id', stratification_coord=None))
+        super(PereiraEncodingAblationPassageShuffle, self).__init__(metric=metric, scrambled_version=scrambled_version, **kwargs) # identifier='Pereira2018-encoding-ablation-passageshuffle'
+
+    @property
+    @load_s3(key='Pereira2018-encoding-ceiling')
+    def ceiling(self):
+        return super(PereiraEncodingAblationPassageShuffle, self).ceiling
+
+###################################
+##### END ABLATION BENCHMARKS
+###################################
 
 
 class _PereiraSubjectWise(_PereiraBenchmark):
@@ -1176,6 +1291,12 @@ benchmark_pool = [
     ('Pereira2018-encoding-scrambled-backward', PereiraEncodingScrambledBackward),
     ('Pereira2018-encoding-scrambled-random', PereiraEncodingScrambledRandom),
     ('Pereira2018-encoding-scrambled-eaw-random', PereiraEncodingScrambledEAWRandom),
+    #ablation benchmarks
+    ('Pereira2018-encoding-ablation-nouns', PereiraEncodingAblationN),
+    ('Pereira2018-encoding-ablation-nounsverbs', PereiraEncodingAblationNV),
+    ('Pereira2018-encoding-ablation-nounsverbsadj', PereiraEncodingAblationNVA),
+    ('Pereira2018-encoding-ablation-functionwords', PereiraEncodingAblationFN),
+    ('Pereira2018-encoding-ablation-passageshuffle', PereiraEncodingAblationPassageShuffle),
     # secondary benchmarks
     ('Pereira2018-rdm', PereiraRDM),
     ('Fedorenko2016v3-rdm', Fedorenko2016V3RDM),

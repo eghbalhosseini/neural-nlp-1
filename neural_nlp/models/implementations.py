@@ -491,9 +491,15 @@ class Transformer(PytorchWrapper, BrainModel, TaskModel):
             model=self._model_container, reset=lambda: None)  # transformer is feed-forward
 
     def __call__(self, *args, average_sentence=True, **kwargs):
+        if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
+            avg=word_mean
+        else:
+            avg=word_last
+
         if self.mode == BrainModel.Modes.recording:
-            return _call_conditional_average(*args, extractor=self._extractor,
-                                             average_sentence=average_sentence, sentence_averaging=word_last, **kwargs)
+                return _call_conditional_average(*args, extractor=self._extractor,
+                                                 average_sentence=average_sentence, sentence_averaging=avg, **kwargs) #CK changed sentence_averaging=word_last to avg
+
         elif self.mode == TaskModel.Modes.tokens_to_features:
             encodings = self._model_container(*args, **kwargs)
             # the onmt implementation concats things together, undo this
@@ -982,6 +988,7 @@ model_pool = {
     Glove.identifier + '-untrained': LazyLoad(lambda: Glove(random_embeddings=True)),
     Transformer.identifier: LazyLoad(Transformer),
     Transformer.identifier + '-untrained': LazyLoad(lambda: Transformer(untrained=True)),
+    Transformer.identifier + '-avgtoken': LazyLoad(Transformer), #CK
     ETM.identifier: LazyLoad(ETM),
     ETM.identifier + '-untrained': LazyLoad(lambda: ETM(random_embeddings=True)),
 }
@@ -1171,6 +1178,9 @@ for untrained in False, True:
             identifier += '-untrained'
             configuration['trained'] = False
 
+        if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':
+            identifier += '-avgtoken'
+
         # either use the defined values for config, model and tokenizer or build from prefix
         configuration['config_ctr'] = configuration.get('config_ctr', configuration['prefix'] + 'Config')
         configuration['model_ctr'] = configuration.get('model_ctr', configuration['prefix'] + 'Model')
@@ -1196,11 +1206,18 @@ for untrained in False, True:
             model_wrapper = configuration.get('model_wrapper', None)
             if model_wrapper:
                 model = model_wrapper(model)
+
+            if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
+                avg = word_mean
+            else:
+                avg = word_last
+
             transformer = _PytorchTransformerWrapper(
                 identifier=identifier,
                 tokenizer=tokenizer, tokenizer_special_tokens=configuration.get('tokenizer_special_tokens', ()),
                 model=model, layers=configuration['layers'],
-                sentence_average=word_last)
+                sentence_average=avg) #CK changed sentence_averaging=word_last to avg
+
             return transformer
 
 
