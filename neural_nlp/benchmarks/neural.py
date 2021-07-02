@@ -484,7 +484,7 @@ class _PereiraBenchmarkScrambled(Benchmark):
             if scrambled_version == key:
                 _logger.debug(f"I AM USING THIS DATA VERSION: {key}")
                 stimuli = pd.read_pickle(STIMULI_TO_PKL_MAP[key])
-                if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1': #CK
+                if os.getenv('AVG_TOKEN_TRANSFORMERS', '0') == '1': #CK
                     stimuli.name = f"Pereira2018-{scrambled_version}-avgtoken" #added this
                 else:
                     stimuli.name = f"Pereira2018-{scrambled_version}-lasttoken"  # added this

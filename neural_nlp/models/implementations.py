@@ -491,7 +491,7 @@ class Transformer(PytorchWrapper, BrainModel, TaskModel):
             model=self._model_container, reset=lambda: None)  # transformer is feed-forward
 
     def __call__(self, *args, average_sentence=True, **kwargs):
-        if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
+        if os.getenv('AVG_TOKEN_TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
             avg=word_mean
         else:
             avg=word_last
@@ -1181,7 +1181,7 @@ for untrained in False, True:
             identifier += '-untrained'
             configuration['trained'] = False
 
-        if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':
+        if os.getenv('AVG_TOKEN_TRANSFORMERS', '0') == '1':
             identifier += '-avgtoken'
 
         # either use the defined values for config, model and tokenizer or build from prefix
@@ -1210,7 +1210,7 @@ for untrained in False, True:
             if model_wrapper:
                 model = model_wrapper(model)
 
-            if os.getenv('AVG-TOKEN-TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
+            if os.getenv('AVG_TOKEN_TRANSFORMERS', '0') == '1':  # CK flag for using avg. token for transformers!
                 avg = word_mean
             else:
                 avg = word_last
