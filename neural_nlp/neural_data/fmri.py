@@ -86,7 +86,7 @@ def load_Pereira2018_Blank_languageresiduals():
     return residuals
 
 #@store()
-def load_Pereira2018_scrambled(version='Scr1'): # edit of load_Pereira2018_Blank
+def load_Pereira2018_scrambled(version='base'): # edit of load_Pereira2018_Blank >> doesn't matter. This fn isn't used
     _logger.info('\n\n\n ************************ \n I AM SCRAMBLING \n ******************** \n\n\n')
     reference_data = load_Pereira2018()
 
